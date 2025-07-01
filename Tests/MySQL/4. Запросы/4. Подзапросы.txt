@@ -1,0 +1,65 @@
+Question: Что такое подзапрос в SQL?
+Options:
+- Это запрос, который используется для создания таблицы
+- Это запрос, вложенный в другой запрос
+- Это запрос, который используется для сортировки данных
+- Это запрос, который выполняется после основного
+Explanation: Подзапрос — это запрос, вложенный внутри другого запроса.
+CorrectAnswerIndex: 1
+
+Question: В каком разделе SQL-запроса чаще всего используется подзапрос?
+Options:
+- WHERE
+- SELECT
+- FROM
+- ORDER BY
+Explanation: Подзапрос чаще всего используется в WHERE для фильтрации данных.
+CorrectAnswerIndex: 0
+
+Question: Какой тип подзапроса используется в следующем примере?
+Code:
+SELECT name, salary FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
+Options:
+- Подзапрос в SELECT
+- Подзапрос в WHERE
+- Подзапрос в FROM
+- Подзапрос в ORDER BY
+Explanation: Подзапрос в WHERE фильтрует сотрудников с зарплатой выше средней.
+CorrectAnswerIndex: 1
+
+Question: Что делает подзапрос в следующем примере?
+Code:
+SELECT department, avg_salary
+FROM (
+  SELECT department, AVG(salary) AS avg_salary
+  FROM employees
+  GROUP BY department
+) AS dept_avg
+WHERE avg_salary > 50000;
+Options:
+- Находит всех сотрудников, чьи зарплаты выше 50000
+- Находит среднюю зарплату по каждому отделу и фильтрует отделы с зарплатой больше 50000
+- Показывает всех сотрудников, работающих в Москве
+- Не имеет смысла
+Explanation: Подзапрос в FROM создает временную таблицу для вычисления средней зарплаты по отделам.
+CorrectAnswerIndex: 1
+
+Question: Какой результат вернет следующий запрос?
+SELECT name, (SELECT MAX(salary) FROM employees) AS max_salary FROM employees;
+Options:
+- Покажет имя каждого сотрудника и максимальную зарплату среди всех сотрудников
+- Покажет имя каждого сотрудника и его собственную зарплату
+- Покажет имя сотрудников, чья зарплата выше максимальной
+- Покажет имя сотрудников и минимальную зарплату
+Explanation: Подзапрос в SELECT возвращает максимальную зарплату, которая применяется ко всем сотрудникам.
+CorrectAnswerIndex: 0
+
+Question: Какой оператор используется для фильтрации значений с использованием подзапроса в следующем примере?
+SELECT name FROM employees WHERE department_id IN (SELECT id FROM departments WHERE location = 'Москва');
+Options:
+- EXISTS
+- ANY
+- IN
+- ALL
+Explanation: Оператор IN используется для фильтрации по результатам подзапроса.
+CorrectAnswerIndex: 2

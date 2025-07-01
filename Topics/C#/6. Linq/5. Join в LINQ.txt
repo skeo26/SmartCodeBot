@@ -1,0 +1,147 @@
+<b>Join</b> — это операция в LINQ, которая позволяет объединить две коллекции данных, основываясь на общем ключе. Это аналог SQL-оператора <code>JOIN</code>.
+
+<b>1. Пример простого соединения:</b>
+
+Предположим, у нас есть два списка: один с людьми, а другой — с заказами. Мы хотим объединить их по идентификатору клиента.
+
+<pre><code>var people = new List&lt;Person&gt;()
+{
+    new Person { Id = 1, Name = "Alice" },
+    new Person { Id = 2, Name = "Bob" },
+    new Person { Id = 3, Name = "Charlie" }
+};
+
+var orders = new List&lt;Order&gt;()
+{
+    new Order { OrderId = 101, CustomerId = 1, Product = "Laptop" },
+    new Order { OrderId = 102, CustomerId = 2, Product = "Smartphone" },
+    new Order { OrderId = 103, CustomerId = 1, Product = "Tablet" }
+};
+
+var joinResult = people.Join(
+    orders,
+    person =&gt; person.Id,
+    order =&gt; order.CustomerId,
+    (person, order) =&gt; new
+    {
+        person.Name,
+        order.Product
+    }
+);
+
+foreach (var item in joinResult)
+{
+    Console.WriteLine($"{item.Name} ordered {item.Product}");
+}
+// Результат:
+// Alice ordered Laptop
+// Alice ordered Tablet
+// Bob ordered Smartphone
+</code></pre>
+
+<b>2. Пример с использованием группировки после Join:</b>
+
+Можно выполнить группировку после соединения данных.
+
+<pre><code>var joinGroupResult = people.Join(
+    orders,
+    person =&gt; person.Id,
+    order =&gt; order.CustomerId,
+    (person, order) =&gt; new { person.Name, order.Product }
+)
+.GroupBy(item =&gt; item.Name);
+
+foreach (var group in joinGroupResult)
+{
+    Console.WriteLine($"Customer: {group.Key}");
+    foreach (var item in group)
+    {
+        Console.WriteLine($"  {item.Product}");
+    }
+}
+// Результат:
+// Customer: Alice
+//   Laptop
+//   Tablet
+// Customer: Bob
+//   Smartphone
+</code></pre>
+
+<b>3. Пример с использованием множества данных в запросе:</b>
+
+Можно соединить несколько коллекций. Например, соединить людей с заказами, а затем соединить их с доставками.
+
+<pre><code>var deliveries = new List&lt;Delivery&gt;()
+{
+    new Delivery { OrderId = 101, DeliveryDate = new DateTime(2023, 12, 1) },
+    new Delivery { OrderId = 102, DeliveryDate = new DateTime(2023, 12, 5) },
+    new Delivery { OrderId = 103, DeliveryDate = new DateTime(2023, 12, 3) }
+};
+
+var detailedJoinResult = people.Join(
+    orders,
+    person =&gt; person.Id,
+    order =&gt; order.CustomerId,
+    (person, order) =&gt; new { person.Name, order.Product, order.OrderId }
+)
+.Join(
+    deliveries,
+    order =&gt; order.OrderId,
+    delivery =&gt; delivery.OrderId,
+    (order, delivery) =&gt; new
+    {
+        order.Name,
+        order.Product,
+        delivery.DeliveryDate
+    }
+);
+
+foreach (var item in detailedJoinResult)
+{
+    Console.WriteLine($"{item.Name} ordered {item.Product} and will receive it on {item.DeliveryDate.ToShortDateString()}");
+}
+// Результат:
+// Alice ordered Laptop and will receive it on 12/1/2023
+// Bob ordered Smartphone and will receive it on 12/5/2023
+// Alice ordered Tablet and will receive it on 12/3/2023
+</code></pre>
+
+<b>4. Пример с использованием Left Join:</b>
+
+В LINQ нет прямого оператора <code>Left Join</code>, но его можно симулировать с помощью метода <code>DefaultIfEmpty()</code>.
+
+<pre><code>var leftJoinResult = people.GroupJoin(
+    orders,
+    person =&gt; person.Id,
+    order =&gt; order.CustomerId,
+    (person, orderGroup) =&gt; new { person.Name, Orders = orderGroup.DefaultIfEmpty() }
+)
+.SelectMany(
+    x =&gt; x.Orders.DefaultIfEmpty(),
+    (x, order) =&gt; new { x.Name, Product = order?.Product ?? "No Order" }
+);
+
+foreach (var item in leftJoinResult)
+{
+    Console.WriteLine($"{item.Name} ordered {item.Product}");
+}
+// Результат:
+// Alice ordered Laptop
+// Alice ordered Tablet
+// Bob ordered Smartphone
+// Charlie ordered No Order
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>Join()</code> позволяет объединить две коллекции по ключу.
+- <code>GroupJoin()</code> позволяет выполнить соединение с группировкой.
+- <code>DefaultIfEmpty()</code> используется для симуляции <code>Left Join</code>.
+- Можно комбинировать несколько операций соединения для создания более сложных запросов.
+
+<b>Когда использовать:</b>
+
+- Когда необходимо объединить данные из нескольких коллекций.
+- Когда нужно создать сложные запросы с несколькими источниками данных.
+- Для выполнения соединений, аналогичных SQL-запросам, в памяти.
+

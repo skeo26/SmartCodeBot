@@ -1,0 +1,21 @@
+Для углубленного изучения и практики MySQL предлагаем следующие ресурсы:
+
+<b>1. Stepik — Курс «Основы баз данных»</b>
+<a href="https://stepik.org/course/63054/syllabus?auth=login" target="_blank">Stepik — Курс «Основы баз данных»</a>
+
+Бесплатный онлайн-курс, охватывающий основы работы с реляционными базами данных. Рассматриваются SQL-запросы, нормализация, связи между таблицами и другие базовые концепции. Отлично подойдёт для новичков, чтобы заложить фундамент.
+
+<b>2. MySQL Cookbook (3rd Edition) — O’Reilly</b>
+<a href="https://www.oreilly.com/library/view/mysql-cookbook-3rd/9781449374112/" target="_blank">MySQL Cookbook (3rd Edition) — O’Reilly</a>
+
+Подробное практическое руководство по решению конкретных задач в MySQL. Подходит для разработчиков любого уровня, помогает быстро находить решения типовых и нестандартных SQL-проблем.
+
+<b>3. Murach’s MySQL (3rd Edition)</b>
+<a href="https://www.murach.com/shop/murach-s-mysql-3rd-edition-detail" target="_blank">Murach’s MySQL (3rd Edition)</a>
+
+Учебник, построенный по принципу «пояснение + пример». Отличается последовательным объяснением теории и практики. Идеален как для начинающих, так и для тех, кто хочет систематизировать знания.
+
+<b>4. Видеокурс на YouTube: «MySQL Tutorial for Beginners»</b>
+<a href="https://www.youtube.com/playlist?list=PLZPZq0r_RZOMskz6MdsMOgxzheIyjo-BZ" target="_blank">Видеокурс на YouTube: «MySQL Tutorial for Beginners»</a>
+
+Видеоплейлист с подробными уроками по MySQL. Подходит для визуального восприятия и практического обучения. Включает в себя как базовые темы, так и более сложные аспекты SQL-запросов.

@@ -1,0 +1,89 @@
+Question: Какая функция в MySQL возвращает текущую дату и время?
+Options:
+- NOW()
+- CURDATE()
+- CURRENT_DATE()
+- DATE()
+Explanation: Функция NOW() возвращает текущую дату и время.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает только текущую дату без времени?
+Options:
+- CURDATE()
+- NOW()
+- DATE()
+- CURRENT_TIME()
+Explanation: Функция CURDATE() возвращает только текущую дату без времени.
+CorrectAnswerIndex: 0
+
+Question: Какая функция используется для извлечения времени из значения типа DATETIME?
+Options:
+- TIME()
+- DATE()
+- NOW()
+- CURDATE()
+Explanation: Функция TIME() извлекает время из значения типа DATETIME.
+CorrectAnswerIndex: 0
+
+Question: Какая функция добавляет интервал времени к дате?
+Options:
+- DATE_ADD()
+- DATE_SUB()
+- DATEDIFF()
+- YEAR()
+Explanation: Функция DATE_ADD() добавляет интервал времени к дате.
+CorrectAnswerIndex: 0
+
+Question: Какая функция извлекает год из даты?
+Options:
+- YEAR()
+- MONTH()
+- DAY()
+- WEEKDAY()
+Explanation: Функция YEAR() извлекает год из даты.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает количество дней между двумя датами?
+Options:
+- DATEDIFF()
+- DATE_ADD()
+- DATE_SUB()
+- YEAR()
+Explanation: Функция DATEDIFF() возвращает количество дней между двумя датами.
+CorrectAnswerIndex: 0
+
+Question: Какая функция извлекает день недели из даты (0 для понедельника, 6 для воскресенья)?
+Options:
+- WEEKDAY()
+- DAY()
+- MONTH()
+- YEAR()
+Explanation: Функция WEEKDAY() возвращает день недели (0 для понедельника, 6 для воскресенья).
+CorrectAnswerIndex: 0
+
+Question: Какая функция используется для преобразования строки в дату по заданному формату?
+Options:
+- STR_TO_DATE()
+- DATE_FORMAT()
+- NOW()
+- CURDATE()
+Explanation: Функция STR_TO_DATE() преобразует строку в дату по заданному формату.
+CorrectAnswerIndex: 0
+
+Question: Какая функция используется для извлечения секунд из времени?
+Options:
+- SECOND()
+- MINUTE()
+- HOUR()
+- WEEKDAY()
+Explanation: Функция SECOND() извлекает секунды из времени.
+CorrectAnswerIndex: 0
+
+Question: Какая функция форматирует дату в строку согласно заданному формату?
+Options:
+- DATE_FORMAT()
+- STR_TO_DATE()
+- NOW()
+- CURDATE()
+Explanation: Функция DATE_FORMAT() форматирует дату в строку согласно заданному формату.
+CorrectAnswerIndex: 0

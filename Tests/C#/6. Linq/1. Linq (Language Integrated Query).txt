@@ -1,0 +1,95 @@
+Question: Что такое LINQ в C#?
+Options:
+- Библиотека для создания графики
+- Способ обращения к базам данных
+- Язык запросов для работы с данными в коллекциях
+- Технология работы с потоками
+Explanation: LINQ — это язык интегрированных запросов, используемый для работы с данными в коллекциях.
+CorrectAnswerIndex: 2
+
+Question: Что делает выражение Where(n => n % 2 == 0)?
+Options:
+- Сортирует список
+- Удваивает каждое число
+- Фильтрует только чётные числа
+- Возвращает количество элементов
+Explanation: Метод Where фильтрует элементы по заданному условию.
+CorrectAnswerIndex: 2
+
+Question: Что выведет следующий код?
+Code:
+int[] nums = { 1, 2, 3, 4, 5 };
+var result = from n in nums where n > 3 select n;
+Options:
+- 1, 2, 3
+- 3, 4, 5
+- 4, 5
+- Ошибка компиляции
+Explanation: Будут выбраны только числа, большие 3: 4 и 5.
+CorrectAnswerIndex: 2
+
+Question: Какая запись использует метод-синтаксис LINQ?
+Options:
+- from x in list select x
+- list.Where(x => x > 5)
+- for (int i = 0; i < list.Count; i++) ...
+- select * from list where x > 5
+Explanation: Метод-синтаксис — это вызов методов-расширений, как `Where(...)`.
+CorrectAnswerIndex: 1
+
+Question: Какой метод LINQ используется для преобразования элементов?
+Options:
+- Where
+- Select
+- OrderBy
+- GroupBy
+Explanation: Select преобразует (проецирует) элементы в новую форму.
+CorrectAnswerIndex: 1
+
+Question: Что делает метод FirstOrDefault()?
+Options:
+- Возвращает количество элементов
+- Возвращает последний элемент
+- Возвращает первый элемент или значение по умолчанию
+- Удаляет первый элемент
+Explanation: FirstOrDefault возвращает первый элемент, если он есть, иначе — значение по умолчанию.
+CorrectAnswerIndex: 2
+
+Question: Какой результат выдаст следующий код?
+Code:
+List&ltstring&gt names = new() { "Ann", "Bob", "Alice" };
+var sorted = names.OrderBy(n => n);
+Options:
+- Ann, Bob, Alice
+- Alice, Ann, Bob
+- Bob, Alice, Ann
+- Ошибка компиляции
+Explanation: OrderBy сортирует строки в алфавитном порядке: Alice, Ann, Bob.
+CorrectAnswerIndex: 1
+
+Question: Что делает метод GroupBy()?
+Options:
+- Сортирует список
+- Объединяет списки
+- Разделяет коллекцию на группы по ключу
+- Удаляет повторяющиеся значения
+Explanation: GroupBy группирует элементы по указанному ключу.
+CorrectAnswerIndex: 2
+
+Question: Какой LINQ-запрос выберет имена студентов с оценкой выше 80?
+Options:
+- students.Select(s => s.Grade > 80)
+- students.Where(s => s.Grade > 80).Select(s => s.Name)
+- from s in students where s.Name == "80" select s
+- students.OrderBy(s => s.Grade > 80)
+Explanation: Второй вариант правильно фильтрует по оценке и возвращает имена.
+CorrectAnswerIndex: 1
+
+Question: Какое преимущество даёт LINQ?
+Options:
+- Повышает безопасность на уровне компиляции
+- Увеличивает объём кода
+- Работает только с массивами
+- Требует подключения к интернету
+Explanation: LINQ даёт типобезопасность, проверяется компилятором и работает с разными источниками данных.
+CorrectAnswerIndex: 0

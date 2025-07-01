@@ -1,0 +1,62 @@
+Question: Какой атрибут столбца в MySQL запрещает хранение значения NULL?
+Options:
+- `NOT NULL`
+- `DEFAULT`
+- `AUTO_INCREMENT`
+- `UNIQUE`
+Explanation: Атрибут `NOT NULL` запрещает хранение значения NULL в столбце.
+CorrectAnswerIndex: 0
+
+Question: Какой атрибут в MySQL используется для задания значения по умолчанию для столбца?
+Options:
+- `DEFAULT`
+- `NOT NULL`
+- `PRIMARY KEY`
+- `AUTO_INCREMENT`
+Explanation: Атрибут `DEFAULT` задает значение по умолчанию для столбца.
+CorrectAnswerIndex: 0
+
+Question: Какой атрибут в MySQL автоматически увеличивает значение в столбце на 1 при добавлении новой записи?
+Options:
+- `AUTO_INCREMENT`
+- `PRIMARY KEY`
+- `UNIQUE`
+- `DEFAULT`
+Explanation: Атрибут `AUTO_INCREMENT` автоматически увеличивает значение на 1 при добавлении новой записи.
+CorrectAnswerIndex: 0
+
+Question: Какой атрибут в MySQL гарантирует уникальность значений в столбце?
+Options:
+- `UNIQUE`
+- `DEFAULT`
+- `NOT NULL`
+- `PRIMARY KEY`
+Explanation: Атрибут `UNIQUE` требует уникальности значений в столбце.
+CorrectAnswerIndex: 0
+
+Question: Какой атрибут столбца в MySQL обозначает уникальный идентификатор строки?
+Options:
+- `PRIMARY KEY`
+- `AUTO_INCREMENT`
+- `NOT NULL`
+- `UNIQUE`
+Explanation: Атрибут `PRIMARY KEY` обозначает уникальный идентификатор строки.
+CorrectAnswerIndex: 0
+
+Question: Какой атрибут таблицы в MySQL используется для указания механизма хранения?
+Options:
+- `ENGINE`
+- `CHARSET`
+- `COMMENT`
+- `DEFAULT`
+Explanation: Атрибут `ENGINE` используется для определения механизма хранения таблицы, например, InnoDB или MyISAM.
+CorrectAnswerIndex: 0
+
+Question: Какой атрибут таблицы в MySQL задает кодировку?
+Options:
+- `CHARSET`
+- `ENGINE`
+- `COMMENT`
+- `DEFAULT`
+Explanation: Атрибут `CHARSET` задает кодировку для таблицы, например, `utf8mb4`.
+CorrectAnswerIndex: 0

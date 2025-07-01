@@ -1,0 +1,53 @@
+MySQL предоставляет несколько функций для выполнения условных операций и обработки значений с учетом определенных условий.
+
+<b>Основные функции:</b>
+
+1. <code>CASE</code>
+   Оператор <code>CASE</code> используется для выполнения условной логики в SQL-запросах. Он позволяет вернуть различные значения в зависимости от выполнения условий.
+   
+   Пример:
+   <code>
+   SELECT 
+       CASE 
+           WHEN salary > 5000 THEN 'High'
+           WHEN salary BETWEEN 3000 AND 5000 THEN 'Medium'
+           ELSE 'Low'
+       END AS salary_category
+   FROM employees;
+   </code>
+   В этом примере будет определена категория зарплаты сотрудника: "High", "Medium" или "Low" в зависимости от значения поля <code>salary</code>.
+
+2. <code>IF()</code>
+   Функция <code>IF()</code> позволяет выполнять условную проверку и возвращать одно значение, если условие истинно, и другое, если условие ложно.
+   
+   Пример:
+   <code>
+   SELECT IF(age >= 18, 'Adult', 'Minor') AS person_status
+   FROM people;
+   </code>
+   В этом примере проверяется возраст, и если он больше или равен 18, возвращается "Adult", в противном случае — "Minor".
+
+3. <code>IFNULL()</code>
+   Функция <code>IFNULL()</code> проверяет, является ли выражение NULL. Если это так, она возвращает заданное значение, иначе возвращает исходное выражение.
+   
+   Пример:
+   <code>
+   SELECT IFNULL(phone_number, 'No phone') AS contact_phone
+   FROM customers;
+   </code>
+   В этом примере, если <code>phone_number</code> равно NULL, будет возвращено "No phone".
+
+4. <code>COALESCE()</code>
+   Функция <code>COALESCE()</code> возвращает первое не-NULL значение среди переданных аргументов. Если все аргументы равны NULL, она возвращает NULL.
+   
+   Пример:
+   <code>
+   SELECT COALESCE(phone_number, mobile_number, 'No contact') AS contact_info
+   FROM contacts;
+   </code>
+   В этом примере функция <code>COALESCE</code> вернет первое значение, которое не является NULL, среди <code>phone_number</code> и <code>mobile_number</code>, а если оба значения NULL, то вернется "No contact".
+
+<b>Примечания:</b>
+
+- <code>CASE</code> является более универсальной, чем <code>IF</code>, так как она позволяет проверять несколько условий, а <code>IF</code> — только одно.
+- <code>IFNULL()</code> и <code>COALESCE()</code> часто используются для обработки NULL значений в запросах.

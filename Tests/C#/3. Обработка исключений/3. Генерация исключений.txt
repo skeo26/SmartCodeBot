@@ -1,0 +1,80 @@
+Question: Что делает оператор throw в C#?
+Options:
+- Прерывает выполнение метода
+- Генерирует исключение
+- Перезапускает программу
+- Игнорирует ошибку
+Explanation: Оператор throw используется для генерации исключения во время выполнения.
+CorrectAnswerIndex: 1
+
+Question: Какой из следующих вариантов корректно генерирует исключение?
+Options:
+- raise new Exception("Ошибка");
+- throw Exception("Ошибка");
+- throw new Exception("Ошибка");
+- catch new Exception("Ошибка");
+Explanation: Исключения в C# генерируются с помощью throw new Exception("сообщение").
+CorrectAnswerIndex: 2
+
+Question: Что произойдет, если сгенерировать исключение и не обработать его?
+Options:
+- Программа продолжит выполнение
+- Исключение будет проигнорировано
+- Программа завершится с ошибкой
+- Исключение автоматически исправится
+Explanation: Необработанные исключения вызывают завершение программы с ошибкой.
+CorrectAnswerIndex: 2
+
+Question: Какой базовый класс необходимо наследовать при создании собственного типа исключения?
+Options:
+- Error
+- ApplicationException
+- System
+- Exception
+Explanation: Все исключения должны наследовать от базового класса Exception.
+CorrectAnswerIndex: 3
+
+Question: Что делает этот код?
+Code:
+throw new ArgumentNullException("Параметр не может быть null");
+Options:
+- Проверяет, что параметр не равен null
+- Создает новую переменную
+- Генерирует исключение с сообщением
+- Перезапускает программу
+Explanation: Оператор throw вручную генерирует исключение с заданным сообщением.
+CorrectAnswerIndex: 2
+
+Question: Что произойдёт при выполнении следующего кода?
+Code:
+throw new InvalidOperationException("Ошибка операции");
+Options:
+- Ошибка будет проигнорирована
+- Программа завершится с исключением InvalidOperationException
+- Исключение автоматически исправится
+- Будет выполнен блок finally
+Explanation: Исключение будет сгенерировано и если не перехвачено, программа завершится.
+CorrectAnswerIndex: 1
+
+Question: Как перехватить сгенерированное исключение?
+Options:
+- try-throw
+- try-raise
+- try-catch
+- try-finally
+Explanation: Исключения в C# перехватываются с помощью конструкции try-catch.
+CorrectAnswerIndex: 2
+
+Question: Что делает следующий класс?
+Code:
+class CustomException : Exception
+{
+    public CustomException(string message) : base(message) { }
+}
+Options:
+- Создаёт пользовательское исключение
+- Переопределяет метод Main
+- Обрабатывает все исключения
+- Удаляет системные ошибки
+Explanation: Класс CustomException наследуется от Exception и представляет пользовательское исключение.
+CorrectAnswerIndex: 0

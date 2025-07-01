@@ -1,0 +1,71 @@
+Question: Как установить MySQL на Windows?
+Options:
+- Скачайте установщик с официального сайта и следуйте инструкциям
+- Используйте команду `sudo apt install mysql-server`
+- Установите через Homebrew
+- Скачайте MySQL через терминал с использованием команды `apt-get`
+Explanation: Для установки MySQL на Windows нужно скачать установщик с официального сайта и следовать инструкциям мастера установки.
+CorrectAnswerIndex: 0
+
+Question: Как установить MySQL на Linux (Ubuntu)?
+Options:
+- Использовать команду `sudo apt update && sudo apt install mysql-server`
+- Скачать установщик с официального сайта и установить вручную
+- Использовать Homebrew
+- Воспользоваться командой `brew install mysql`
+Explanation: Для установки MySQL на Linux (Ubuntu) используется команда `sudo apt update && sudo apt install mysql-server`.
+CorrectAnswerIndex: 0
+
+Question: Как установить MySQL на macOS?
+Options:
+- Использовать команду `brew install mysql`
+- Скачать установщик с официального сайта и следовать инструкциям
+- Использовать команду `sudo apt install mysql-server`
+- Использовать команду `apt-get install mysql`
+Explanation: На macOS MySQL можно установить с помощью команды `brew install mysql` через Homebrew.
+CorrectAnswerIndex: 0
+
+Question: Как войти в MySQL после установки?
+Options:
+- Использовать команду `mysql -u root -p`
+- Войти через команду `sudo mysql`
+- Использовать команду `mysql -u admin`
+- Пройти авторизацию через веб-страницу
+Explanation: Для входа в MySQL используется команда `mysql -u root -p`, где `root` — это имя пользователя, и будет запрашиваться пароль.
+CorrectAnswerIndex: 0
+
+Question: Как создать базу данных в MySQL?
+Options:
+- Использовать команду `CREATE DATABASE testdb;`
+- Использовать команду `CREATE DATABASE database_name;`
+- Использовать команду `NEW DATABASE testdb;`
+- Использовать команду `INIT DATABASE testdb;`
+Explanation: Для создания базы данных в MySQL используется команда `CREATE DATABASE testdb;`.
+CorrectAnswerIndex: 0
+
+Question: Как проверить, что сервер MySQL запущен на Linux?
+Options:
+- Использовать команду `sudo systemctl status mysql`
+- Использовать команду `ps aux | grep mysql`
+- Использовать команду `mysql status`
+- Использовать команду `sudo systemctl check mysql`
+Explanation: Для проверки, что сервер MySQL запущен, нужно использовать команду `sudo systemctl status mysql`.
+CorrectAnswerIndex: 0
+
+Question: Как просмотреть список всех баз данных в MySQL?
+Options:
+- Использовать команду `SHOW DATABASES;`
+- Использовать команду `LIST DATABASES;`
+- Использовать команду `SHOW ALL DATABASES;`
+- Использовать команду `SHOW ALL;`
+Explanation: Для просмотра списка всех баз данных в MySQL используется команда `SHOW DATABASES;`.
+CorrectAnswerIndex: 0
+
+Question: Что такое MySQL Workbench?
+Options:
+- Графическая оболочка для работы с MySQL
+- Программа для разработки на языке MySQL
+- Среда для компиляции запросов SQL
+- Утилита для управления серверами MySQL
+Explanation: MySQL Workbench — это графическая оболочка для работы с MySQL, позволяющая управлять базами данных и выполнять SQL-запросы.
+CorrectAnswerIndex: 0

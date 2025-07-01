@@ -1,0 +1,71 @@
+<b>Что такое Queue?</b>
+
+<code>Queue</code> — это коллекция, реализующая принцип "первым пришел — первым обслужен" (FIFO, First In — First Out). Это означает, что элементы добавляются в конец очереди и извлекаются из начала.
+
+<b>Где используется Queue?</b>
+
+Очереди полезны в ситуациях, когда важен порядок обработки элементов, например:
+- управление заданиями на печать;
+- обработка задач в фоновом режиме;
+- потоковая передача данных.
+
+<b>Queue реализован в пространстве имён:</b>
+<code>System.Collections.Generic</code> как <code>Queue&lt;T&gt;</code>, где <code>T</code> — тип элементов очереди.
+
+<b>Основные методы Queue:</b>
+
+1. <code>Enqueue(T item)</code> — добавляет элемент в конец очереди.
+2. <code>Dequeue()</code> — удаляет и возвращает элемент из начала очереди.
+3. <code>Peek()</code> — возвращает элемент из начала очереди, не удаляя его.
+4. <code>Clear()</code> — очищает очередь.
+5. <code>Contains(T item)</code> — проверяет, содержится ли элемент в очереди.
+6. <code>Count</code> — возвращает количество элементов в очереди.
+7. <code>ToArray()</code> — копирует элементы очереди в массив.
+
+<b>Пример использования:</b>
+
+<pre><code>Queue&lt;string&gt; queue = new Queue&lt;string&gt;();
+queue.Enqueue("Alice");
+queue.Enqueue("Bob");
+queue.Enqueue("Charlie");
+
+Console.WriteLine(queue.Dequeue()); // Alice
+Console.WriteLine(queue.Peek());    // Bob (не удаляется)
+</code></pre>
+
+<b>Итерация по очереди:</b>
+
+<pre><code>foreach (string person in queue)
+{
+    Console.WriteLine(person);
+}
+// Вывод:
+// Bob
+// Charlie
+</code></pre>
+
+<b>Метод Contains:</b>
+
+<pre><code>bool hasBob = queue.Contains("Bob"); // true
+bool hasTom = queue.Contains("Tom"); // false
+</code></pre>
+
+<b>Очистка очереди:</b>
+
+<pre><code>queue.Clear();
+Console.WriteLine(queue.Count); // 0
+</code></pre>
+
+<b>Преобразование в массив:</b>
+
+<pre><code>Queue&lt;int&gt; numbers = new Queue&lt;int&gt;();
+numbers.Enqueue(1);
+numbers.Enqueue(2);
+numbers.Enqueue(3);
+
+int[] arr = numbers.ToArray();
+</code></pre>
+
+<b>Итог:</b>
+
+<code>Queue</code> — это полезная структура данных, когда нужно обрабатывать элементы в порядке поступления. Она проста в использовании и обеспечивает эффективные операции добавления и удаления.

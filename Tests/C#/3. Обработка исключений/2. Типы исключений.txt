@@ -1,0 +1,83 @@
+Question: Что такое исключение в контексте C#?
+Options:
+- Ошибка компиляции
+- Ошибка, возникающая при выполнении программы
+- Предупреждение компилятора
+- Комментарий в коде
+Explanation: Исключения — это ошибки времени выполнения, возникающие при работе программы.
+CorrectAnswerIndex: 1
+
+Question: Какой класс является базовым для всех исключений в C#?
+Options:
+- System.BaseException
+- System.Error
+- System.Exception
+- System.Throw
+Explanation: Все исключения в C# наследуются от базового класса System.Exception.
+CorrectAnswerIndex: 2
+
+Question: Какое исключение будет выброшено при попытке доступа к элементу за пределами массива?
+Options:
+- NullReferenceException
+- DivideByZeroException
+- IndexOutOfRangeException
+- ArgumentException
+Explanation: IndexOutOfRangeException возникает при выходе за границы массива.
+CorrectAnswerIndex: 2
+
+Question: Какое исключение будет выброшено при делении на ноль?
+Options:
+- DivideByZeroException
+- IndexOutOfRangeException
+- NullReferenceException
+- IOException
+Explanation: DivideByZeroException выбрасывается при делении целого числа на ноль.
+CorrectAnswerIndex: 0
+
+Question: Какое исключение возникает при попытке вызвать метод у объекта, равного null?
+Options:
+- InvalidOperationException
+- NullReferenceException
+- ArgumentException
+- IndexOutOfRangeException
+Explanation: NullReferenceException возникает, когда код обращается к объекту, который равен null.
+CorrectAnswerIndex: 1
+
+Question: Что делает блок catch в конструкции try-catch?
+Options:
+- Игнорирует ошибку
+- Завершает программу
+- Перехватывает и обрабатывает исключение
+- Повторно вызывает метод
+Explanation: catch-блок используется для перехвата и обработки возникшего исключения.
+CorrectAnswerIndex: 2
+
+Question: Какое исключение следует выбрасывать, если метод получает некорректный аргумент?
+Options:
+- ArgumentException
+- IOException
+- DivideByZeroException
+- NullReferenceException
+Explanation: ArgumentException выбрасывается, если передан неподходящий аргумент.
+CorrectAnswerIndex: 0
+
+Question: Какой результат выполнения кода?
+Code:
+string str = null;
+Console.WriteLine(str.Length);
+Options:
+- Будет выведено 0
+- Программа завершится успешно
+- Возникнет исключение NullReferenceException
+- str будет преобразован в пустую строку
+Explanation: str равен null, попытка доступа к Length вызовет NullReferenceException.
+CorrectAnswerIndex: 2
+
+Question: Как правильно обрабатывать разные типы исключений?
+Options:
+- Использовать несколько блоков catch
+- Использовать только один catch с базовым типом
+- Исключения не обрабатываются
+- Оборачивать каждый метод в try-finally
+Explanation: Рекомендуется использовать несколько блоков catch для обработки разных исключений отдельно.
+CorrectAnswerIndex: 0

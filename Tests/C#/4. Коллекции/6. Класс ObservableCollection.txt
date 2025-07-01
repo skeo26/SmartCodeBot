@@ -1,0 +1,71 @@
+Question: Что такое ObservableCollection?
+Options:
+- Коллекция, поддерживающая автоматическое уведомление о добавлении, удалении и изменении элементов
+- Коллекция, поддерживающая автоматическую сортировку элементов
+- Коллекция, позволяющая сохранять элементы в файле
+- Коллекция, работающая только с числовыми значениями
+Explanation: ObservableCollection поддерживает автоматическое уведомление о добавлении, удалении и изменении элементов.
+CorrectAnswerIndex: 0
+
+Question: Какую особенность имеет ObservableCollection, отличающую её от обычных коллекций?
+Options:
+- Реализует интерфейс INotifyCollectionChanged для уведомления об изменениях
+- Работает только с числовыми типами
+- Хранит элементы в отсортированном порядке
+- Использует асинхронное обновление интерфейса
+Explanation: ObservableCollection реализует интерфейс INotifyCollectionChanged, что позволяет уведомлять об изменениях коллекции.
+CorrectAnswerIndex: 0
+
+Question: Как можно подписаться на событие изменения ObservableCollection?
+Options:
+- Использовать обработчик события CollectionChanged
+- Использовать метод NotifyChanges()
+- Использовать метод OnCollectionChanged()
+- Использовать метод SubscribeToChanges()
+Explanation: Для подписки на изменения ObservableCollection нужно использовать обработчик события CollectionChanged.
+CorrectAnswerIndex: 0
+
+Question: Что нужно реализовать в классе, элементы которого добавляются в ObservableCollection, чтобы отслеживать изменения этих элементов?
+Options:
+- INotifyPropertyChanged
+- INotifyCollectionChanged
+- ICollectionChanged
+- INotifyElementChanged
+Explanation: Чтобы отслеживать изменения элементов в ObservableCollection, нужно реализовать интерфейс INotifyPropertyChanged в классе.
+CorrectAnswerIndex: 0
+
+Question: Какой интерфейс реализует ObservableCollection для отслеживания изменений?
+Options:
+- INotifyCollectionChanged
+- INotifyPropertyChanged
+- ICollection
+- INotifyChange
+Explanation: ObservableCollection реализует интерфейс INotifyCollectionChanged для отслеживания изменений.
+CorrectAnswerIndex: 0
+
+Question: Какую операцию нужно выполнить, чтобы ObservableCollection уведомила о добавлении нового элемента?
+Options:
+- Добавить элемент с помощью метода Add()
+- Удалить элемент с помощью метода Remove()
+- Изменить значение элемента в коллекции
+- Очистить коллекцию с помощью метода Clear()
+Explanation: Добавление нового элемента с помощью метода Add() вызовет событие изменения в ObservableCollection.
+CorrectAnswerIndex: 0
+
+Question: Когда следует использовать ObservableCollection?
+Options:
+- Когда нужно отслеживать изменения в коллекции и обновлять UI автоматически
+- Когда требуется хранить большие объемы данных
+- Когда нужно обеспечить быстрый доступ к элементам по индексу
+- Когда нужно хранить только уникальные элементы
+Explanation: ObservableCollection следует использовать, когда нужно отслеживать изменения в коллекции и обновлять UI автоматически.
+CorrectAnswerIndex: 0
+
+Question: Какую проблему решает использование интерфейса INotifyPropertyChanged в классе, элементы которого находятся в ObservableCollection?
+Options:
+- Обновление значений свойств в UI при изменении значений элементов
+- Уведомление об изменении самой коллекции
+- Проверка уникальности элементов в коллекции
+- Сортировка элементов по возрастанию
+Explanation: Интерфейс INotifyPropertyChanged позволяет обновлять значения свойств в UI при изменении значений элементов коллекции.
+CorrectAnswerIndex: 0

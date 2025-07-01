@@ -1,0 +1,96 @@
+<b>LINQ (Language Integrated Query)</b> — это способ работы с коллекциями данных в C# с помощью выражений, напоминающих SQL-запросы.
+
+<b>LINQ позволяет:</b>
+- Фильтровать, сортировать, группировать данные
+- Выполнять агрегацию (Count, Sum, Average и т.д.)
+- Работать с коллекциями в декларативном стиле
+
+<b>Простая структура LINQ-запроса:</b>
+
+<pre><code>var result = from item in collection
+             where item.Условие
+             select item;</code></pre>
+
+---
+
+### 📦 <b>Пример: LINQ с массивом чисел</b>
+
+<pre><code>int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Найти чётные числа
+var evenNumbers = from n in numbers
+                  where n % 2 == 0
+                  select n;
+
+foreach (var num in evenNumbers)
+{
+    Console.WriteLine(num); // 2, 4, 6, 8, 10
+}</code></pre>
+
+---
+
+### 🛠 <b>Методы расширения LINQ</b>
+
+LINQ также можно писать в виде цепочек методов (method syntax):
+
+<pre><code>List&lt;string&gt; names = new List&lt;string&gt; { "Alice", "Bob", "Charlie", "Ann" };
+
+var aNames = names
+    .Where(name =&gt; name.StartsWith("A"))
+    .OrderBy(name =&gt; name);
+
+foreach (var name in aNames)
+{
+    Console.WriteLine(name); // Alice, Ann
+}</code></pre>
+
+---
+
+### 📌 <b>Популярные методы LINQ:</b>
+
+- <code>Where(predicate)</code> — фильтрация элементов  
+- <code>Select(selector)</code> — проекция (преобразование)  
+- <code>OrderBy / OrderByDescending</code> — сортировка  
+- <code>First / FirstOrDefault</code> — получить первый элемент  
+- <code>Any / All</code> — проверка условия  
+- <code>Count / Sum / Average / Max / Min</code> — агрегаты  
+- <code>GroupBy</code> — группировка  
+
+---
+
+### 🧪 <b>Пример с объектами</b>
+
+<pre><code>class Student
+{
+    public string Name { get; set; }
+    public int Grade { get; set; }
+}
+
+var students = new List&lt;Student&gt;
+{
+    new Student { Name = "Alice", Grade = 85 },
+    new Student { Name = "Bob", Grade = 92 },
+    new Student { Name = "Charlie", Grade = 78 }
+};
+
+var highScorers = students
+    .Where(s =&gt; s.Grade &gt;= 80)
+    .Select(s =&gt; s.Name);
+
+foreach (var name in highScorers)
+{
+    Console.WriteLine(name); // Alice, Bob
+}</code></pre>
+
+---
+
+### ✅ <b>Преимущества LINQ:</b>
+
+- Компактный и читаемый синтаксис  
+- Упрощает работу с данными  
+- Поддержка компиляцией (типобезопасность)  
+- Универсальность: можно использовать с массивами, списками, XML, базами данных и т.д.
+
+---
+
+Готов продолжить со следующей темой по LINQ или переходить к следующему разделу?

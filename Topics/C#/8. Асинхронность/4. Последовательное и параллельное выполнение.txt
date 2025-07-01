@@ -1,0 +1,92 @@
+В этой теме мы рассмотрим, как организовать последовательное и параллельное выполнение задач в C# с использованием асинхронных операций. Это важно для оптимизации работы приложения, особенно при выполнении длительных операций.
+
+<b>1. Последовательное выполнение</b>
+
+Последовательное выполнение означает, что задачи выполняются одна за другой, каждая из которых должна завершиться перед тем, как начнется следующая. Это простая схема, подходящая для операций, где каждая задача зависит от предыдущей.
+
+<pre><code>public async Task&lt;string&gt; ExecuteSequentialTasksAsync()
+{
+    string result1 = await Task1Async(); // Задача 1
+    string result2 = await Task2Async(result1); // Задача 2 зависит от результата задачи 1
+    string result3 = await Task3Async(result2); // Задача 3 зависит от результата задачи 2
+    return result3;
+}
+
+public async Task&lt;string&gt; Task1Async() { await Task.Delay(100); return "Результат 1"; }
+public async Task&lt;string&gt; Task2Async(string input) { await Task.Delay(100); return input + " -> Результат 2"; }
+public async Task&lt;string&gt; Task3Async(string input) { await Task.Delay(100); return input + " -> Результат 3"; }
+</code></pre>
+
+<b>2. Параллельное выполнение</b>
+
+Параллельное выполнение означает, что задачи могут выполняться одновременно, не зависая друг от друга. Это полезно, когда задачи не зависят от результатов друг друга и их можно обрабатывать одновременно для повышения производительности.
+
+<pre><code>public async Task&lt;string&gt; ExecuteParallelTasksAsync()
+{
+    Task&lt;string&gt; task1 = Task1Async(); // Задача 1
+    Task&lt;string&gt; task2 = Task2Async("Start"); // Задача 2
+    Task&lt;string&gt; task3 = Task3Async("Start"); // Задача 3
+
+    await Task.WhenAll(task1, task2, task3); // Ожидаем завершения всех задач
+
+    return $"Задачи завершены: {task1.Result}, {task2.Result}, {task3.Result}";
+}
+</code></pre>
+
+<b>3. Выбор между последовательным и параллельным выполнением</b>
+
+Чтобы выбрать между последовательным и параллельным выполнением, нужно учитывать, зависят ли задачи друг от друга. Если задачи не зависят, их можно выполнять параллельно. В противном случае используйте последовательное выполнение.
+
+<pre><code>public async Task&lt;string&gt; ExecuteConditionalTasksAsync(bool isParallel)
+{
+    if (isParallel)
+    {
+        return await ExecuteParallelTasksAsync(); // Параллельное выполнение
+    }
+    else
+    {
+        return await ExecuteSequentialTasksAsync(); // Последовательное выполнение
+    }
+}
+</code></pre>
+
+<b>4. Асинхронное выполнение с учетом приоритетов</b>
+
+Если задачи имеют разные приоритеты, можно управлять их выполнением, чтобы сначала выполнялись более важные операции.
+
+<pre><code>public async Task ExecutePriorityTasksAsync()
+{
+    var highPriorityTask = Task1Async(); // Высокий приоритет
+    var lowPriorityTask = Task3Async("Low"); // Низкий приоритет
+
+    await highPriorityTask; // Ожидаем завершения задачи высокого приоритета
+    await lowPriorityTask; // Ожидаем завершения задачи низкого приоритета
+}
+</code></pre>
+
+<b>5. Асинхронная обработка с тайм-аутом</b>
+
+Когда выполняются параллельные задачи, важно правильно управлять временем их выполнения. Использование тайм-аутов помогает избежать блокировки, если задачи не завершаются вовремя.
+
+<pre><code>public async Task&lt;string&gt; ExecuteWithTimeoutAsync()
+{
+    var task = Task.Delay(5000); // Задача с задержкой
+
+    if (await Task.WhenAny(task, Task.Delay(3000)) == task) // Ожидание с тайм-аутом
+    {
+        return "Задача завершена";
+    }
+    else
+    {
+        throw new TimeoutException("Задача не завершена вовремя");
+    }
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- Для последовательного выполнения используйте <code>await</code> для каждой задачи, гарантируя их выполнение одну за другой.
+- Для параллельного выполнения используйте <code>Task.WhenAll</code>, чтобы запустить несколько задач одновременно.
+- При выборе между последовательным и параллельным выполнением учитывайте зависимости задач.
+- Используйте тайм-ауты для управления временем выполнения асинхронных операций.
+

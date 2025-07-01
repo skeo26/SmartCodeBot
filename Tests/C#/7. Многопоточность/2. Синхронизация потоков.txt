@@ -1,0 +1,94 @@
+Question: Для чего используется ключевое слово lock в C#?
+Options:
+- Для создания асинхронных задач
+- Для синхронизации доступа к общим данным
+- Для управления памятью
+- Для ограничения количества потоков
+Explanation: Ключевое слово lock используется для синхронизации потоков и защиты критической секции от одновременного доступа.
+CorrectAnswerIndex: 1
+
+Question: Что делает конструкция lock (typeof(Program)) { ... }?
+Options:
+- Блокирует выполнение метода Program
+- Синхронизирует доступ к объекту типа Program
+- Запускает метод в отдельном потоке
+- Ожидает завершения всех потоков
+Explanation: Конструкция lock блокирует доступ к коду внутри блока, используя указанный объект в качестве монитора.
+CorrectAnswerIndex: 1
+
+Question: Чем отличается Monitor от lock?
+Options:
+- Monitor быстрее, чем lock
+- Monitor работает только с потоками из одного процесса
+- Monitor предоставляет больше гибкости и контроль через методы Enter и Exit
+- Между ними нет отличий
+Explanation: Monitor предоставляет те же возможности, что и lock, но с дополнительной гибкостью (например, можно использовать try/finally).
+CorrectAnswerIndex: 2
+
+Question: Какой код правильно синхронизирует доступ с использованием Monitor?
+Options:
+- Monitor.Lock(); counter++; Monitor.Unlock();
+- Monitor.Enter(lockObj); try { ... } finally { Monitor.Exit(lockObj); }
+- lock(lockObj) { ... }
+- Monitor.Wait(lockObj); Monitor.Release(lockObj);
+Explanation: Правильная форма использования Monitor включает Enter и Exit с блоком try/finally для корректного освобождения.
+CorrectAnswerIndex: 1
+
+Question: Какой тип синхронизации используется для разных процессов?
+Options:
+- lock
+- Monitor
+- Semaphore
+- Mutex
+Explanation: Mutex используется для синхронизации доступа к ресурсам между потоками разных процессов.
+CorrectAnswerIndex: 3
+
+Question: Что делает метод mutex.WaitOne()?
+Options:
+- Запускает поток
+- Ожидает завершения всех потоков
+- Получает исключение при блокировке
+- Блокирует поток до получения доступа к Mutex
+Explanation: Метод WaitOne() блокирует поток, пока Mutex не станет доступным.
+CorrectAnswerIndex: 3
+
+Question: Чем отличается Semaphore от Mutex?
+Options:
+- Semaphore может ограничивать количество потоков, а Mutex — только один
+- Mutex работает быстрее
+- Semaphore только для межпроцессной синхронизации
+- Между ними нет разницы
+Explanation: Semaphore может ограничивать доступ одновременно нескольким потокам, тогда как Mutex — только одному.
+CorrectAnswerIndex: 0
+
+Question: Что делает следующий код:
+Code:
+Semaphore semaphore = new Semaphore(2, 2);
+semaphore.WaitOne();
+try { Console.WriteLine("Задача в потоке."); }
+finally { semaphore.Release(); }
+Options:
+- Выполняет задачу в двух потоках одновременно
+- Всегда запускает только один поток
+- Позволяет одновременно двум потокам выполнять задачу
+- Блокирует выполнение задачи
+Explanation: Semaphore с параметрами (2, 2) допускает выполнение до двух потоков одновременно.
+CorrectAnswerIndex: 2
+
+Question: Какой механизм синхронизации оптимален для множественного чтения и редкой записи?
+Options:
+- lock
+- Monitor
+- Mutex
+- ReaderWriterLockSlim
+Explanation: ReaderWriterLockSlim позволяет множественное чтение одновременно и синхронизирует записи, повышая производительность при чтении.
+CorrectAnswerIndex: 3
+
+Question: Что делает метод lockSlim.EnterReadLock()?
+Options:
+- Захватывает блокировку на запись
+- Запускает задачу асинхронно
+- Захватывает блокировку на чтение
+- Ожидает завершения всех потоков
+Explanation: Метод EnterReadLock() позволяет потоку безопасно читать данные одновременно с другими читающими потоками.
+CorrectAnswerIndex: 2

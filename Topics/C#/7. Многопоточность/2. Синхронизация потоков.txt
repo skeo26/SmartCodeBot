@@ -1,0 +1,86 @@
+Синхронизация потоков необходима для предотвращения ошибок при одновременном доступе к общим данным. Для этого используются различные механизмы синхронизации.
+
+<b>1. lock</b>
+
+Используется для блокировки кода, чтобы только один поток мог выполнить критическую секцию.
+
+<pre><code>lock (typeof(Program))
+{
+    counter++;
+    Console.WriteLine(counter);
+}
+</code></pre>
+
+<b>2. Monitor</b>
+
+Класс <code>Monitor</code> предоставляет более гибкую синхронизацию, позволяя также использовать методы <code>Enter</code> и <code>Exit</code> для блокировки и разблокировки.
+
+<pre><code>Monitor.Enter(lockObj);
+try
+{
+    counter++;
+    Console.WriteLine(counter);
+}
+finally
+{
+    Monitor.Exit(lockObj);
+}
+</code></pre>
+
+<b>3. Mutex</b>
+
+<code>Mutex</code> используется для синхронизации между различными процессами. Он может быть использован для блокировки ресурса на уровне системы.
+
+<pre><code>Mutex mutex = new Mutex();
+mutex.WaitOne();
+try
+{
+    counter++;
+    Console.WriteLine(counter);
+}
+finally
+{
+    mutex.ReleaseMutex();
+}
+</code></pre>
+
+<b>4. Semaphore</b>
+
+<code>Semaphore</code> ограничивает количество потоков, которые могут одновременно иметь доступ к ресурсу.
+
+<pre><code>Semaphore semaphore = new Semaphore(2, 2);
+semaphore.WaitOne();
+try
+{
+    Console.WriteLine("Задача в потоке.");
+}
+finally
+{
+    semaphore.Release();
+}
+</code></pre>
+
+<b>5. ReaderWriterLockSlim</b>
+
+<code>ReaderWriterLockSlim</code> позволяет эффективно синхронизировать доступ к данным для нескольких потоков, обеспечивая при этом более высокую производительность при чтении данных.
+
+<pre><code>ReaderWriterLockSlim lockSlim = new ReaderWriterLockSlim();
+lockSlim.EnterReadLock();
+try
+{
+    Console.WriteLine("Чтение данных.");
+}
+finally
+{
+    lockSlim.ExitReadLock();
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>lock</code> — простое средство для синхронизации.
+- <code>Monitor</code> — более гибкая блокировка с возможностью использования <code>Enter</code> и <code>Exit</code>.
+- <code>Mutex</code> — для синхронизации между процессами.
+- <code>Semaphore</code> — ограничение количества потоков.
+- <code>ReaderWriterLockSlim</code> — для эффективного чтения данных несколькими потоками.
+

@@ -1,0 +1,113 @@
+<b>GroupBy</b> — это операция в LINQ, которая позволяет группировать элементы коллекции по ключу. Это полезно, когда нужно собрать данные по каким-либо признакам (например, сгруппировать элементы по категории).
+
+<b>1. Пример группировки по одному свойству:</b>
+
+Предположим, у нас есть коллекция объектов, и нам нужно сгруппировать их по какому-либо свойству, например, по возрасту.
+
+<pre><code>var people = new List&lt;Person&gt;()
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 25 },
+    new Person { Name = "David", Age = 30 }
+};
+
+var groupedByAge = people.GroupBy(p =&gt; p.Age);
+
+foreach (var group in groupedByAge)
+{
+    Console.WriteLine($"Age: {group.Key}");
+    foreach (var person in group)
+    {
+        Console.WriteLine($"  {person.Name}");
+    }
+}
+// Результат:
+// Age: 25
+//   Alice
+//   Charlie
+// Age: 30
+//   Bob
+//   David
+</code></pre>
+
+<b>2. Пример группировки с использованием анонимного типа:</b>
+
+Можно группировать данные по нескольким свойствам, создав анонимный тип.
+
+<pre><code>var groupedByAgeAndName = people
+    .GroupBy(p =&gt; new { p.Age, FirstLetter = p.Name[0] });
+
+foreach (var group in groupedByAgeAndName)
+{
+    Console.WriteLine($"Age: {group.Key.Age}, First Letter: {group.Key.FirstLetter}");
+    foreach (var person in group)
+    {
+        Console.WriteLine($"  {person.Name}");
+    }
+}
+// Результат:
+// Age: 25, First Letter: A
+//   Alice
+//   Charlie
+// Age: 30, First Letter: B
+//   Bob
+// Age: 30, First Letter: D
+//   David
+</code></pre>
+
+<b>3. Пример с агрегатными функциями:</b>
+
+Можно использовать методы агрегатных функций, такие как <code>Count()</code>, <code>Sum()</code>, <code>Average()</code>, в сочетании с группировкой.
+
+<pre><code>var groupedByAgeWithCount = people
+    .GroupBy(p =&gt; p.Age)
+    .Select(group =&gt; new
+    {
+        Age = group.Key,
+        Count = group.Count()
+    });
+
+foreach (var group in groupedByAgeWithCount)
+{
+    Console.WriteLine($"Age: {group.Age}, Count: {group.Count}");
+}
+// Результат:
+// Age: 25, Count: 2
+// Age: 30, Count: 2
+</code></pre>
+
+<b>4. Пример группировки с фильтрацией:</b>
+
+Можно комбинировать фильтрацию с группировкой. Например, группировать только тех людей, чей возраст больше 25 лет.
+
+<pre><code>var filteredGroupedByAge = people
+    .Where(p =&gt; p.Age &gt; 25)
+    .GroupBy(p =&gt; p.Age);
+
+foreach (var group in filteredGroupedByAge)
+{
+    Console.WriteLine($"Age: {group.Key}");
+    foreach (var person in group)
+    {
+        Console.WriteLine($"  {person.Name}");
+    }
+}
+// Результат:
+// Age: 30
+//   Bob
+//   David
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>GroupBy()</code> создаёт коллекцию групп, каждая из которых имеет ключ и элементы, удовлетворяющие этому ключу.
+- <code>Key</code> — это свойство, которое используется как ключ для каждой группы.
+- Можно применять агрегатные функции после группировки для подсчёта, нахождения суммы или среднего значения.
+
+<b>Когда использовать:</b>
+
+- Когда нужно классифицировать или группировать данные по определённому признаку.
+- Для выполнения агрегаций, таких как подсчёт количества элементов в каждой группе.
+- Когда необходимо выполнить сложные запросы к коллекциям данных, такие как сводные отчёты.
+

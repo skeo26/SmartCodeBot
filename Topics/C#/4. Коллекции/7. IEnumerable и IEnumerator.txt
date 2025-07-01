@@ -1,0 +1,101 @@
+<b>Что такое IEnumerable?</b>
+
+Интерфейс <code>IEnumerable</code> представляет коллекцию, по которой можно перебирать элементы с помощью цикла <code>foreach</code>. Он определяет один метод:
+
+<code>IEnumerator GetEnumerator();</code>
+
+Есть также обобщённая версия — <code>IEnumerable&lt;T&gt;</code>, которая предоставляет типобезопасный способ перебора элементов.
+
+<b>Пример:</b>
+
+<pre><code>List&lt;string&gt; names = new List&lt;string&gt; { "Alice", "Bob", "Charlie" };
+
+foreach (string name in names)
+{
+    Console.WriteLine(name);
+}
+</code></pre>
+
+Этот код работает, потому что <code>List&lt;T&gt;</code> реализует <code>IEnumerable&lt;T&gt;</code>.
+
+<b>Что такое IEnumerator?</b>
+
+Интерфейс <code>IEnumerator</code> используется для поэлементного перебора коллекции. Он предоставляет следующие члены:
+
+<code>bool MoveNext()</code> — перемещает указатель на следующий элемент  
+<code>object Current</code> — возвращает текущий элемент  
+<code>void Reset()</code> — сбрасывает указатель (не всегда реализуется)
+
+<b>Пример использования IEnumerator напрямую:</b>
+
+<pre><code>IEnumerator enumerator = names.GetEnumerator();
+
+while (enumerator.MoveNext())
+{
+    string name = (string)enumerator.Current;
+    Console.WriteLine(name);
+}
+</code></pre>
+
+<b>Реализация IEnumerable вручную:</b>
+
+<pre><code>public class NumberCollection : IEnumerable
+{
+    private int[] numbers = { 1, 2, 3, 4 };
+
+    public IEnumerator GetEnumerator()
+    {
+        return numbers.GetEnumerator();
+    }
+}
+</code></pre>
+
+Использование:
+
+<pre><code>NumberCollection collection = new NumberCollection();
+
+foreach (int number in collection)
+{
+    Console.WriteLine(number);
+}
+</code></pre>
+
+<b>Зачем нужны IEnumerable и IEnumerator?</b>
+
+Они позволяют создавать универсальные коллекции, которые можно перебирать с помощью <code>foreach</code>. Это основа работы большинства коллекций в .NET: <code>List&lt;T&gt;</code>, <code>Dictionary&lt;TKey, TValue&gt;</code>, <code>HashSet&lt;T&gt;</code> и др.
+
+<b>Обобщённые версии:</b>
+
+<pre><code>public class MyCollection : IEnumerable&lt;int&gt;
+{
+    private int[] data = { 1, 2, 3 };
+
+    public IEnumerator&lt;int&gt; GetEnumerator()
+    {
+        foreach (int item in data)
+            yield return item;
+    }
+
+    IEnumerator IEnumerable.GetEnumerator() =&gt; GetEnumerator();
+}
+</code></pre>
+
+<b>yield return</b> — специальная конструкция, упрощающая реализацию <code>IEnumerable</code>. Она позволяет возвращать элементы последовательно без ручной реализации <code>IEnumerator</code>.
+
+<b>Пример с yield:</b>
+
+<pre><code>public IEnumerable&lt;int&gt; GetNumbers()
+{
+    yield return 1;
+    yield return 2;
+    yield return 3;
+}
+</code></pre>
+
+<b>Вывод:</b>
+
+- <code>IEnumerable</code> предоставляет интерфейс для перебора коллекции.
+- <code>IEnumerator</code> управляет процессом перебора.
+- Все коллекции, которые поддерживают <code>foreach</code>, используют <code>IEnumerable</code> или <code>IEnumerable&lt;T&gt;</code>.
+- Использование <code>yield return</code> упрощает создание пользовательских коллекций.
+

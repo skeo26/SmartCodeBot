@@ -1,0 +1,71 @@
+Question: Какой принцип работы реализует структура данных Stack?
+Options:
+- Принцип "первым пришел — первым обслужен" (FIFO)
+- Принцип "последним пришел — первым обслужен" (LIFO)
+- Принцип отсортированных элементов
+- Принцип случайного доступа
+Explanation: Stack реализует принцип "последним пришел — первым обслужен" (LIFO).
+CorrectAnswerIndex: 1
+
+Question: Какой метод добавляет элемент в стек?
+Options:
+- Add()
+- Insert()
+- Push()
+- Put()
+Explanation: Метод Push добавляет элемент в стек (на вершину).
+CorrectAnswerIndex: 2
+
+Question: Какой метод удаляет и возвращает верхний элемент стека?
+Options:
+- Pop()
+- Dequeue()
+- Remove()
+- Take()
+Explanation: Метод Pop удаляет и возвращает верхний элемент стека.
+CorrectAnswerIndex: 0
+
+Question: Какой метод позволяет получить верхний элемент стека, не удаляя его?
+Options:
+- Peek()
+- Front()
+- Top()
+- Look()
+Explanation: Метод Peek возвращает верхний элемент стека, не удаляя его.
+CorrectAnswerIndex: 0
+
+Question: Как очистить стек?
+Options:
+- ClearStack()
+- Reset()
+- Clear()
+- RemoveAll()
+Explanation: Метод Clear очищает стек.
+CorrectAnswerIndex: 2
+
+Question: Как проверить наличие элемента в стеке?
+Options:
+- Contains()
+- HasElement()
+- Exists()
+- InStack()
+Explanation: Метод Contains проверяет наличие элемента в стеке.
+CorrectAnswerIndex: 0
+
+Question: Как преобразовать стек в массив?
+Options:
+- ToArray()
+- ToList()
+- ToCollection()
+- ConvertToArray()
+Explanation: Метод ToArray копирует элементы стека в массив.
+CorrectAnswerIndex: 0
+
+Question: Как итерировать по элементам стека?
+Options:
+- Использовать цикл for
+- Использовать foreach
+- Использовать while
+- Использовать цикл do-while
+Explanation: Для перебора элементов стека можно использовать цикл foreach.
+CorrectAnswerIndex: 1

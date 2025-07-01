@@ -1,0 +1,52 @@
+<b>JOIN</b> используется для объединения строк из двух или более таблиц на основе связанного между ними поля.
+
+<b>Основные типы JOIN в MySQL:</b>
+
+<code>1. INNER JOIN</code> — возвращает только совпадающие строки в обеих таблицах.
+Пример:
+<code>
+SELECT employees.name, departments.name
+FROM employees
+INNER JOIN departments
+ON employees.department_id = departments.id;
+</code>
+
+<code>2. LEFT JOIN (или LEFT OUTER JOIN)</code> — возвращает все строки из левой таблицы и совпадающие строки из правой, если они есть.
+Пример:
+<code>
+SELECT employees.name, departments.name
+FROM employees
+LEFT JOIN departments
+ON employees.department_id = departments.id;
+</code>
+
+<code>3. RIGHT JOIN (или RIGHT OUTER JOIN)</code> — возвращает все строки из правой таблицы и совпадающие строки из левой.
+Пример:
+<code>
+SELECT employees.name, departments.name
+FROM employees
+RIGHT JOIN departments
+ON employees.department_id = departments.id;
+</code>
+
+<code>4. FULL JOIN (или FULL OUTER JOIN)</code> — возвращает все строки из обеих таблиц, даже если нет совпадений.
+MySQL не поддерживает FULL JOIN напрямую, но его можно имитировать с помощью <code>UNION</code>:
+<code>
+SELECT employees.name, departments.name
+FROM employees
+LEFT JOIN departments ON employees.department_id = departments.id
+
+UNION
+
+SELECT employees.name, departments.name
+FROM employees
+RIGHT JOIN departments ON employees.department_id = departments.id;
+</code>
+
+<b>Различия:</b>
+- <code>INNER JOIN</code> — только совпадения.
+- <code>LEFT JOIN</code> — все из левой таблицы + совпадения.
+- <code>RIGHT JOIN</code> — все из правой таблицы + совпадения.
+- <code>FULL JOIN</code> — всё из обеих таблиц.
+
+<b>Рекомендация:</b> используйте <code>INNER JOIN</code>, если вас интересуют только совпадающие записи, и <code>LEFT JOIN</code>, если важны все записи из одной таблицы, даже если в другой нет соответствия.

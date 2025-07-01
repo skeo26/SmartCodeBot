@@ -1,0 +1,48 @@
+Question: Какой оператор используется для извлечения данных из таблицы?
+Options:
+- SELECT
+- GET
+- SHOW
+- EXTRACT
+Explanation: Оператор SELECT используется для выборки данных из базы данных.
+CorrectAnswerIndex: 0
+
+Question: Что делает следующий запрос?
+Code:
+SELECT name, age FROM users;
+Options:
+- Выбирает только имя и возраст из таблицы users
+- Удаляет имя и возраст
+- Обновляет имя и возраст
+- Выбирает все столбцы из users
+Explanation: Запрос извлекает только указанные столбцы — name и age.
+CorrectAnswerIndex: 0
+
+Question: Как отфильтровать пользователей старше 30 лет?
+Options:
+- SELECT * FROM users WHERE age > 30;
+- SELECT age > 30 FROM users;
+- SELECT users WHERE age > 30;
+- GET * FROM users WHERE age > 30;
+Explanation: Условие WHERE age > 30 используется для фильтрации данных.
+CorrectAnswerIndex: 0
+
+Question: Что делает оператор ORDER BY?
+Options:
+- Сортирует результаты запроса
+- Ограничивает количество строк
+- Объединяет таблицы
+- Удаляет дубликаты
+Explanation: ORDER BY сортирует результаты по указанному столбцу.
+CorrectAnswerIndex: 0
+
+Question: Что делает следующий запрос?
+Code:
+SELECT * FROM users WHERE age > 18 AND city = 'Moscow';
+Options:
+- Выбирает всех совершеннолетних пользователей из Москвы
+- Удаляет несовершеннолетних из Москвы
+- Обновляет возраст пользователей
+- Выводит пользователей младше 18 лет
+Explanation: Запрос выбирает строки, где age > 18 и city = 'Moscow'.
+CorrectAnswerIndex: 0

@@ -1,0 +1,1106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\handlers\\botcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:handlers\\botcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\handlers\\ibotcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:handlers\\ibotcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\feedbackcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\feedbackcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\icommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\icommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\initcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\initcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\learningflowprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\learningflowprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\directcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\directcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\assistantcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\assistantcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningoptionscommands\\taketestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningoptionscommands\\taketestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\providers\\testprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:providers\\testprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\providers\\itopicprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:providers\\itopicprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\providers\\itestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:providers\\itestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\providers\\iadditionalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:providers\\iadditionalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\providers\\filetopicprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:providers\\filetopicprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\providers\\additionalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:providers\\additionalprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\models\\usersessiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:models\\usersessiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\models\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:models\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\models\\menustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:models\\menustate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\dataaccess\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:dataaccess\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\dataaccess\\idbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:dataaccess\\idbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\handlers\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:handlers\\updatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningoptionscommands\\askassistantcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningoptionscommands\\askassistantcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\assistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\assistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\iassistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\iassistantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\usersessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\usersessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\userquestionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\userquestionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningoptionscommands\\startlearningcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningoptionscommands\\startlearningcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningoptionscommands\\selecttopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningoptionscommands\\selecttopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\laguagemenucommands\\languagechoicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\laguagemenucommands\\languagechoicecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningoptionscommands\\learningoptionscommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningoptionscommands\\learningoptionscommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\registercommand\\commandregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:registercommand\\commandregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\iuserquestionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\iuserquestionbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\userinitializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\userinitializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commandproccesors\\groupcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commandproccesors\\groupcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\mainmenucommands\\feedbackcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\mainmenucommands\\feedbackcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\handlers\\iupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:handlers\\iupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\registercommand\\icommandregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:registercommand\\icommandregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\itopicprogressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\itopicprogressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\iuserinitializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\iuserinitializerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\keyboardsmarkup\\keyboardmarkuphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:keyboardsmarkup\\keyboardmarkuphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\keyboardsmarkup\\languageselectionkeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:keyboardsmarkup\\languageselectionkeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\keyboardsmarkup\\learningoptionskeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:keyboardsmarkup\\learningoptionskeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\keyboardsmarkup\\mainmenukeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:keyboardsmarkup\\mainmenukeyboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\keyboardsmarkup\\navigationmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:keyboardsmarkup\\navigationmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\smartcodebot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:1:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:smartcodebot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\mainmenucommands\\languageselectioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\mainmenucommands\\languageselectioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\mainmenucommands\\mainmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\mainmenucommands\\mainmenucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningmaterialcommand\\nexttopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningmaterialcommand\\nexttopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\laguagemenucommands\\languageselectioncommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\laguagemenucommands\\languageselectioncommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\othercommands\\backcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\othercommands\\backcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\selecttopicscommands\\materialcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\selecttopicscommands\\materialcommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningmaterialcommand\\previoustopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningmaterialcommand\\previoustopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\othercommands\\backtomainmenucommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\othercommands\\backtomainmenucommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\services\\iusersessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:services\\iusersessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\contracts\\ibotcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\contracts\\ibotcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\testcommands\\starttestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\testcommands\\starttestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\selecttopicscommands\\selectfilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\selecttopicscommands\\selectfilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\testcommands\\selectsubtopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\testcommands\\selectsubtopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\othercommands\\additionalmaterialcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\othercommands\\additionalmaterialcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\learningmaterialcommand\\navigatetopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\learningmaterialcommand\\navigatetopiccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\othercommands\\startcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\othercommands\\startcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\othercommands\\returntotopicselectioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\othercommands\\returntotopicselectioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\mainmenucommands\\supportcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\mainmenucommands\\supportcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\commands\\contracts\\icommandgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:commands\\contracts\\icommandgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\smartcodebot\\smartcodebot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:2:0:{ECA5EEDA-0DAE-42A9-B1D5-EA770B39D6F7}|SmartCodeBot.csproj|solutionrelative:smartcodebot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AskAssistantCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\AskAssistantCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningOptionsCommands\\AskAssistantCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\AskAssistantCommand.cs",
+              "RelativeToolTip": "Commands\\LearningOptionsCommands\\AskAssistantCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:41:53.036Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TestProvider.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\TestProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\TestProvider.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\TestProvider.cs",
+              "RelativeToolTip": "Providers\\TestProvider.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:50:23.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TakeTestCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\TakeTestCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningOptionsCommands\\TakeTestCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\TakeTestCommand.cs",
+              "RelativeToolTip": "Commands\\LearningOptionsCommands\\TakeTestCommand.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwDkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T04:10:42.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DirectCommandProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\DirectCommandProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\DirectCommandProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\DirectCommandProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\DirectCommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:32:04.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FeedbackCommandProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\FeedbackCommandProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\FeedbackCommandProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\FeedbackCommandProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\FeedbackCommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:30:50.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LearningFlowProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\LearningFlowProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\LearningFlowProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\LearningFlowProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\LearningFlowProcessor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:32:23.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BotCommandHandler.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\BotCommandHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\BotCommandHandler.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\BotCommandHandler.cs",
+              "RelativeToolTip": "Handlers\\BotCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T02:20:31.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ITopicProvider.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\ITopicProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\ITopicProvider.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\ITopicProvider.cs",
+              "RelativeToolTip": "Providers\\ITopicProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T04:47:32.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITestProvider.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\ITestProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\ITestProvider.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\ITestProvider.cs",
+              "RelativeToolTip": "Providers\\ITestProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:49:52.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAdditionalProvider.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\IAdditionalProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\IAdditionalProvider.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\IAdditionalProvider.cs",
+              "RelativeToolTip": "Providers\\IAdditionalProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:44:20.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssistantCommandProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\AssistantCommandProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\AssistantCommandProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\AssistantCommandProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\AssistantCommandProcessor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAjwCUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:31:09.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InitCommandProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\InitCommandProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\InitCommandProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\InitCommandProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\InitCommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:31:30.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICommandProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\ICommandProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\ICommandProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\ICommandProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\ICommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:26:26.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBotCommandHandler.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\IBotCommandHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\IBotCommandHandler.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\IBotCommandHandler.cs",
+              "RelativeToolTip": "Handlers\\IBotCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T02:20:09.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FileTopicProvider.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\FileTopicProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\FileTopicProvider.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\FileTopicProvider.cs",
+              "RelativeToolTip": "Providers\\FileTopicProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T04:48:04.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdditionalProvider.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\AdditionalProvider.cs",
+              "RelativeDocumentMoniker": "Providers\\AdditionalProvider.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Providers\\AdditionalProvider.cs",
+              "RelativeToolTip": "Providers\\AdditionalProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:45:13.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserSessionData.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Models\\UserSessionData.cs",
+              "RelativeDocumentMoniker": "Models\\UserSessionData.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Models\\UserSessionData.cs",
+              "RelativeToolTip": "Models\\UserSessionData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T06:23:19.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestQuestion.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Models\\TestQuestion.cs",
+              "RelativeDocumentMoniker": "Models\\TestQuestion.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Models\\TestQuestion.cs",
+              "RelativeToolTip": "Models\\TestQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T03:06:35.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MenuState.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Models\\MenuState.cs",
+              "RelativeDocumentMoniker": "Models\\MenuState.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Models\\MenuState.cs",
+              "RelativeToolTip": "Models\\MenuState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:24:43.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:56:05.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DataBaseService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\DataAccess\\DataBaseService.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DataBaseService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\DataAccess\\DataBaseService.cs",
+              "RelativeToolTip": "DataAccess\\DataBaseService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAACIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T04:30:41.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDBService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\DataAccess\\IDBService.cs",
+              "RelativeDocumentMoniker": "DataAccess\\IDBService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\DataAccess\\IDBService.cs",
+              "RelativeToolTip": "DataAccess\\IDBService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T04:45:46.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateHandler.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\UpdateHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\UpdateHandler.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\UpdateHandler.cs",
+              "RelativeToolTip": "Handlers\\UpdateHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:10:44.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IAssistantService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IAssistantService.cs",
+              "RelativeDocumentMoniker": "Services\\IAssistantService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IAssistantService.cs",
+              "RelativeToolTip": "Services\\IAssistantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:43:52.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserQuestionBuffer.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\UserQuestionBuffer.cs",
+              "RelativeDocumentMoniker": "Services\\UserQuestionBuffer.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\UserQuestionBuffer.cs",
+              "RelativeToolTip": "Services\\UserQuestionBuffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T12:21:38.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserSessionService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\UserSessionService.cs",
+              "RelativeDocumentMoniker": "Services\\UserSessionService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\UserSessionService.cs",
+              "RelativeToolTip": "Services\\UserSessionService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAjwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:24:17.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StartLearningCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\StartLearningCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningOptionsCommands\\StartLearningCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\StartLearningCommand.cs",
+              "RelativeToolTip": "Commands\\LearningOptionsCommands\\StartLearningCommand.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:58:38.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AssistantService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\AssistantService.cs",
+              "RelativeDocumentMoniker": "Services\\AssistantService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\AssistantService.cs",
+              "RelativeToolTip": "Services\\AssistantService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwCkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T10:44:16.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SelectTopicCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\SelectTopicCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningOptionsCommands\\SelectTopicCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\SelectTopicCommand.cs",
+              "RelativeToolTip": "Commands\\LearningOptionsCommands\\SelectTopicCommand.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAewDIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T04:48:56.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LearningOptionsCommands.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\LearningOptionsCommands.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningOptionsCommands\\LearningOptionsCommands.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningOptionsCommands\\LearningOptionsCommands.cs",
+              "RelativeToolTip": "Commands\\LearningOptionsCommands\\LearningOptionsCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:57:02.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LanguageChoiceCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LaguageMenuCommands\\LanguageChoiceCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LaguageMenuCommands\\LanguageChoiceCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LaguageMenuCommands\\LanguageChoiceCommand.cs",
+              "RelativeToolTip": "Commands\\LaguageMenuCommands\\LanguageChoiceCommand.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAewCwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:54:35.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TelegramBotService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\TelegramBotService.cs",
+              "RelativeDocumentMoniker": "Services\\TelegramBotService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\TelegramBotService.cs",
+              "RelativeToolTip": "Services\\TelegramBotService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:36:58.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CommandRegistry.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\RegisterCommand\\CommandRegistry.cs",
+              "RelativeDocumentMoniker": "RegisterCommand\\CommandRegistry.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\RegisterCommand\\CommandRegistry.cs",
+              "RelativeToolTip": "RegisterCommand\\CommandRegistry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T03:59:57.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IUserQuestionBuffer.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IUserQuestionBuffer.cs",
+              "RelativeDocumentMoniker": "Services\\IUserQuestionBuffer.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IUserQuestionBuffer.cs",
+              "RelativeToolTip": "Services\\IUserQuestionBuffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T12:19:32.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserInitializerService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\UserInitializerService.cs",
+              "RelativeDocumentMoniker": "Services\\UserInitializerService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\UserInitializerService.cs",
+              "RelativeToolTip": "Services\\UserInitializerService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwDUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T04:49:04.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GroupCommandProcessor.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\GroupCommandProcessor.cs",
+              "RelativeDocumentMoniker": "CommandProccesors\\GroupCommandProcessor.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\CommandProccesors\\GroupCommandProcessor.cs",
+              "RelativeToolTip": "CommandProccesors\\GroupCommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:31:48.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FeedbackCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\FeedbackCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\MainMenuCommands\\FeedbackCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\FeedbackCommand.cs",
+              "RelativeToolTip": "Commands\\MainMenuCommands\\FeedbackCommand.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAWwD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T04:19:55.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IUpdateHandler.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\IUpdateHandler.cs",
+              "RelativeDocumentMoniker": "Handlers\\IUpdateHandler.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Handlers\\IUpdateHandler.cs",
+              "RelativeToolTip": "Handlers\\IUpdateHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T10:10:59.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ICommandRegistry.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\RegisterCommand\\ICommandRegistry.cs",
+              "RelativeDocumentMoniker": "RegisterCommand\\ICommandRegistry.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\RegisterCommand\\ICommandRegistry.cs",
+              "RelativeToolTip": "RegisterCommand\\ICommandRegistry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T03:59:29.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ITopicProgressService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\ITopicProgressService.cs",
+              "RelativeDocumentMoniker": "Services\\ITopicProgressService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\ITopicProgressService.cs",
+              "RelativeToolTip": "Services\\ITopicProgressService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T05:09:50.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IUserInitializerService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IUserInitializerService.cs",
+              "RelativeDocumentMoniker": "Services\\IUserInitializerService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IUserInitializerService.cs",
+              "RelativeToolTip": "Services\\IUserInitializerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T04:55:32.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "KeyboardMarkupHelper.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\KeyboardMarkupHelper.cs",
+              "RelativeDocumentMoniker": "KeyboardsMarkup\\KeyboardMarkupHelper.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\KeyboardMarkupHelper.cs",
+              "RelativeToolTip": "KeyboardsMarkup\\KeyboardMarkupHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T10:20:49.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LanguageSelectionKeyboard.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\LanguageSelectionKeyboard.cs",
+              "RelativeDocumentMoniker": "KeyboardsMarkup\\LanguageSelectionKeyboard.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\LanguageSelectionKeyboard.cs",
+              "RelativeToolTip": "KeyboardsMarkup\\LanguageSelectionKeyboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:35:28.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LearningOptionsKeyboard.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\LearningOptionsKeyboard.cs",
+              "RelativeDocumentMoniker": "KeyboardsMarkup\\LearningOptionsKeyboard.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\LearningOptionsKeyboard.cs",
+              "RelativeToolTip": "KeyboardsMarkup\\LearningOptionsKeyboard.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:55:42.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MainMenuKeyboard.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\MainMenuKeyboard.cs",
+              "RelativeDocumentMoniker": "KeyboardsMarkup\\MainMenuKeyboard.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\MainMenuKeyboard.cs",
+              "RelativeToolTip": "KeyboardsMarkup\\MainMenuKeyboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:43:57.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "NavigationMenuCommands.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\NavigationMenuCommands.cs",
+              "RelativeDocumentMoniker": "KeyboardsMarkup\\NavigationMenuCommands.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\KeyboardsMarkup\\NavigationMenuCommands.cs",
+              "RelativeToolTip": "KeyboardsMarkup\\NavigationMenuCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:43:56.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "LanguageSelectionCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\LanguageSelectionCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\MainMenuCommands\\LanguageSelectionCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\LanguageSelectionCommand.cs",
+              "RelativeToolTip": "Commands\\MainMenuCommands\\LanguageSelectionCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:42:08.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SmartCodeBot.csproj",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\SmartCodeBot.csproj",
+              "RelativeDocumentMoniker": "SmartCodeBot.csproj",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\SmartCodeBot.csproj",
+              "RelativeToolTip": "SmartCodeBot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-28T04:20:31.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "MainMenuCommands.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\MainMenuCommands.cs",
+              "RelativeDocumentMoniker": "Commands\\MainMenuCommands\\MainMenuCommands.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\MainMenuCommands.cs",
+              "RelativeToolTip": "Commands\\MainMenuCommands\\MainMenuCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:39:48.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NextTopicCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningMaterialCommand\\NextTopicCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningMaterialCommand\\NextTopicCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningMaterialCommand\\NextTopicCommand.cs",
+              "RelativeToolTip": "Commands\\LearningMaterialCommand\\NextTopicCommand.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAswFEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:53:06.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LanguageSelectionCommands.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LaguageMenuCommands\\LanguageSelectionCommands.cs",
+              "RelativeDocumentMoniker": "Commands\\LaguageMenuCommands\\LanguageSelectionCommands.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LaguageMenuCommands\\LanguageSelectionCommands.cs",
+              "RelativeToolTip": "Commands\\LaguageMenuCommands\\LanguageSelectionCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:53:46.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "MaterialCommands.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\SelectTopicsCommands\\MaterialCommands.cs",
+              "RelativeDocumentMoniker": "Commands\\SelectTopicsCommands\\MaterialCommands.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\SelectTopicsCommands\\MaterialCommands.cs",
+              "RelativeToolTip": "Commands\\SelectTopicsCommands\\MaterialCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T06:44:56.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "BackCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\BackCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OtherCommands\\BackCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\BackCommand.cs",
+              "RelativeToolTip": "Commands\\OtherCommands\\BackCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:24:24.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "BackToMainMenuCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\BackToMainMenuCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OtherCommands\\BackToMainMenuCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\BackToMainMenuCommand.cs",
+              "RelativeToolTip": "Commands\\OtherCommands\\BackToMainMenuCommand.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAhwB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T04:33:11.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PreviousTopicCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningMaterialCommand\\PreviousTopicCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningMaterialCommand\\PreviousTopicCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningMaterialCommand\\PreviousTopicCommand.cs",
+              "RelativeToolTip": "Commands\\LearningMaterialCommand\\PreviousTopicCommand.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswFEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:53:21.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IBotCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\Contracts\\IBotCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\Contracts\\IBotCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\Contracts\\IBotCommand.cs",
+              "RelativeToolTip": "Commands\\Contracts\\IBotCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:37:10.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IUserSessionService.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IUserSessionService.cs",
+              "RelativeDocumentMoniker": "Services\\IUserSessionService.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Services\\IUserSessionService.cs",
+              "RelativeToolTip": "Services\\IUserSessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T11:17:59.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "StartTestCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\TestCommands\\StartTestCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\TestCommands\\StartTestCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\TestCommands\\StartTestCommand.cs",
+              "RelativeToolTip": "Commands\\TestCommands\\StartTestCommand.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAABBwCcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T03:56:35.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "SelectFileCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\SelectTopicsCommands\\SelectFileCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\SelectTopicsCommands\\SelectFileCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\SelectTopicsCommands\\SelectFileCommand.cs",
+              "RelativeToolTip": "Commands\\SelectTopicsCommands\\SelectFileCommand.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwC8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T06:44:24.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "SelectSubtopicCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\TestCommands\\SelectSubtopicCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\TestCommands\\SelectSubtopicCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\TestCommands\\SelectSubtopicCommand.cs",
+              "RelativeToolTip": "Commands\\TestCommands\\SelectSubtopicCommand.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T07:11:02.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "AdditionalMaterialCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\AdditionalMaterialCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OtherCommands\\AdditionalMaterialCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\AdditionalMaterialCommand.cs",
+              "RelativeToolTip": "Commands\\OtherCommands\\AdditionalMaterialCommand.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwD0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:30:11.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "NavigateTopicCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningMaterialCommand\\NavigateTopicCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\LearningMaterialCommand\\NavigateTopicCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\LearningMaterialCommand\\NavigateTopicCommand.cs",
+              "RelativeToolTip": "Commands\\LearningMaterialCommand\\NavigateTopicCommand.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:22:36.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ReturnToTopicSelectionCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\ReturnToTopicSelectionCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OtherCommands\\ReturnToTopicSelectionCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\ReturnToTopicSelectionCommand.cs",
+              "RelativeToolTip": "Commands\\OtherCommands\\ReturnToTopicSelectionCommand.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAABBwCAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T04:41:40.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "StartCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\StartCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\OtherCommands\\StartCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\OtherCommands\\StartCommand.cs",
+              "RelativeToolTip": "Commands\\OtherCommands\\StartCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T04:57:08.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "SupportCommand.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\SupportCommand.cs",
+              "RelativeDocumentMoniker": "Commands\\MainMenuCommands\\SupportCommand.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\MainMenuCommands\\SupportCommand.cs",
+              "RelativeToolTip": "Commands\\MainMenuCommands\\SupportCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:44:26.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ICommandGroup.cs",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\Contracts\\ICommandGroup.cs",
+              "RelativeDocumentMoniker": "Commands\\Contracts\\ICommandGroup.cs",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\Commands\\Contracts\\ICommandGroup.cs",
+              "RelativeToolTip": "Commands\\Contracts\\ICommandGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T03:31:14.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "SmartCodeBot.csproj",
+              "DocumentMoniker": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\SmartCodeBot.csproj",
+              "RelativeDocumentMoniker": "SmartCodeBot.csproj",
+              "ToolTip": "D:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B c#\\SmartCodeBot\\SmartCodeBot.csproj",
+              "RelativeToolTip": "SmartCodeBot.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-02T03:44:32.932Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

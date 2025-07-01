@@ -1,0 +1,90 @@
+<b>Что такое наследование?</b>
+
+Наследование позволяет создавать новый класс на основе существующего. При этом дочерний класс (наследник) получает все открытые и защищённые члены родительского класса.
+
+Ключевое слово для наследования: <code>:</code>
+
+<b>Пример:</b>
+<pre><code>class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Животное ест");
+    }
+}
+
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Собака лает");
+    }
+}
+</code></pre>
+
+<b>Использование:</b>
+<pre><code>Dog dog = new Dog();
+dog.Eat();  // Наследованный метод
+dog.Bark(); // Метод потомка
+</code></pre>
+
+<b>Ключевые особенности:</b>
+- Наследование реализуется через <b>:</b>
+- Подкласс наследует все <b>public</b> и <b>protected</b> члены базового класса
+- Подкласс может добавлять новые члены или переопределять существующие
+
+<b>Модификатор <code>virtual</code> и ключевое слово <code>override</code></b>
+
+Чтобы метод можно было переопределить в производном классе, его нужно объявить как <code>virtual</code>. В производном классе используется <code>override</code>.
+
+<b>Пример:</b>
+<pre><code>class Animal
+{
+    public virtual void Speak()
+    {
+        Console.WriteLine("Животное издает звук");
+    }
+}
+
+class Cat : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Кошка мяукает");
+    }
+}
+</code></pre>
+
+<b>Использование:</b>
+<pre><code>Animal animal = new Cat();
+animal.Speak(); // "Кошка мяукает"
+</code></pre>
+
+<b>Ключевые слова:</b>
+- <code>base</code> — используется для доступа к членам базового класса
+- <code>sealed</code> — запрещает дальнейшее наследование
+- <code>abstract</code> — обозначает, что класс или метод должен быть реализован в наследниках
+
+<b>Пример с base:</b>
+<pre><code>class Parent
+{
+    public virtual void Show()
+    {
+        Console.WriteLine("Родитель");
+    }
+}
+
+class Child : Parent
+{
+    public override void Show()
+    {
+        base.Show();
+        Console.WriteLine("Ребёнок");
+    }
+}
+</code></pre>
+
+<b>Итог:</b>
+- Наследование упрощает повторное использование кода
+- Позволяет расширять функциональность существующих классов
+- Обеспечивает основу для полиморфизма

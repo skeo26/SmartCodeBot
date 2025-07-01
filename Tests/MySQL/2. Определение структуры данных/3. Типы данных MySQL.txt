@@ -1,0 +1,53 @@
+Question: Какой тип данных в MySQL используется для хранения целых чисел?
+Options:
+- `INT`
+- `VARCHAR`
+- `FLOAT`
+- `DECIMAL`
+Explanation: Для хранения целых чисел используется тип данных `INT`.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных в MySQL позволяет хранить числа с плавающей точкой?
+Options:
+- `FLOAT`
+- `INT`
+- `TEXT`
+- `CHAR`
+Explanation: Для хранения чисел с плавающей точкой используется тип данных `FLOAT`.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных в MySQL используется для хранения строк переменной длины?
+Options:
+- `VARCHAR(n)`
+- `CHAR(n)`
+- `TEXT`
+- `ENUM`
+Explanation: Для хранения строк переменной длины используется тип данных `VARCHAR(n)`.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных в MySQL используется для хранения только даты?
+Options:
+- `DATE`
+- `DATETIME`
+- `TIME`
+- `TIMESTAMP`
+Explanation: Для хранения только даты используется тип данных `DATE`.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных в MySQL позволяет хранить логическое значение?
+Options:
+- `BOOLEAN`
+- `INT`
+- `FLOAT`
+- `TEXT`
+Explanation: Для хранения логического значения используется тип данных `BOOLEAN`, который является аналогом `TINYINT(1)`.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных в MySQL можно использовать для хранения ограниченного набора значений?
+Options:
+- `ENUM`
+- `DATE`
+- `TEXT`
+- `INT`
+Explanation: Тип данных `ENUM` используется для хранения ограниченного набора значений.
+CorrectAnswerIndex: 0

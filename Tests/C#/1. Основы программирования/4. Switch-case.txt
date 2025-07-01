@@ -1,0 +1,80 @@
+Question: Для чего используется конструкция switch-case?
+Options:
+- Для выбора одного из нескольких вариантов на основе значения переменной
+- Для создания цикла
+- Для обработки исключений
+- Для объявления переменной
+Explanation: Конструкция switch-case позволяет выполнить разные блоки кода в зависимости от значения выражения.
+CorrectAnswerIndex: 0
+
+Question: Что необходимо указывать после каждого блока case?
+Options:
+- break;
+- continue;
+- goto;
+- return;
+Explanation: Чтобы выйти из блока case и избежать выполнения следующего блока, нужно использовать break.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт, если не указать break в блоке case?
+Options:
+- Выполнение продолжится в следующем блоке case
+- Произойдёт ошибка компиляции
+- Остановится выполнение программы
+- Переменная обнулится
+Explanation: Без break произойдёт «проваливание» в следующий блок case.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных может использоваться в switch выражении?
+Options:
+- int
+- string
+- char
+- Все перечисленные
+Explanation: В C# в switch можно использовать int, string, char и другие простые типы.
+CorrectAnswerIndex: 3
+
+Question: Можно ли использовать default в switch-case?
+Options:
+- Да
+- Нет
+- Только если нет других case
+- Только с числами
+Explanation: Блок default выполняется, если ни один case не подошел.
+CorrectAnswerIndex: 0
+
+Question: Можно ли использовать switch-case с булевыми значениями?
+Options:
+- Нет
+- Да
+- Только с default
+- Только с true
+Explanation: Тип bool не поддерживается в выражении switch.
+CorrectAnswerIndex: 0
+
+Question: Можно ли использовать один case для нескольких значений?
+Options:
+- Да, через запятую
+- Да, с объединением case
+- Нет, каждый case должен быть уникальным
+- Да, но только с числами
+Explanation: Можно объединить несколько case подряд без кода между ними, чтобы они выполняли один блок.
+CorrectAnswerIndex: 1
+
+Question: Как называется поведение, при котором один case выполняет код следующего?
+Options:
+- Проваливание (fall-through)
+- Склеивание (glue-case)
+- Встраивание (embed-case)
+- Дублирование (duplicate-case)
+Explanation: Это называется fall-through — выполнение следующего case без break.
+CorrectAnswerIndex: 0
+
+Question: Что делает ключевое слово break в switch-case?
+Options:
+- Прерывает выполнение блока и выходит из switch
+- Переходит к следующему case
+- Завершает метод
+- Ничего не делает
+Explanation: break завершает выполнение блока case и выходит из конструкции switch.
+CorrectAnswerIndex: 0

@@ -1,0 +1,71 @@
+Question: Какой принцип работы реализует структура данных Queue?
+Options:
+- Принцип "первым пришел — первым обслужен" (FIFO)
+- Принцип "последним пришел — первым обслужен" (LIFO)
+- Принцип случайного доступа
+- Принцип отсортированных элементов
+Explanation: Queue реализует принцип "первым пришел — первым обслужен" (FIFO).
+CorrectAnswerIndex: 0
+
+Question: Какой метод добавляет элемент в очередь?
+Options:
+- Add()
+- Insert()
+- Enqueue()
+- Push()
+Explanation: Метод Enqueue добавляет элемент в конец очереди.
+CorrectAnswerIndex: 2
+
+Question: Какой метод удаляет элемент из начала очереди?
+Options:
+- Pop()
+- Dequeue()
+- RemoveFirst()
+- TakeFirst()
+Explanation: Метод Dequeue удаляет и возвращает элемент из начала очереди.
+CorrectAnswerIndex: 1
+
+Question: Какой метод позволяет получить элемент из начала очереди, не удаляя его?
+Options:
+- Peek()
+- Front()
+- Look()
+- First()
+Explanation: Метод Peek возвращает элемент из начала очереди, не удаляя его.
+CorrectAnswerIndex: 0
+
+Question: Как очистить очередь?
+Options:
+- ClearQueue()
+- Reset()
+- Clear()
+- RemoveAll()
+Explanation: Метод Clear очищает очередь.
+CorrectAnswerIndex: 2
+
+Question: Как проверить, содержится ли элемент в очереди?
+Options:
+- Contains()
+- IsInQueue()
+- HasElement()
+- Exists()
+Explanation: Метод Contains проверяет, содержится ли элемент в очереди.
+CorrectAnswerIndex: 0
+
+Question: Как преобразовать очередь в массив?
+Options:
+- ToList()
+- ToArray()
+- ToCollection()
+- ConvertToArray()
+Explanation: Метод ToArray копирует элементы очереди в массив.
+CorrectAnswerIndex: 1
+
+Question: Как итерировать по элементам очереди?
+Options:
+- Использовать цикл for
+- Использовать foreach
+- Использовать while
+- Использовать цикл do-while
+Explanation: Для перебора элементов очереди можно использовать цикл foreach.
+CorrectAnswerIndex: 1

@@ -1,0 +1,143 @@
+Структурные паттерны проектирования решают задачи, связанные с организацией классов и объектов. Они помогают создавать гибкие и удобные структуры, облегчая взаимодействие между объектами.
+
+<b>1. Адаптер (Adapter)</b>
+
+Позволяет объектам с несовместимыми интерфейсами работать вместе.
+
+<pre><code>public interface ITarget
+{
+    void Request();
+}
+
+public class Adaptee
+{
+    public void SpecificRequest() { Console.WriteLine("Specific request"); }
+}
+
+public class Adapter : ITarget
+{
+    private Adaptee _adaptee;
+    public Adapter(Adaptee adaptee) { _adaptee = adaptee; }
+    public void Request() { _adaptee.SpecificRequest(); }
+}
+</code></pre>
+
+<b>2. Мост (Bridge)</b>
+
+Разделяет абстракцию и реализацию, позволяя их изменять независимо.
+
+<pre><code>public interface IImplementation
+{
+    void Operation();
+}
+
+public class ConcreteImplementationA : IImplementation
+{
+    public void Operation() { Console.WriteLine("Operation A"); }
+}
+
+public class ConcreteImplementationB : IImplementation
+{
+    public void Operation() { Console.WriteLine("Operation B"); }
+}
+
+public abstract class Abstraction
+{
+    protected IImplementation _implementation;
+    public Abstraction(IImplementation implementation) { _implementation = implementation; }
+    public abstract void Operation();
+}
+
+public class RefinedAbstraction : Abstraction
+{
+    public RefinedAbstraction(IImplementation implementation) : base(implementation) { }
+    public override void Operation() { _implementation.Operation(); }
+}
+</code></pre>
+
+<b>3. Компоновщик (Composite)</b>
+
+Позволяет сгруппировать объекты в древовидные структуры и работать с ними как с единым объектом.
+
+<pre><code>public interface IComponent
+{
+    void Operation();
+}
+
+public class Leaf : IComponent
+{
+    public void Operation() { Console.WriteLine("Leaf operation"); }
+}
+
+public class Composite : IComponent
+{
+    private List&lt;IComponent&gt; _children = new List&lt;IComponent&gt;();
+    public void Add(IComponent component) { _children.Add(component); }
+    public void Operation() { foreach (var child in _children) child.Operation(); }
+}
+</code></pre>
+
+<b>4. Декоратор (Decorator)</b>
+
+Позволяет динамически добавлять функциональность объектам.
+
+<pre><code>public interface IComponent
+{
+    void Operation();
+}
+
+public class ConcreteComponent : IComponent
+{
+    public void Operation() { Console.WriteLine("ConcreteComponent operation"); }
+}
+
+public class Decorator : IComponent
+{
+    private IComponent _component;
+    public Decorator(IComponent component) { _component = component; }
+    public void Operation() { _component.Operation(); }
+}
+
+public class ConcreteDecoratorA : Decorator
+{
+    public ConcreteDecoratorA(IComponent component) : base(component) { }
+    public void AdditionalOperation() { Console.WriteLine("Additional operation"); }
+}
+</code></pre>
+
+<b>5. Фасад (Facade)</b>
+
+Предоставляет упрощенный интерфейс для работы с подсистемой.
+
+<pre><code>public class SubsystemA
+{
+    public void OperationA() { Console.WriteLine("SubsystemA operation"); }
+}
+
+public class SubsystemB
+{
+    public void OperationB() { Console.WriteLine("SubsystemB operation"); }
+}
+
+public class Facade
+{
+    private SubsystemA _subsystemA;
+    private SubsystemB _subsystemB;
+
+    public Facade(SubsystemA subsystemA, SubsystemB subsystemB)
+    {
+        _subsystemA = subsystemA;
+        _subsystemB = subsystemB;
+    }
+
+    public void Operation() 
+    {
+        _subsystemA.OperationA();
+        _subsystemB.OperationB();
+    }
+}
+</code></pre>
+
+<b>6. Когда использовать структурные паттерны?</b>
+
+Когда необходимо улучшить взаимодействие между объектами или группировать объекты для более удобного использования.

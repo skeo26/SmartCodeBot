@@ -1,0 +1,51 @@
+Question: Для чего используется оператор GROUP BY?
+Options:
+- Для сортировки строк по возрастанию
+- Для фильтрации строк по условию
+- Для группировки строк по значению столбца
+- Для удаления дубликатов
+Explanation: GROUP BY группирует строки с одинаковыми значениями в указанных столбцах.
+CorrectAnswerIndex: 2
+
+Question: Что делает следующий запрос?
+Code:
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+Options:
+- Показывает всех сотрудников
+- Показывает среднюю зарплату по каждому отделу
+- Показывает максимальную зарплату
+- Показывает зарплату каждого сотрудника
+Explanation: Запрос группирует сотрудников по отделам и выводит среднюю зарплату в каждом.
+CorrectAnswerIndex: 1
+
+Question: Чем отличается HAVING от WHERE?
+Options:
+- WHERE применяется после группировки, HAVING — до
+- HAVING нельзя использовать с агрегатными функциями
+- HAVING применяется после группировки и может использовать агрегатные функции
+- Они полностью взаимозаменяемы
+Explanation: HAVING фильтрует данные после группировки, в отличие от WHERE.
+CorrectAnswerIndex: 2
+
+Question: Что вернёт следующий запрос?
+Code:
+SELECT department, COUNT(*) AS employee_count
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 3;
+Options:
+- Все отделы
+- Только отделы, где больше 3 сотрудников
+- Отделы с наибольшей зарплатой
+- Ошибку
+Explanation: HAVING COUNT(*) > 3 фильтрует только те группы, где больше 3 сотрудников.
+CorrectAnswerIndex: 1
+
+Question: Можно ли использовать агрегатные функции в WHERE?
+Options:
+- Да, всегда
+- Только если это COUNT
+- Нет, только в HAVING
+- Да, но только с ORDER BY
+Explanation: Агрегатные функции нельзя использовать в WHERE — только в HAVING.
+CorrectAnswerIndex: 2

@@ -1,0 +1,49 @@
+Question: Какой оператор используется для добавления новой строки в таблицу?
+Options:
+- INSERT
+- ADD
+- PUSH
+- APPEND
+Explanation: Для добавления новой строки в таблицу используется команда INSERT.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при использовании INSERT IGNORE при дублировании уникального значения?
+Options:
+- Ошибка будет проигнорирована
+- Будет выброшено исключение
+- Старое значение будет удалено
+- Новое значение будет заменено
+Explanation: INSERT IGNORE пропускает строки, которые вызвали бы ошибку из-за ограничений (например, UNIQUE).
+CorrectAnswerIndex: 0
+
+Question: Что делает команда REPLACE в MySQL?
+Options:
+- Удаляет старую строку и вставляет новую
+- Обновляет строку без удаления
+- Только вставляет, если строки нет
+- Обновляет только одно поле
+Explanation: REPLACE удаляет существующую строку с таким же ключом и вставляет новую.
+CorrectAnswerIndex: 0
+
+Question: Какой результат даст следующая команда?
+Code:
+INSERT INTO users (name, age) VALUES ('Anna', DEFAULT);
+Options:
+- Вставит 'Anna' и значение по умолчанию для age
+- Вставит NULL в age
+- Возникнет ошибка
+- Вставит только имя
+Explanation: DEFAULT вставляет значение по умолчанию, заданное в структуре таблицы.
+CorrectAnswerIndex: 0
+
+Question: Что делает следующий запрос?
+Code:
+INSERT INTO orders (customer_id, order_date)
+SELECT id, NOW() FROM customers WHERE status = 'active';
+Options:
+- Вставляет новые заказы для активных клиентов
+- Обновляет таблицу customers
+- Удаляет неактивных клиентов
+- Вставляет пустые строки в orders
+Explanation: Подзапрос выбирает id активных клиентов и текущую дату, вставляя их в таблицу orders.
+CorrectAnswerIndex: 0

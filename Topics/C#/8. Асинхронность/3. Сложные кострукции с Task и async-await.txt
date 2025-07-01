@@ -1,0 +1,96 @@
+В этой теме рассмотрим более сложные конструкции, которые используют <code>Task</code>, <code>async</code> и <code>await</code>. Мы познакомимся с паттернами работы с асинхронными операциями, такими как обработка ошибок, цепочки задач и использование асинхронных методов для параллельных операций.
+
+<b>1. Асинхронная цепочка операций</b>
+
+Цепочка асинхронных операций позволяет последовательно выполнять несколько асинхронных методов. Это важно, когда операции зависят друг от друга.
+
+<pre><code>public async Task&lt;string&gt; ProcessDataAsync(string data)
+{
+    string step1 = await Step1Async(data); // Шаг 1
+    string step2 = await Step2Async(step1); // Шаг 2, зависит от шага 1
+    string step3 = await Step3Async(step2); // Шаг 3, зависит от шага 2
+    return step3;
+}
+
+public async Task&lt;string&gt; Step1Async(string data) { await Task.Delay(100); return data + " -> Step1"; }
+public async Task&lt;string&gt; Step2Async(string data) { await Task.Delay(100); return data + " -> Step2"; }
+public async Task&lt;string&gt; Step3Async(string data) { await Task.Delay(100); return data + " -> Step3"; }
+</code></pre>
+
+<b>2. Параллельное выполнение задач</b>
+
+Если операции не зависят друг от друга, можно запустить несколько задач параллельно, используя <code>Task.WhenAll</code>.
+
+<pre><code>public async Task ProcessParallelTasksAsync()
+{
+    Task&lt;string&gt; task1 = Task1Async();
+    Task&lt;string&gt; task2 = Task2Async();
+    Task&lt;string&gt; task3 = Task3Async();
+    await Task.WhenAll(task1, task2, task3); // Ожидаем завершение всех задач
+    Console.WriteLine($"Результат task1: {task1.Result}, task2: {task2.Result}, task3: {task3.Result}");
+}
+
+public async Task&lt;string&gt; Task1Async() { await Task.Delay(100); return "task1 завершен"; }
+public async Task&lt;string&gt; Task2Async() { await Task.Delay(200); return "task2 завершен"; }
+public async Task&lt;string&gt; Task3Async() { await Task.Delay(150); return "task3 завершен"; }
+</code></pre>
+
+<b>3. Асинхронная обработка исключений</b>
+
+Как и в обычных методах, в асинхронных можно использовать блоки <code>try-catch</code> для обработки исключений. Однако стоит помнить, что исключения из асинхронных методов нужно перехватывать с использованием <code>await</code>.
+
+<pre><code>public async Task ProcessDataWithErrorHandlingAsync()
+{
+    try
+    {
+        await PerformTaskAsync();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Произошла ошибка: {ex.Message}");
+    }
+}
+
+public async Task&lt;string&gt; PerformTaskAsync()
+{
+    await Task.Delay(100);
+    throw new InvalidOperationException("Ошибка в задаче");
+}
+</code></pre>
+
+<b>4. Ожидание с тайм-аутом с использованием CancellationToken</b>
+
+Можно использовать <code>CancellationToken</code> для задания тайм-аута при ожидании задачи. Это полезно для обработки длительных операций.
+
+<pre><code>public async Task&lt;string&gt; TaskWithTimeoutAsync(CancellationToken token)
+{
+    Task&lt;string&gt; task = Task.Delay(5000); // Симуляция долгой операции
+    if (await Task.WhenAny(task, Task.Delay(3000)) == task) // Проверка завершения задачи до тайм-аута
+    {
+        return "Операция завершена";
+    }
+    else
+    {
+        throw new TimeoutException("Операция превысила тайм-аут");
+    }
+}
+</code></pre>
+
+<b>5. Использование асинхронных методов с результатом типа void</b>
+
+Асинхронный метод с результатом <code>void</code> не возвращает результат, но может использоваться, например, для асинхронной обработки событий.
+
+<pre><code>public async void ButtonClickHandler(object sender, EventArgs e)
+{
+    await Task.Delay(1000);
+    Console.WriteLine("Кнопка была нажата");
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- Для параллельного выполнения независимых задач используйте <code>Task.WhenAll</code>.
+- Асинхронные операции можно использовать с обработкой исключений через <code>try-catch</code>.
+- Для управления временем выполнения можно использовать <code>CancellationToken</code> с тайм-аутом.
+- Асинхронные методы могут возвращать <code>void</code> (используется для обработки событий), но их следует использовать с осторожностью.
+

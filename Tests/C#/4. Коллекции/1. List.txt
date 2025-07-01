@@ -1,0 +1,72 @@
+Question: Что представляет собой коллекция List в C#?
+Options:
+- Статический массив фиксированной длины
+- Динамический список, который может изменять размер
+- Таблицу с ключами и значениями
+- Стек с ограниченной глубиной
+Explanation: List в C# — это динамическая коллекция, способная изменять размер и хранить элементы любого типа.
+CorrectAnswerIndex: 1
+
+Question: Какой тип коллекции представляет следующий код?
+<pre><code>List&lt;int&gt; numbers = new List&lt;int&gt;();</code></pre>
+Options:
+- Массив
+- Словарь
+- Список целых чисел
+- Очередь
+Explanation: В этом примере создается список целых чисел.
+CorrectAnswerIndex: 2
+
+Question: Какой метод используется для добавления элемента в List?
+Options:
+- Push()
+- Add()
+- InsertItem()
+- Append()
+Explanation: Метод Add() добавляет элемент в конец списка.
+CorrectAnswerIndex: 1
+
+Question: Что делает метод Remove(80)?
+Options:
+- Удаляет элемент по индексу 80
+- Удаляет первое вхождение значения 80
+- Удаляет все элементы из списка
+- Проверяет, есть ли в списке число 80
+Explanation: Remove(80) удаляет первое вхождение значения 80 из списка.
+CorrectAnswerIndex: 1
+
+Question: Как вставить элемент на определенную позицию в списке?
+Options:
+- AddAt(index, item)
+- Insert(index, item)
+- Add(index, item)
+- Place(index, item)
+Explanation: Метод Insert позволяет вставить элемент в заданный индекс.
+CorrectAnswerIndex: 1
+
+Question: Как узнать количество элементов в списке?
+Options:
+- Length
+- Size
+- Count
+- Capacity
+Explanation: Свойство Count возвращает текущее количество элементов в List.
+CorrectAnswerIndex: 2
+
+Question: Что делает метод Sort()?
+Options:
+- Удаляет дубликаты
+- Переворачивает список
+- Сортирует элементы
+- Удаляет последний элемент
+Explanation: Метод Sort() сортирует элементы списка в порядке возрастания.
+CorrectAnswerIndex: 2
+
+Question: Что вернёт метод IndexOf(4) для списка [1, 2, 3, 4]?
+Options:
+- 3
+- 4
+- 0
+- -1
+Explanation: IndexOf возвращает индекс первого найденного элемента, индекс 4 в списке [1,2,3,4] — это 3.
+CorrectAnswerIndex: 0

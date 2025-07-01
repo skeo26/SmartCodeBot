@@ -1,0 +1,39 @@
+<b>GROUP BY</b> используется для группировки строк, которые имеют одинаковые значения в указанных столбцах. Это особенно полезно при использовании агрегатных функций (COUNT, SUM, AVG и др.).
+
+<b>Синтаксис:</b>
+<code>
+SELECT столбец, агрегатная_функция(столбец)
+FROM таблица
+GROUP BY столбец;
+</code>
+
+<b>Пример 1. Средняя зарплата по отделам:</b>
+<code>
+SELECT department, AVG(salary)
+FROM employees
+GROUP BY department;
+</code>
+Этот запрос группирует сотрудников по отделам и показывает среднюю зарплату в каждом из них.
+
+<b>HAVING</b> — фильтрует результаты после группировки (в отличие от WHERE, который фильтрует до группировки).
+
+<b>Пример 2. Только отделы, где средняя зарплата больше 50000:</b>
+<code>
+SELECT department, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) &gt; 50000;
+</code>
+
+<b>Пример 3. Количество сотрудников в каждом отделе (если больше 3):</b>
+<code>
+SELECT department, COUNT(*) AS employee_count
+FROM employees
+GROUP BY department
+HAVING COUNT(*) &gt; 3;
+</code>
+
+<b>Важно:</b>
+- <code>HAVING</code> всегда используется с <code>GROUP BY</code>.
+- В <code>HAVING</code> можно использовать агрегатные функции, чего нельзя в <code>WHERE</code>.
+

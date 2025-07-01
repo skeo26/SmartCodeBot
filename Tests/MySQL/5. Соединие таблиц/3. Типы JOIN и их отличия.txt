@@ -1,0 +1,44 @@
+Question: Какой тип JOIN используется для возврата только совпадающих строк в обеих таблицах?
+Options:
+- LEFT JOIN
+- RIGHT JOIN
+- INNER JOIN
+- FULL JOIN
+Explanation: INNER JOIN используется для возврата только совпадающих строк в обеих таблицах.
+CorrectAnswerIndex: 2
+
+Question: Какой тип JOIN возвращает все строки из левой таблицы и совпадающие строки из правой?
+Options:
+- LEFT JOIN
+- RIGHT JOIN
+- INNER JOIN
+- FULL JOIN
+Explanation: LEFT JOIN возвращает все строки из левой таблицы и совпадающие строки из правой, если они есть.
+CorrectAnswerIndex: 0
+
+Question: Какой тип JOIN используется для возврата всех строк из правой таблицы и совпадающих строк из левой?
+Options:
+- LEFT JOIN
+- RIGHT JOIN
+- INNER JOIN
+- FULL JOIN
+Explanation: RIGHT JOIN возвращает все строки из правой таблицы и совпадающие строки из левой.
+CorrectAnswerIndex: 1
+
+Question: Как можно имитировать FULL JOIN в MySQL, который не поддерживается напрямую?
+Options:
+- Использовать только LEFT JOIN
+- Использовать только RIGHT JOIN
+- Использовать UNION между LEFT JOIN и RIGHT JOIN
+- Использовать только INNER JOIN
+Explanation: Для имитации FULL JOIN в MySQL используют UNION между LEFT JOIN и RIGHT JOIN.
+CorrectAnswerIndex: 2
+
+Question: Когда лучше использовать LEFT JOIN, а когда INNER JOIN?
+Options:
+- Используйте LEFT JOIN, если хотите получить только совпадающие записи
+- Используйте INNER JOIN, если хотите все записи из обеих таблиц
+- Используйте LEFT JOIN, если важны все записи из одной таблицы, даже если в другой нет соответствия
+- Используйте INNER JOIN, если важны все записи из обеих таблиц
+Explanation: LEFT JOIN лучше использовать, если важны все записи из одной таблицы, даже если в другой нет соответствия, а INNER JOIN — для возврата только совпадающих записей.
+CorrectAnswerIndex: 2

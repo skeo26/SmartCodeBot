@@ -1,0 +1,141 @@
+<b>Select</b> и <b>SelectMany</b> — это методы в LINQ, которые используются для проекции элементов коллекции в новые формы. <code>Select</code> используется для преобразования каждого элемента в новый объект, а <code>SelectMany</code> используется для преобразования элементов в коллекции коллекций.
+
+<b>1. Select</b>
+
+Метод <code>Select()</code> позволяет преобразовать элементы коллекции в новый тип или структуру.
+
+<pre><code>var numbers = new List&lt;int&gt;() { 1, 2, 3, 4, 5 };
+
+var squaredNumbers = numbers.Select(n =&gt; n * n);
+
+foreach (var number in squaredNumbers)
+{
+    Console.WriteLine(number);
+}
+// Результат:
+// 1
+// 4
+// 9
+// 16
+// 25
+</code></pre>
+
+<b>2. Select с анонимными типами:</b>
+
+Можно использовать <code>Select()</code> для создания анонимных типов.
+
+<pre><code>var people = new List&lt;Person&gt;()
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 35 }
+};
+
+var selectedPeople = people.Select(p =&gt; new { p.Name, p.Age });
+
+foreach (var person in selectedPeople)
+{
+    Console.WriteLine($"{person.Name}, {person.Age}");
+}
+// Результат:
+// Alice, 25
+// Bob, 30
+// Charlie, 35
+</code></pre>
+
+<b>3. SelectMany</b>
+
+Метод <code>SelectMany()</code> используется для проекции коллекций коллекций. Это позволяет распаковывать коллекции, вложенные в коллекции, в одну плоскую коллекцию.
+
+<pre><code>var listOfLists = new List&lt;List&lt;int&gt;&gt;()
+{
+    new List&lt;int&gt;() { 1, 2, 3 },
+    new List&lt;int&gt;() { 4, 5, 6 },
+    new List&lt;int&gt;() { 7, 8, 9 }
+};
+
+var flattenedList = listOfLists.SelectMany(list =&gt; list);
+
+foreach (var number in flattenedList)
+{
+    Console.WriteLine(number);
+}
+// Результат:
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+</code></pre>
+
+<b>4. SelectMany с анонимными типами:</b>
+
+Можно использовать <code>SelectMany()</code> для распаковки коллекции объектов и создания новых объектов.
+
+<pre><code>var orders = new List&lt;Customer&gt;()
+{
+    new Customer { Name = "Alice", Orders = new List&lt;Order&gt; { new Order { Product = "Laptop" }, new Order { Product = "Tablet" } } },
+    new Customer { Name = "Bob", Orders = new List&lt;Order&gt; { new Order { Product = "Smartphone" } } }
+};
+
+var customerOrders = orders.SelectMany(c =&gt; c.Orders, (customer, order) =&gt; new
+{
+    customer.Name,
+    order.Product
+});
+
+foreach (var item in customerOrders)
+{
+    Console.WriteLine($"{item.Name} ordered {item.Product}");
+}
+// Результат:
+// Alice ordered Laptop
+// Alice ordered Tablet
+// Bob ordered Smartphone
+</code></pre>
+
+<b>5. Использование SelectMany для работы с несколькими коллекциями:</b>
+
+Можно использовать <code>SelectMany()</code> для работы с несколькими уровнями коллекций и их проекцией.
+
+<pre><code>var countries = new List&lt;Country&gt;()
+{
+    new Country { Name = "USA", Cities = new List&lt;string&gt; { "New York", "Los Angeles", "Chicago" } },
+    new Country { Name = "Germany", Cities = new List&lt;string&gt; { "Berlin", "Munich", "Hamburg" } }
+};
+
+var countryCities = countries.SelectMany(c =&gt; c.Cities, (country, city) =&gt; new
+{
+    country.Name,
+    City = city
+});
+
+foreach (var item in countryCities)
+{
+    Console.WriteLine($"{item.Name}: {item.City}");
+}
+// Результат:
+// USA: New York
+// USA: Los Angeles
+// USA: Chicago
+// Germany: Berlin
+// Germany: Munich
+// Germany: Hamburg
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>Select()</code> используется для преобразования элементов коллекции.
+- <code>SelectMany()</code> используется для распаковки коллекции коллекций в одну коллекцию.
+- <code>SelectMany()</code> может также принимать функцию, которая проецирует элементы коллекции в новый объект, и объединяет элементы из вложенных коллекций.
+
+<b>Когда использовать:</b>
+
+- Когда нужно преобразовать данные в новую форму.
+- Для работы с коллекциями коллекций и распаковки вложенных данных.
+- Для работы с анонимными типами или комбинирования данных из разных источников.
+

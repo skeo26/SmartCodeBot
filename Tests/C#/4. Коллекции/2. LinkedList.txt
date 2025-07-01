@@ -1,0 +1,71 @@
+Question: Что такое LinkedList?
+Options:
+- Коллекция, где элементы хранятся в непрерывной области памяти
+- Массив фиксированной длины
+- Последовательность узлов, где каждый содержит данные и ссылку на следующий
+- Таблица с индексами и значениями
+Explanation: LinkedList — это структура данных, состоящая из узлов, каждый из которых содержит данные и ссылку на следующий элемент.
+CorrectAnswerIndex: 2
+
+Question: Какой using необходим для работы с LinkedList?
+Options:
+- using System.Text;
+- using System.Collections;
+- using System.Collections.Generic;
+- using System.Data;
+Explanation: Класс LinkedList находится в пространстве имён System.Collections.Generic.
+CorrectAnswerIndex: 2
+
+Question: Какой метод добавляет элемент в начало LinkedList?
+Options:
+- AddFirst()
+- AddStart()
+- InsertAtStart()
+- AddHead()
+Explanation: Метод AddFirst() добавляет элемент в начало списка.
+CorrectAnswerIndex: 0
+
+Question: Что делает метод AddAfter(node, value)?
+Options:
+- Удаляет узел после указанного
+- Добавляет значение в конец списка
+- Добавляет элемент перед указанным узлом
+- Добавляет элемент после указанного узла
+Explanation: AddAfter добавляет новый элемент после указанного узла.
+CorrectAnswerIndex: 3
+
+Question: Как удалить первый узел из LinkedList?
+Options:
+- DeleteFirst()
+- RemoveFirst()
+- RemoveStart()
+- Remove(0)
+Explanation: Метод RemoveFirst() удаляет первый элемент из списка.
+CorrectAnswerIndex: 1
+
+Question: Что вернет метод Find(3)?
+Options:
+- Узел, содержащий значение 3
+- Индекс элемента 3
+- Количество элементов со значением 3
+- Ошибку, если элемент не найден
+Explanation: Метод Find возвращает ссылку на первый узел, содержащий заданное значение.
+CorrectAnswerIndex: 0
+
+Question: Какой из следующих методов добавляет элемент в конец LinkedList?
+Options:
+- Append()
+- AddEnd()
+- AddLast()
+- PushBack()
+Explanation: Метод AddLast() добавляет элемент в конец списка.
+CorrectAnswerIndex: 2
+
+Question: Какой способ перебора LinkedList является корректным?
+Options:
+- for (int i = 0; i < list.Count; i++) Console.WriteLine(list[i]);
+- list.PrintAll();
+- foreach (var item in list) Console.WriteLine(item);
+- while (list.HasNext()) Console.WriteLine(list.Next());
+Explanation: LinkedList можно перебирать с помощью foreach.
+CorrectAnswerIndex: 2

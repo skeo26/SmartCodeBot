@@ -1,0 +1,89 @@
+Question: Что делает метод ContinueWith?
+Options:
+- Выполняет задачу в отдельном потоке
+- Позволяет выполнить код после завершения другой задачи
+- Запускает задачу параллельно
+- Отменяет выполнение задачи
+Explanation: ContinueWith позволяет задать действия, которые выполняются после завершения задачи.
+CorrectAnswerIndex: 1
+
+Question: Какой из методов позволяет получить результат самой быстрой задачи из набора?
+Options:
+- Task.WhenAll
+- Task.WaitAll
+- Task.WhenAny
+- Task.Run
+Explanation: Task.WhenAny возвращает первую завершившуюся задачу из набора.
+CorrectAnswerIndex: 2
+
+Question: Зачем используется CancellationToken в асинхронных задачах?
+Options:
+- Для ускорения задач
+- Для логирования
+- Для управления временем выполнения и отмены задач
+- Для создания новых задач
+Explanation: CancellationToken позволяет отменить выполнение задачи при необходимости.
+CorrectAnswerIndex: 2
+
+Question: Что вернёт метод Task.WhenAll?
+Options:
+- Первая завершившаяся задача
+- Исключение, если одна из задач не выполнится
+- Массив результатов всех завершившихся задач
+- Только последнюю задачу
+Explanation: Task.WhenAll возвращает массив результатов всех завершившихся задач.
+CorrectAnswerIndex: 2
+
+Question: Что произойдёт, если задача завершится с ошибкой, а затем вызван ContinueWith?
+Options:
+- Ошибка проигнорируется
+- ContinueWith не будет вызван
+- В ContinueWith можно обработать ошибку через t.Exception
+- Программа завершится
+Explanation: ContinueWith всегда вызывается, и в случае ошибки можно обработать её через t.Exception.
+CorrectAnswerIndex: 2
+
+Question: Что вернёт метод TaskWithCancellationAsync, если задача будет отменена до завершения?
+Options:
+- "Операция завершена"
+- null
+- Исключение TaskCanceledException
+- Пустую строку
+Explanation: При отмене задачи через CancellationToken будет выброшено исключение TaskCanceledException.
+CorrectAnswerIndex: 2
+
+Question: Когда удобно использовать метод, возвращающий Task без результата?
+Options:
+- Когда нужно получить результат
+- Когда метод ничего не делает
+- Когда нужно просто выполнить операцию и не получать значение
+- Когда нужно параллельное выполнение
+Explanation: Task без результата подходит для операций, не возвращающих данные.
+CorrectAnswerIndex: 2
+
+Question: Какой способ позволит выполнить несколько задач и дождаться их завершения?
+Options:
+- Task.Run
+- ContinueWith
+- Task.WhenAll
+- async void
+Explanation: Task.WhenAll ожидает завершения всех переданных задач.
+CorrectAnswerIndex: 2
+
+Question: Как можно построить цепочку из нескольких задач?
+Options:
+- С помощью async void
+- С помощью Thread.Sleep
+- С помощью последовательных ContinueWith
+- Используя Task.Run внутри метода
+Explanation: ContinueWith позволяет строить цепочки задач, обрабатывая результат предыдущей.
+CorrectAnswerIndex: 2
+
+Question: Какой способ позволяет контролировать отмену выполнения задачи?
+Options:
+- Task.Wait
+- async void
+- Использование CancellationToken
+- ContinueWith
+Explanation: CancellationToken предоставляет механизм управления отменой выполнения асинхронной задачи.
+CorrectAnswerIndex: 2

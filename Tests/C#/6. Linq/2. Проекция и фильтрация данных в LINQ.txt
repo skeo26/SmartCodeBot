@@ -1,0 +1,101 @@
+Question: Что делает метод Select() в LINQ?
+Options:
+- Фильтрует элементы
+- Проецирует элементы (преобразует их форму)
+- Сортирует элементы
+- Удаляет дубликаты
+Explanation: Select используется для проекции — создания новой структуры из элементов.
+CorrectAnswerIndex: 1
+
+Question: Какой результат выведет следующий код?
+Code:
+var numbers = new List&lt;int&gt; { 1, 2, 3, 4 };
+var result = numbers.Where(n => n > 2).Select(n => n * 2);
+Options:
+- 2, 4, 6, 8
+- 6, 8
+- 1, 2
+- Ошибка компиляции
+Explanation: Сначала фильтруем >2 (3, 4), затем умножаем: 6, 8.
+CorrectAnswerIndex: 1
+
+Question: Что делает метод Where()?
+Options:
+- Удаляет элементы
+- Преобразует элементы в строки
+- Фильтрует элементы по условию
+- Сортирует по алфавиту
+Explanation: Where возвращает только те элементы, которые удовлетворяют условию.
+CorrectAnswerIndex: 2
+
+Question: Какая из записей правильно объединяет фильтрацию и проекцию?
+Options:
+- list.Select(x => x).Where(x => x > 5)
+- list.Where(x => x > 5).Select(x => x * 2)
+- list.OrderBy(x => x).Select(x => x > 5)
+- list.Select(x => x * 2).ToList().Where(x => x > 5)
+Explanation: Вариант с Where + Select — правильный порядок: фильтрация → проекция.
+CorrectAnswerIndex: 1
+
+Question: Какой метод используется для сортировки по возрастанию?
+Options:
+- Sort()
+- Distinct()
+- OrderBy()
+- GroupBy()
+Explanation: OrderBy сортирует коллекцию по заданному ключу.
+CorrectAnswerIndex: 2
+
+Question: Что вернёт следующий код?
+Code:
+var people = new[] {
+    new { Name = "Ann", Age = 20 },
+    new { Name = "Bob", Age = 17 }
+};
+var result = people.Where(p => p.Age > 18).Select(p => p.Name);
+Options:
+- Ann, Bob
+- Bob
+- Ann
+- Пустой список
+Explanation: Только Ann удовлетворяет условию Age > 18.
+CorrectAnswerIndex: 2
+
+Question: Что такое анонимный тип в LINQ?
+Options:
+- Объект без имени
+- Объект, созданный без определения класса
+- Объект без свойств
+- Интерфейс LINQ
+Explanation: Анонимный тип создаётся с помощью конструкции `new { ... }` без явного класса.
+CorrectAnswerIndex: 1
+
+Question: Как получить список без повторяющихся значений?
+Options:
+- Where()
+- Select()
+- FirstOrDefault()
+- Distinct()
+Explanation: Distinct удаляет дубликаты из коллекции.
+CorrectAnswerIndex: 3
+
+Question: Что делает метод First()?
+Options:
+- Возвращает все элементы
+- Возвращает последний элемент
+- Возвращает первый элемент, выбрасывает исключение, если коллекция пуста
+- Удаляет первый элемент
+Explanation: First возвращает первый элемент коллекции или выбрасывает исключение, если она пуста.
+CorrectAnswerIndex: 2
+
+Question: Какой результат будет у следующего кода?
+Code:
+var list = new List&ltint&gt { 3, 1, 4 };
+var sorted = list.OrderBy(x => x);
+Options:
+- 3, 1, 4
+- 1, 3, 4
+- 4, 3, 1
+- Ошибка компиляции
+Explanation: OrderBy сортирует по возрастанию: 1, 3, 4.
+CorrectAnswerIndex: 1

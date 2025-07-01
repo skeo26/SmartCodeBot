@@ -1,0 +1,44 @@
+Question: Что делает оператор UPDATE?
+Options:
+- Обновляет данные в таблице
+- Удаляет таблицу
+- Вставляет новые строки
+- Извлекает данные
+Explanation: Оператор UPDATE используется для изменения существующих данных в таблице.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт, если выполнить UPDATE без условия WHERE?
+Options:
+- Все строки в таблице будут обновлены
+- Произойдёт ошибка
+- Обновится только первая строка
+- Ничего не произойдёт
+Explanation: Без WHERE условие применяется ко всем строкам.
+CorrectAnswerIndex: 0
+
+Question: Какой синтаксис правильный для удаления строк?
+Options:
+- DELETE FROM users WHERE age < 18;
+- REMOVE FROM users WHERE age < 18;
+- DELETE users WHERE age < 18;
+- DELETE ALL FROM users WHERE age < 18;
+Explanation: Верный синтаксис — DELETE FROM таблица WHERE условие.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при выполнении DELETE без WHERE?
+Options:
+- Все строки в таблице будут удалены
+- Будет удалена таблица
+- Удалится только одна строка
+- Ничего не изменится
+Explanation: Без WHERE удаляются все строки.
+CorrectAnswerIndex: 0
+
+Question: Как обновить статус пользователей, которые заходили после 2022-01-01?
+Options:
+- UPDATE users SET status = 'active' WHERE last_login > '2022-01-01';
+- CHANGE users status = 'active' IF last_login > '2022-01-01';
+- SET users.status = 'active' WHERE last_login > '2022-01-01';
+- MODIFY users SET status TO 'active' WHERE last_login > '2022-01-01';
+Explanation: Только первый вариант соответствует синтаксису UPDATE в MySQL.
+CorrectAnswerIndex: 0

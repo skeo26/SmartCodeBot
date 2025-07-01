@@ -1,0 +1,53 @@
+Question: Как создать базу данных в MySQL?
+Options:
+- Использовать команду `CREATE DATABASE имя_базы;`
+- Использовать команду `CREATE DATABASE BASE имя_базы;`
+- Использовать команду `NEW DATABASE имя_базы;`
+- Использовать команду `MAKE DATABASE имя_базы;`
+Explanation: Для создания базы данных в MySQL используется команда `CREATE DATABASE имя_базы;`.
+CorrectAnswerIndex: 0
+
+Question: Как создать базу данных с определённой кодировкой и сравнением в MySQL?
+Options:
+- Использовать команду `CREATE DATABASE shop CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;`
+- Использовать команду `CREATE DATABASE shop COLLATE utf8mb4_general_ci CHARACTER SET utf8mb4;`
+- Использовать команду `CREATE DATABASE shop CHARACTER SET utf8 COLLATE utf8_general_ci;`
+- Использовать команду `CREATE DATABASE shop SET CHARACTER utf8mb4 COLLATE utf8mb4_general_ci;`
+Explanation: Для создания базы данных с определённой кодировкой и сравнением используется команда `CREATE DATABASE имя_базы CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;`.
+CorrectAnswerIndex: 0
+
+Question: Как просмотреть все базы данных в MySQL?
+Options:
+- Использовать команду `SHOW DATABASES;`
+- Использовать команду `LIST DATABASES;`
+- Использовать команду `SHOW ALL DATABASES;`
+- Использовать команду `SELECT DATABASES;`
+Explanation: Для просмотра всех баз данных используется команда `SHOW DATABASES;`.
+CorrectAnswerIndex: 0
+
+Question: Как выбрать базу данных для работы в MySQL?
+Options:
+- Использовать команду `USE имя_базы;`
+- Использовать команду `SELECT имя_базы;`
+- Использовать команду `CHOOSE имя_базы;`
+- Использовать команду `SET DATABASE имя_базы;`
+Explanation: Для выбора базы данных используется команда `USE имя_базы;`.
+CorrectAnswerIndex: 0
+
+Question: Как удалить базу данных в MySQL?
+Options:
+- Использовать команду `DROP DATABASE имя_базы;`
+- Использовать команду `DELETE DATABASE имя_базы;`
+- Использовать команду `REMOVE DATABASE имя_базы;`
+- Использовать команду `DROP DATABASE IF EXISTS имя_базы;`
+Explanation: Для удаления базы данных используется команда `DROP DATABASE имя_базы;`. Будьте осторожны, так как команда удаляет базу без возможности восстановления.
+CorrectAnswerIndex: 0
+
+Question: Что происходит, если выполнить команду `DROP DATABASE` в MySQL?
+Options:
+- База данных будет удалена без возможности восстановления.
+- База данных будет перемещена в корзину.
+- База данных будет переименована.
+- База данных будет только очищена, но не удалена.
+Explanation: Команда `DROP DATABASE` удаляет базу данных без возможности восстановления.
+CorrectAnswerIndex: 0

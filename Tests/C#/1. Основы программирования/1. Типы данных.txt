@@ -1,0 +1,102 @@
+Question: Какой тип данных целочисленный?
+Options:
+- int
+- double
+- char
+Explanation: Целочисленным типом данных является int, так как это тип, предназначенный для хранения целых чисел.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных используется для хранения символов?
+Options:
+- char
+- string
+- int
+Explanation: Тип данных char предназначен для хранения одиночных символов, в то время как string — для строк, а int — для целых чисел.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных используется для хранения логических значений?
+Options:
+- bool
+- int
+- string
+Explanation: Тип данных bool предназначен для хранения логических значений: true или false. Типы int и string используются для чисел и строк соответственно.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных используется для хранения строк?
+Options:
+- int
+- string
+- char
+- double
+Explanation: Тип данных string используется для хранения строковых данных, в то время как char используется для одного символа, а double — для вещественных чисел.
+CorrectAnswerIndex: 1
+
+Question: Какой тип данных используется для хранения вещественных чисел?
+Options:
+- int
+- double
+- bool
+- char
+Explanation: Тип double предназначен для хранения чисел с плавающей точкой.
+CorrectAnswerIndex: 1
+
+Question: Какой из типов данных занимает наименьший объем памяти?
+Options:
+- byte
+- int
+- double
+- string
+Explanation: Тип byte занимает 1 байт памяти, что делает его самым компактным среди представленных.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных чаще всего используется для хранения целых чисел в большом диапазоне?
+Options:
+- int
+- long
+- short
+- bool
+Explanation: Тип long позволяет хранить целые числа в более широком диапазоне, чем int и short.
+CorrectAnswerIndex: 1
+
+Question: Какой тип данных можно использовать для хранения одного символа?
+Options:
+- char
+- string
+- bool
+- double
+Explanation: Тип char предназначен для хранения одного символа.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных лучше всего подходит для работы с флагами и логикой?
+Options:
+- bool
+- int
+- string
+Explanation: Тип bool используется для хранения значений true/false, что идеально подходит для логических операций.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных выбрать, если нужно хранить большое текстовое значение?
+Options:
+- char
+- string
+- int
+Explanation: Тип string позволяет хранить строки произвольной длины, в отличие от char, который хранит только один символ.
+CorrectAnswerIndex: 1
+
+Question: Какой тип данных может содержать значение null?
+Options:
+- string
+- int
+- bool
+- Все перечисленные
+Explanation: Тип string (и nullable версии других типов) может содержать значение null, если это разрешено в коде.
+CorrectAnswerIndex: 3
+
+Question: Какой тип данных используется для представления 64-битного целого числа?
+Options:
+- int
+- long
+- short
+- byte
+Explanation: Тип long используется для хранения 64-битных целых чисел.
+CorrectAnswerIndex: 1

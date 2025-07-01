@@ -1,0 +1,76 @@
+<b>Строки в C# обладают широким набором встроенных методов, которые позволяют выполнять различные операции. Вот наиболее часто используемые из них:</b>
+
+<b>1. Length</b> — возвращает длину строки.
+
+<pre><code>string name = "Alice";
+int len = name.Length; // 5</code></pre>
+
+<b>2. ToUpper() и ToLower()</b> — преобразуют строку в верхний или нижний регистр.
+
+<pre><code>string lower = "text";
+string upper = lower.ToUpper(); // "TEXT"</code></pre>
+
+<b>3. Contains()</b> — проверяет, содержит ли строка указанную подстроку.
+
+<pre><code>string phrase = "Hello, world!";
+bool hasWorld = phrase.Contains("world"); // true</code></pre>
+
+<b>4. IndexOf()</b> — возвращает индекс первого вхождения подстроки.
+
+<pre><code>int index = phrase.IndexOf("world"); // 7</code></pre>
+
+<b>5. Substring()</b> — извлекает подстроку из строки.
+
+<pre><code>string word = phrase.Substring(7, 5); // "world"</code></pre>
+
+<b>6. Replace()</b> — заменяет все вхождения одной подстроки на другую.
+
+<pre><code>string corrected = phrase.Replace("world", "C#"); // "Hello, C#!"</code></pre>
+
+<b>7. Trim(), TrimStart(), TrimEnd()</b> — удаляют пробелы (или указанные символы) с начала, конца или обеих сторон строки.
+
+<pre><code>string raw = "  data  ";
+string clean = raw.Trim(); // "data"</code></pre>
+
+<b>8. Split()</b> — разделяет строку на части по заданному символу или строке.
+
+<pre><code>string csv = "apple,banana,orange";
+string[] fruits = csv.Split(','); // [ "apple", "banana", "orange" ]</code></pre>
+
+<b>9. Join()</b> — объединяет элементы массива в одну строку.
+
+<pre><code>string joined = string.Join(" - ", fruits); // "apple - banana - orange"</code></pre>
+
+<b>10. StartsWith(), EndsWith()</b> — проверяют начало или конец строки на соответствие заданной подстроке.
+
+<pre><code>bool starts = phrase.StartsWith("Hello"); // true
+bool ends = phrase.EndsWith("!"); // true</code></pre>
+
+<b>11. Equals()</b> — сравнивает строки с учётом регистра (по умолчанию).
+
+<pre><code>string a = "Test";
+string b = "test";
+
+bool equal = a.Equals(b); // false
+bool ignoreCase = a.Equals(b, StringComparison.OrdinalIgnoreCase); // true</code></pre>
+
+<b>12. IsNullOrEmpty() и IsNullOrWhiteSpace()</b> — проверяют, пуста ли строка или состоит только из пробелов.
+
+<pre><code>string empty = "";
+bool isEmpty = string.IsNullOrEmpty(empty); // true
+
+string spaces = "   ";
+bool onlySpaces = string.IsNullOrWhiteSpace(spaces); // true</code></pre>
+
+<b>Комбинированный пример:</b>
+
+<pre><code>string input = "  Hello, C# World!  ";
+string result = input.Trim().Replace("C#", ".NET").ToUpper();
+
+Console.WriteLine(result); // "HELLO, .NET WORLD!"</code></pre>
+
+<b>Вывод:</b>
+
+- Методы для работы со строками делают их обработку удобной и гибкой.
+- Строки остаются неизменяемыми: любые изменения создают новый объект.
+- Знание этих методов поможет вам эффективно анализировать, изменять и форматировать текст.

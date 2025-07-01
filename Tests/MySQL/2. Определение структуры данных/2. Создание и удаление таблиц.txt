@@ -1,0 +1,53 @@
+Question: Как создать таблицу в MySQL?
+Options:
+- `CREATE TABLE имя_таблицы (имя_столбца1 тип_данных, ...);`
+- `NEW TABLE имя_таблицы (имя_столбца1 тип_данных, ...);`
+- `CREATE NEW TABLE имя_таблицы (имя_столбца1 тип_данных, ...);`
+- `MAKE TABLE имя_таблицы (имя_столбца1 тип_данных, ...);`
+Explanation: Для создания таблицы в MySQL используется команда `CREATE TABLE имя_таблицы (имя_столбца1 тип_данных, ...);`.
+CorrectAnswerIndex: 0
+
+Question: Как создать таблицу с автогенерируемым идентификатором в MySQL?
+Options:
+- `CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, ...);`
+- `CREATE TABLE users (id INT PRIMARY KEY AUTO_INCREMENT, ...);`
+- `CREATE TABLE users (id INT UNIQUE AUTO_INCREMENT, ...);`
+- `CREATE TABLE users (id SERIAL PRIMARY KEY, ...);`
+Explanation: Для создания таблицы с автогенерируемым идентификатором используется команда `CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, ...);`.
+CorrectAnswerIndex: 0
+
+Question: Как просмотреть структуру таблицы в MySQL?
+Options:
+- `DESCRIBE имя_таблицы;`
+- `SHOW STRUCTURE имя_таблицы;`
+- `SELECT STRUCTURE FROM имя_таблицы;`
+- `SHOW COLUMNS FROM имя_таблицы;`
+Explanation: Для просмотра структуры таблицы используется команда `DESCRIBE имя_таблицы;`.
+CorrectAnswerIndex: 0
+
+Question: Как удалить таблицу в MySQL?
+Options:
+- `DROP TABLE имя_таблицы;`
+- `DELETE TABLE имя_таблицы;`
+- `REMOVE TABLE имя_таблицы;`
+- `DROP DATA_TABLE имя_таблицы;`
+Explanation: Для удаления таблицы используется команда `DROP TABLE имя_таблицы;`. Будьте осторожны, так как команда удаляет таблицу и все её данные.
+CorrectAnswerIndex: 0
+
+Question: Какой тип данных в MySQL используется для строк?
+Options:
+- `VARCHAR(n)`
+- `TEXT`
+- `DATETIME`
+- `INT`
+Explanation: Для хранения строк в MySQL используется тип данных `VARCHAR(n)` или `TEXT` для более длинных строк.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при выполнении команды `DROP TABLE`?
+Options:
+- Таблица и все данные будут удалены.
+- Таблица будет перемещена в корзину.
+- Таблица будет очищена, но структура останется.
+- Таблица будет переименована.
+Explanation: Команда `DROP TABLE` удаляет таблицу и все её данные без восстановления.
+CorrectAnswerIndex: 0

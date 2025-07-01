@@ -1,0 +1,68 @@
+Асинхронность позволяет эффективно использовать ресурсы, не блокируя поток выполнения. В C# для асинхронных операций используется ключевое слово <code>async</code> и <code>await</code>.
+
+<b>1. Ключевое слово async</b>
+
+Метод с ключевым словом <code>async</code> является асинхронным и может содержать оператор <code>await</code>.
+
+<pre><code>public async Task&lt;string&gt; GetDataAsync()
+{
+    await Task.Delay(1000); // Симуляция асинхронной операции
+    return "Данные получены";
+}
+</code></pre>
+
+<b>2. Ключевое слово await</b>
+
+<code>await</code> используется для асинхронного ожидания завершения операции.
+
+<pre><code>public async Task PrintDataAsync()
+{
+    string data = await GetDataAsync();
+    Console.WriteLine(data);
+}
+</code></pre>
+
+<b>3. Асинхронная работа с I/O</b>
+
+Асинхронные методы позволяют эффективно работать с операциями ввода-вывода (например, чтение/запись в файл или запросы к базе данных).
+
+<pre><code>public async Task ReadFileAsync(string fileName)
+{
+    string content = await File.ReadAllTextAsync(fileName);
+    Console.WriteLine(content);
+}
+</code></pre>
+
+<b>4. Работа с несколькими асинхронными операциями</b>
+
+Можно запускать несколько асинхронных операций параллельно с помощью <code>Task.WhenAll</code>.
+
+<pre><code>public async Task GetDataFromMultipleSourcesAsync()
+{
+    Task task1 = GetDataAsync();
+    Task task2 = GetDataAsync();
+    await Task.WhenAll(task1, task2); // Ожидание завершения обеих задач
+}
+</code></pre>
+
+<b>5. Исключения в асинхронных методах</b>
+
+Исключения в асинхронных методах обрабатываются как в обычных методах, но через <code>try-catch</code> блок.
+
+<pre><code>try
+{
+    await GetDataAsync();
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>async</code> делает метод асинхронным.
+- <code>await</code> ожидает завершения асинхронной операции.
+- Асинхронность помогает эффективно работать с операциями ввода-вывода и не блокирует основной поток.
+- Для работы с несколькими асинхронными задачами используйте <code>Task.WhenAll</code>.
+

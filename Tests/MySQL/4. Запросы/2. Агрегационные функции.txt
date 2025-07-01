@@ -1,0 +1,48 @@
+Question: Что делает функция COUNT(*)?
+Options:
+- Считает сумму чисел
+- Возвращает количество столбцов
+- Считает количество строк в таблице
+- Выводит только уникальные значения
+Explanation: COUNT(*) подсчитывает количество строк в таблице, включая строки с NULL.
+CorrectAnswerIndex: 2
+
+Question: Какой результат вернёт запрос?
+Code:
+SELECT SUM(salary) FROM employees;
+Options:
+- Количество сотрудников
+- Сумму зарплат всех сотрудников
+- Среднюю зарплату
+- Минимальную зарплату
+Explanation: SUM() возвращает сумму значений в указанном столбце.
+CorrectAnswerIndex: 1
+
+Question: Какая функция используется для вычисления среднего значения?
+Options:
+- COUNT()
+- AVG()
+- MIN()
+- MAX()
+Explanation: AVG() вычисляет среднее значение по столбцу.
+CorrectAnswerIndex: 1
+
+Question: Что делает следующий запрос?
+Code:
+SELECT department, AVG(salary) FROM employees GROUP BY department;
+Options:
+- Выводит среднюю зарплату всех сотрудников
+- Выводит все отделы и их зарплаты
+- Показывает среднюю зарплату в каждом отделе
+- Сортирует сотрудников по зарплате
+Explanation: Группировка по department с использованием AVG() возвращает среднюю зарплату по каждому отделу.
+CorrectAnswerIndex: 2
+
+Question: Какой запрос покажет наименьшую цену среди товаров?
+Options:
+- SELECT MAX(price) FROM products;
+- SELECT MIN(price) FROM products;
+- SELECT AVG(price) FROM products;
+- SELECT COUNT(price) FROM products;
+Explanation: MIN() возвращает минимальное значение в столбце.
+CorrectAnswerIndex: 1

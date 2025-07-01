@@ -1,0 +1,103 @@
+Question: Что делает метод Join() в LINQ?
+Options:
+- Объединяет две коллекции по общему ключу
+- Удаляет дубликаты из коллекции
+- Группирует элементы по значению
+- Сортирует коллекцию по ключу
+Explanation: Join объединяет две коллекции на основе совпадающих ключей, аналогично SQL JOIN.
+CorrectAnswerIndex: 0
+
+Question: Какой метод используется для имитации Left Join в LINQ?
+Options:
+- Join()
+- ThenBy()
+- GroupJoin() + DefaultIfEmpty()
+- Where() + Select()
+Explanation: Left Join можно реализовать с помощью GroupJoin и DefaultIfEmpty.
+CorrectAnswerIndex: 2
+
+Question: Что произойдёт при выполнении следующего кода?
+Code:
+var people = new[] { new { Id = 1, Name = "Anna" } };
+var orders = new[] { new { OrderId = 10, CustomerId = 2, Product = "Phone" } };
+var result = people.Join(
+    orders,
+    p => p.Id,
+    o => o.CustomerId,
+    (p, o) => new { p.Name, o.Product });
+Options:
+- Ошибка компиляции
+- Вернётся одна пара (Anna, Phone)
+- Вернётся пустая коллекция
+- Произойдёт исключение
+Explanation: Ключи не совпадают (1 ≠ 2), поэтому результат будет пустой.
+CorrectAnswerIndex: 2
+
+Question: Какой метод используется для группировки результатов после Join?
+Options:
+- Where()
+- GroupJoin()
+- Select()
+- GroupBy()
+Explanation: После Join можно применить GroupBy для группировки результатов по какому-либо ключу.
+CorrectAnswerIndex: 3
+
+Question: Что делает метод GroupJoin()?
+Options:
+- Выполняет группировку без соединения
+- Объединяет коллекции и группирует соответствующие элементы
+- Сортирует элементы по группам
+- Фильтрует группы
+Explanation: GroupJoin выполняет объединение коллекций с сохранением структуры групп.
+CorrectAnswerIndex: 1
+
+Question: Какой будет результат, если использовать DefaultIfEmpty() без параметров?
+Options:
+- Вернёт null
+- Вернёт коллекцию с одним элементом по умолчанию
+- Вернёт пустую коллекцию
+- Ошибка компиляции
+Explanation: DefaultIfEmpty() возвращает коллекцию с одним значением по умолчанию, если она пуста.
+CorrectAnswerIndex: 1
+
+Question: Какой метод позволяет объединить три коллекции, как в SQL JOIN?
+Options:
+- Join().Join()
+- Join().Select()
+- Select().Join()
+- Where().Select()
+Explanation: Метод Join можно вызывать цепочкой для объединения более двух коллекций.
+CorrectAnswerIndex: 0
+
+Question: Какой результат будет у следующего запроса?
+Code:
+var result = people.GroupJoin(
+    orders,
+    p => p.Id,
+    o => o.CustomerId,
+    (p, g) => new { p.Name, g });
+Options:
+- Коллекция пар (имя, список заказов)
+- Коллекция заказов
+- Плоский список (имя, заказ)
+- Ошибка компиляции
+Explanation: GroupJoin создаёт пары вида (человек, список заказов).
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт, если в Left Join заказов не будет у клиента?
+Options:
+- Будет исключение
+- Запись не попадёт в результат
+- Продукт будет null или "No Order"
+- Ошибка компиляции
+Explanation: DefaultIfEmpty позволяет включить такие записи в результат с заменой значений на null/по умолчанию.
+CorrectAnswerIndex: 2
+
+Question: Какой из этих методов является эквивалентом SQL INNER JOIN?
+Options:
+- Where()
+- GroupJoin()
+- Join()
+- SelectMany()
+Explanation: Join() в LINQ соответствует SQL INNER JOIN.
+CorrectAnswerIndex: 2

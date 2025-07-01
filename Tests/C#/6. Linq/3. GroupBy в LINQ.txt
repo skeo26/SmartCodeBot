@@ -1,0 +1,102 @@
+Question: Что делает метод GroupBy() в LINQ?
+Options:
+- Объединяет две коллекции
+- Преобразует каждый элемент в новый тип
+- Группирует элементы по ключу
+- Фильтрует коллекцию по условию
+Explanation: GroupBy группирует элементы коллекции по значению ключа.
+CorrectAnswerIndex: 2
+
+Question: Какой будет результат следующего кода?
+Code:
+var people = new[] {
+    new Person { Name = "Ann", Age = 20 },
+    new Person { Name = "Bob", Age = 20 },
+    new Person { Name = "Cleo", Age = 25 }
+};
+var groups = people.GroupBy(p => p.Age);
+Options:
+- Одна группа: все люди
+- Две группы: по возрасту 20 и 25
+- Три группы: по каждому человеку
+- Ошибка компиляции
+Explanation: Две группы — одна с Age = 20 (Ann, Bob), другая с Age = 25 (Cleo).
+CorrectAnswerIndex: 1
+
+Question: Что представляет собой свойство Key у группы?
+Options:
+- Имя первого элемента
+- Количество элементов
+- Значение, по которому была выполнена группировка
+- Тип элементов в группе
+Explanation: Свойство Key — это значение, по которому сгруппированы элементы.
+CorrectAnswerIndex: 2
+
+Question: Что делает следующий код?
+Code:
+var grouped = people
+    .GroupBy(p => p.Age)
+    .Select(g => new { g.Key, Count = g.Count() });
+Options:
+- Возвращает всех людей
+- Группирует людей и считает количество в каждой группе
+- Сортирует людей по возрасту
+- Создаёт новую коллекцию без дубликатов
+Explanation: Код группирует людей по возрасту и считает количество в каждой группе.
+CorrectAnswerIndex: 1
+
+Question: Можно ли использовать анонимный тип в качестве ключа в GroupBy?
+Options:
+- Да
+- Нет
+- Только с числовыми значениями
+- Только если он содержит один элемент
+Explanation: В LINQ можно группировать по анонимному типу, если все его поля участвуют в сравнении.
+CorrectAnswerIndex: 0
+
+Question: Что будет результатом следующего запроса?
+Code:
+people.Where(p => p.Age > 25).GroupBy(p => p.Age);
+Options:
+- Все люди сгруппированы по возрасту
+- Только люди с Age > 25 сгруппированы по возрасту
+- Ошибка, нельзя фильтровать до группировки
+- Вернёт пустую коллекцию
+Explanation: Сначала фильтрация, затем группировка по возрасту.
+CorrectAnswerIndex: 1
+
+Question: Что вернёт group.Count() после группировки?
+Options:
+- Общее количество всех элементов
+- Количество групп
+- Количество элементов в текущей группе
+- Ничего
+Explanation: group.Count() возвращает количество элементов в данной группе.
+CorrectAnswerIndex: 2
+
+Question: Какой тип возвращает GroupBy()?
+Options:
+- IEnumerable<T>
+- IEnumerable<IGrouping<TKey, TElement>>
+- List<T>
+- Dictionary<TKey, TElement>
+Explanation: Метод GroupBy возвращает коллекцию групп, каждая из которых реализует IGrouping.
+CorrectAnswerIndex: 1
+
+Question: Можно ли использовать агрегатные функции после GroupBy()?
+Options:
+- Да
+- Нет
+- Только Count()
+- Только с числовыми коллекциями
+Explanation: Можно использовать любые агрегатные функции: Count, Sum, Average и т.д.
+CorrectAnswerIndex: 0
+
+Question: Как сгруппировать по двум признакам (например, Age и первая буква имени)?
+Options:
+- GroupBy(p => p.Age + p.Name[0])
+- GroupBy(p => new { p.Age, FirstLetter = p.Name[0] })
+- GroupBy(p => $"{p.Age}-{p.Name}")
+- GroupBy(p => Tuple.Create(p.Age, p.Name))
+Explanation: Для группировки по нескольким признакам используется анонимный тип.
+CorrectAnswerIndex: 1

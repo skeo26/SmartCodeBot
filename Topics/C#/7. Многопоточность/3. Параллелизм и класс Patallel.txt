@@ -1,0 +1,69 @@
+Параллелизм позволяет эффективно использовать многозадачность для улучшения производительности. В C# класс <code>Parallel</code> упрощает выполнение параллельных задач.
+
+<b>1. Parallel.For</b>
+
+<code>Parallel.For</code> позволяет выполнить итерации цикла параллельно.
+
+<pre><code>Parallel.For(0, 10, i =&gt; 
+{
+    Console.WriteLine($"Итерация {i} в потоке {Thread.CurrentThread.ManagedThreadId}");
+});
+</code></pre>
+
+<b>2. Parallel.ForEach</b>
+
+<code>Parallel.ForEach</code> выполняет параллельные итерации для коллекций.
+
+<pre><code>var numbers = new int[] { 1, 2, 3, 4, 5 };
+Parallel.ForEach(numbers, number =&gt;
+{
+    Console.WriteLine($"Число {number} в потоке {Thread.CurrentThread.ManagedThreadId}");
+});
+</code></pre>
+
+<b>3. Parallel.Invoke</b>
+
+<code>Parallel.Invoke</code> позволяет параллельно выполнить несколько методов.
+
+<pre><code>Parallel.Invoke(
+    () =&gt; Console.WriteLine("Метод 1"),
+    () =&gt; Console.WriteLine("Метод 2")
+);
+</code></pre>
+
+<b>4. Условие остановки</b>
+
+Методы <code>Parallel</code> позволяют задавать условия для остановки выполнения параллельных операций.
+
+<pre><code>Parallel.For(0, 10, (i, state) =&gt;
+{
+    if (i == 5) state.Stop();
+    Console.WriteLine(i);
+});
+</code></pre>
+
+<b>5. Исключения</b>
+
+Исключения в параллельных задачах можно обрабатывать с помощью <code>AggregateException</code>.
+
+<pre><code>try
+{
+    Parallel.For(0, 10, i =&gt; 
+    {
+        if (i == 5) throw new Exception("Ошибка!");
+    });
+}
+catch (AggregateException ex)
+{
+    foreach (var inner in ex.InnerExceptions)
+        Console.WriteLine(inner.Message);
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>Parallel.For</code> и <code>Parallel.ForEach</code> — для параллельного выполнения циклов.
+- <code>Parallel.Invoke</code> — для параллельного выполнения методов.
+- Можно контролировать остановку задач с помощью <code>state.Stop()</code>.
+- Исключения обрабатываются через <code>AggregateException</code>.
+

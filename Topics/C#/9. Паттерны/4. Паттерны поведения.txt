@@ -1,0 +1,141 @@
+Паттерны поведения определяют взаимодействие объектов и отвечают за алгоритмы и ответственность объектов, делая взаимодействие между ними гибким и эффективным.
+
+<b>1. Стратегия (Strategy)</b>
+
+Позволяет выбирать алгоритм выполнения задачи в зависимости от контекста.
+
+<pre><code>public interface IStrategy
+{
+    void Execute();
+}
+
+public class ConcreteStrategyA : IStrategy
+{
+    public void Execute() { Console.WriteLine("Strategy A executed"); }
+}
+
+public class Context
+{
+    private IStrategy _strategy;
+    public Context(IStrategy strategy) { _strategy = strategy; }
+    public void SetStrategy(IStrategy strategy) { _strategy = strategy; }
+    public void ExecuteStrategy() { _strategy.Execute(); }
+}
+</code></pre>
+
+<b>2. Команда (Command)</b>
+
+Инкапсулирует запрос как объект, позволяя параметризовать объекты с запросами и поддерживать отмену операций.
+
+<pre><code>public interface ICommand
+{
+    void Execute();
+}
+
+public class ConcreteCommand : ICommand
+{
+    private Receiver _receiver;
+    public ConcreteCommand(Receiver receiver) { _receiver = receiver; }
+    public void Execute() { _receiver.Action(); }
+}
+
+public class Receiver
+{
+    public void Action() { Console.WriteLine("Action executed"); }
+}
+
+public class Invoker
+{
+    private ICommand _command;
+    public void SetCommand(ICommand command) { _command = command; }
+    public void Invoke() { _command.Execute(); }
+}
+</code></pre>
+
+<b>3. Наблюдатель (Observer)</b>
+
+Позволяет объектам уведомлять других объектов об изменениях без жесткой связи.
+
+<pre><code>public interface IObserver
+{
+    void Update(string message);
+}
+
+public interface ISubject
+{
+    void Attach(IObserver observer);
+    void Detach(IObserver observer);
+    void Notify();
+}
+
+public class ConcreteSubject : ISubject
+{
+    private List&lt;IObserver&gt; _observers = new List&lt;IObserver&gt;();
+    private string _state;
+
+    public void Attach(IObserver observer) { _observers.Add(observer); }
+    public void Detach(IObserver observer) { _observers.Remove(observer); }
+    public void Notify()
+    {
+        foreach (var observer in _observers)
+            observer.Update(_state);
+    }
+
+    public string State
+    {
+        get { return _state; }
+        set
+        {
+            _state = value;
+            Notify();
+        }
+    }
+}
+
+public class ConcreteObserver : IObserver
+{
+    private string _name;
+    private ISubject _subject;
+
+    public ConcreteObserver(string name, ISubject subject)
+    {
+        _name = name;
+        _subject = subject;
+        _subject.Attach(this);
+    }
+
+    public void Update(string message) { Console.WriteLine($"{_name} received: {message}"); }
+}
+</code></pre>
+
+<b>4. Состояние (State)</b>
+
+Изменяет поведение объекта в зависимости от его состояния, позволяя избежать длинных условных конструкций.
+
+<pre><code>public interface IState
+{
+    void Handle();
+}
+
+public class ConcreteStateA : IState
+{
+    public void Handle() { Console.WriteLine("Handling State A"); }
+}
+
+public class ConcreteStateB : IState
+{
+    public void Handle() { Console.WriteLine("Handling State B"); }
+}
+
+public class Context
+{
+    private IState _state;
+    public Context(IState state) { _state = state; }
+    public void SetState(IState state) { _state = state; }
+    public void Request() { _state.Handle(); }
+}
+</code></pre>
+
+<b>5. Когда использовать паттерны поведения?</b>
+
+Паттерны поведения полезны, когда требуется гибко управлять поведением объектов и их взаимодействием, минимизируя жесткие связи между ними.

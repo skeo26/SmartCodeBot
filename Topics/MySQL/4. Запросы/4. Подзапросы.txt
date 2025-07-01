@@ -1,0 +1,54 @@
+<b>Подзапрос</b> — это SQL-запрос, вложенный внутрь другого SQL-запроса. Он выполняется отдельно и передаёт результат основному запросу.
+
+<b>Подзапрос может находиться:</b>
+- В <code>WHERE</code> (чаще всего)
+- В <code>FROM</code> (в виде временной таблицы)
+- В <code>SELECT</code> (в виде вычисляемого значения)
+
+<b>Пример 1. Найти сотрудников с зарплатой выше средней:</b>
+<code>
+SELECT name, salary
+FROM employees
+WHERE salary &gt; (
+  SELECT AVG(salary)
+  FROM employees
+);
+</code>
+
+<b>Пример 2. Использование в FROM (временная таблица):</b>
+<code>
+SELECT department, avg_salary
+FROM (
+  SELECT department, AVG(salary) AS avg_salary
+  FROM employees
+  GROUP BY department
+) AS dept_avg
+WHERE avg_salary &gt; 50000;
+</code>
+
+<b>Пример 3. Подзапрос в SELECT:</b>
+<code>
+SELECT name,
+  (SELECT MAX(salary) FROM employees) AS max_salary
+FROM employees;
+</code>
+
+<b>Особенности:</b>
+- Подзапрос может возвращать одно значение (скалярный), одно поле (столбец), или целую таблицу.
+- В подзапросах можно использовать <code>IN</code>, <code>EXISTS</code>, <code>ANY</code>, <code>ALL</code>.
+
+<b>Пример 4. Использование IN с подзапросом:</b>
+<code>
+SELECT name
+FROM employees
+WHERE department_id IN (
+  SELECT id
+  FROM departments
+  WHERE location = 'Москва'
+);
+</code>
+
+<b>Важно:</b>
+- Старайтесь не злоупотреблять подзапросами в больших выборках — они могут замедлить выполнение.
+- Во многих случаях подзапрос можно заменить на <code>JOIN</code>.
+

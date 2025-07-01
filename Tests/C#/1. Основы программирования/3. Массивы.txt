@@ -1,0 +1,89 @@
+Question: Как объявить массив целых чисел на 5 элементов?
+Options:
+- int[] numbers = new int[5];
+- int numbers = new int[5];
+- int[5] numbers;
+- array<int> numbers = new array(5);
+Explanation: Массив объявляется с помощью квадратных скобок после типа: int[] numbers = new int[5];
+CorrectAnswerIndex: 0
+
+Question: Как получить длину массива в C#?
+Options:
+- array.Length
+- array.length()
+- array.GetSize()
+- array.Count
+Explanation: Свойство Length возвращает количество элементов массива.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при обращении к элементу за пределами массива?
+Options:
+- Будет выброшено исключение IndexOutOfRangeException
+- Программа завершится успешно
+- Произойдёт переполнение
+- Будет возвращён null
+Explanation: Обращение к несуществующему элементу массива вызывает исключение IndexOutOfRangeException.
+CorrectAnswerIndex: 0
+
+Question: Какой индекс у первого элемента массива?
+Options:
+- 0
+- 1
+- -1
+- Зависит от типа данных
+Explanation: В C# нумерация элементов массива начинается с 0.
+CorrectAnswerIndex: 0
+
+Question: Что выведет следующий код: <code>int[] arr = {1, 2, 3}; Console.Write(arr[1]);</code>?
+Options:
+- 1
+- 2
+- 3
+- Ошибка
+Explanation: Индексация начинается с нуля, поэтому arr[1] — это второй элемент массива, равный 2.
+CorrectAnswerIndex: 1
+
+Question: Как можно изменить значение второго элемента массива?
+Options:
+- arr[1] = 10;
+- arr[2] = 10;
+- arr[0] = 10;
+- arr(1) = 10;
+Explanation: Чтобы изменить второй элемент, используем индекс 1: arr[1] = 10;
+CorrectAnswerIndex: 0
+
+Question: Что делает метод Array.Reverse()?
+Options:
+- Изменяет порядок элементов на обратный
+- Сортирует элементы по возрастанию
+- Очищает массив
+- Создаёт копию массива
+Explanation: Метод Reverse переворачивает массив.
+CorrectAnswerIndex: 0
+
+Question: Как скопировать массив в другой массив того же размера?
+Options:
+- Array.Copy(source, target, length);
+- source = target;
+- source.Clone(target);
+- target = source.Clone(length);
+Explanation: Array.Copy позволяет скопировать один массив в другой, указав количество копируемых элементов.
+CorrectAnswerIndex: 0
+
+Question: Массив какого типа может содержать значения true и false?
+Options:
+- bool[]
+- int[]
+- string[]
+- char[]
+Explanation: Логические значения хранятся в массиве типа bool[].
+CorrectAnswerIndex: 0
+
+Question: Какой результат выполнения: <code>int[] arr = new int[3]; Console.Write(arr[0]);</code>?
+Options:
+- 0
+- 1
+- null
+- Ошибка
+Explanation: Элементы массива int по умолчанию инициализируются значением 0.
+CorrectAnswerIndex: 0

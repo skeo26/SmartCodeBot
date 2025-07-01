@@ -1,0 +1,108 @@
+<b>OrderBy</b> и <b>OrderByDescending</b> — это методы в LINQ, которые используются для сортировки данных в коллекции. <code>OrderBy</code> сортирует данные по возрастанию, а <code>OrderByDescending</code> — по убыванию.
+
+<b>1. Пример сортировки по возрастанию (OrderBy):</b>
+
+Предположим, у нас есть коллекция объектов, и мы хотим отсортировать её по возрасту.
+
+<pre><code>var people = new List&lt;Person&gt;()
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 35 }
+};
+
+var sortedByAge = people.OrderBy(p =&gt; p.Age);
+
+foreach (var person in sortedByAge)
+{
+    Console.WriteLine($"{person.Name}: {person.Age}");
+}
+// Результат:
+// Alice: 25
+// Bob: 30
+// Charlie: 35
+</code></pre>
+
+<b>2. Пример сортировки по убыванию (OrderByDescending):</b>
+
+Если мы хотим отсортировать коллекцию по возрасту по убыванию, используем <code>OrderByDescending</code>.
+
+<pre><code>var sortedByAgeDesc = people.OrderByDescending(p =&gt; p.Age);
+
+foreach (var person in sortedByAgeDesc)
+{
+    Console.WriteLine($"{person.Name}: {person.Age}");
+}
+// Результат:
+// Charlie: 35
+// Bob: 30
+// Alice: 25
+</code></pre>
+
+<b>3. Сортировка по нескольким критериям:</b>
+
+Можно выполнить сортировку по нескольким полям, используя метод <code>ThenBy</code> для сортировки по вторичному критерию.
+
+<pre><code>var peopleSortedByAgeAndName = people
+    .OrderBy(p =&gt; p.Age)
+    .ThenBy(p =&gt; p.Name);
+
+foreach (var person in peopleSortedByAgeAndName)
+{
+    Console.WriteLine($"{person.Name}: {person.Age}");
+}
+// Результат:
+// Alice: 25
+// Bob: 30
+// Charlie: 35
+</code></pre>
+
+<b>4. Пример сортировки строк по длине:</b>
+
+Можно сортировать не только по числовым значениям, но и по длине строк.
+
+<pre><code>var words = new List&lt;string&gt;() { "apple", "banana", "kiwi", "grape" };
+
+var sortedByLength = words.OrderBy(w =&gt; w.Length);
+
+foreach (var word in sortedByLength)
+{
+    Console.WriteLine(word);
+}
+// Результат:
+// kiwi
+// apple
+// grape
+// banana
+</code></pre>
+
+<b>5. Сортировка с использованием анонимного типа:</b>
+
+Можно сортировать данные по нескольким критериям, создавая анонимные типы для упрощения запросов.
+
+<pre><code>var sorted = people
+    .OrderBy(p =&gt; new { p.Age, p.Name });
+
+foreach (var person in sorted)
+{
+    Console.WriteLine($"{person.Name}: {person.Age}");
+}
+// Результат:
+// Alice: 25
+// Bob: 30
+// Charlie: 35
+</code></pre>
+
+<b>Основные методы:</b>
+
+- <code>OrderBy()</code> — сортировка по возрастанию.
+- <code>OrderByDescending()</code> — сортировка по убыванию.
+- <code>ThenBy()</code> — сортировка по вторичному критерию после использования <code>OrderBy()</code>.
+- <code>ThenByDescending()</code> — сортировка по вторичному критерию по убыванию.
+
+<b>Когда использовать:</b>
+
+- Когда необходимо упорядочить коллекцию данных.
+- Для улучшения производительности при работе с большими объемами данных (например, в базах данных).
+- Для подготовки отчетов, которые требуют сортировки данных по определенным критериям.
+

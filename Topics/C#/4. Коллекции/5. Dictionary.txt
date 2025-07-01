@@ -1,0 +1,75 @@
+<b>Что такое Dictionary?</b>
+
+<code>Dictionary&lt;TKey, TValue&gt;</code> — это коллекция, которая хранит пары "ключ–значение", где каждый ключ уникален. Используется для быстрого поиска данных по ключу.
+
+<b>Где используется Dictionary?</b>
+
+Dictionary часто применяется:
+- для отображения соответствий (например, ID → имя);
+- при реализации кэширования;
+- для группировки и подсчета.
+
+<b>Dictionary реализован в пространстве имён:</b>
+<code>System.Collections.Generic</code>
+
+<b>Основные методы и свойства:</b>
+
+1. <code>Add(TKey key, TValue value)</code> — добавляет пару ключ–значение.
+2. <code>Remove(TKey key)</code> — удаляет элемент по ключу.
+3. <code>ContainsKey(TKey key)</code> — проверяет наличие ключа.
+4. <code>ContainsValue(TValue value)</code> — проверяет наличие значения.
+5. <code>TryGetValue(TKey key, out TValue value)</code> — безопасно получает значение по ключу.
+6. <code>Clear()</code> — очищает словарь.
+7. <code>Count</code> — количество элементов.
+8. <code>Keys</code> и <code>Values</code> — коллекции ключей и значений.
+
+<b>Пример создания и работы:</b>
+
+<pre><code>Dictionary&lt;int, string&gt; users = new Dictionary&lt;int, string&gt;();
+users.Add(1, "Alice");
+users.Add(2, "Bob");
+users.Add(3, "Charlie");
+
+Console.WriteLine(users[2]); // Bob
+</code></pre>
+
+<b>Итерирование по Dictionary:</b>
+
+<pre><code>foreach (KeyValuePair&lt;int, string&gt; pair in users)
+{
+    Console.WriteLine($"ID: {pair.Key}, Name: {pair.Value}");
+}
+</code></pre>
+
+<b>Безопасное получение значения:</b>
+
+<pre><code>if (users.TryGetValue(4, out string name))
+{
+    Console.WriteLine(name);
+}
+else
+{
+    Console.WriteLine("Пользователь не найден");
+}
+</code></pre>
+
+<b>Удаление элемента:</b>
+
+<pre><code>users.Remove(2); // Удаляет пару с ключом 2
+</code></pre>
+
+<b>Проверка наличия ключа или значения:</b>
+
+<pre><code>bool hasKey = users.ContainsKey(1); // true
+bool hasValue = users.ContainsValue("Alice"); // true
+</code></pre>
+
+<b>Очистка словаря:</b>
+
+<pre><code>users.Clear();
+Console.WriteLine(users.Count); // 0
+</code></pre>
+
+<b>Итог:</b>
+
+<code>Dictionary</code> — это мощный и эффективный инструмент для работы с ассоциативными данными. Он обеспечивает быстрый доступ по ключу, что делает его незаменимым при поиске и сопоставлении информации.

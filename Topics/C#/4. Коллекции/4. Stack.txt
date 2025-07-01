@@ -1,0 +1,72 @@
+<b>Что такое Stack?</b>
+
+<code>Stack</code> — это коллекция, реализующая принцип "последним пришел — первым обслужен" (LIFO, Last In — First Out). Это означает, что элементы добавляются и извлекаются с одного конца — вершины стека.
+
+<b>Где используется Stack?</b>
+
+Стек полезен в следующих ситуациях:
+- отмена действий (undo);
+- рекурсивные алгоритмы;
+- парсинг выражений;
+- обработка вызовов функций.
+
+<b>Stack реализован в пространстве имён:</b>
+<code>System.Collections.Generic</code> как <code>Stack&lt;T&gt;</code>, где <code>T</code> — тип элементов.
+
+<b>Основные методы Stack:</b>
+
+1. <code>Push(T item)</code> — добавляет элемент в стек (на вершину).
+2. <code>Pop()</code> — удаляет и возвращает верхний элемент стека.
+3. <code>Peek()</code> — возвращает верхний элемент, не удаляя его.
+4. <code>Clear()</code> — очищает стек.
+5. <code>Contains(T item)</code> — проверяет наличие элемента.
+6. <code>Count</code> — возвращает количество элементов.
+7. <code>ToArray()</code> — копирует стек в массив.
+
+<b>Пример использования:</b>
+
+<pre><code>Stack&lt;string&gt; stack = new Stack&lt;string&gt;();
+stack.Push("Page1");
+stack.Push("Page2");
+stack.Push("Page3");
+
+Console.WriteLine(stack.Pop());  // Page3
+Console.WriteLine(stack.Peek()); // Page2
+</code></pre>
+
+<b>Итерация по стеку:</b>
+
+<pre><code>foreach (string page in stack)
+{
+    Console.WriteLine(page);
+}
+// Вывод:
+// Page2
+// Page1
+</code></pre>
+
+<b>Проверка наличия элемента:</b>
+
+<pre><code>bool hasPage1 = stack.Contains("Page1"); // true
+bool hasPage4 = stack.Contains("Page4"); // false
+</code></pre>
+
+<b>Очистка стека:</b>
+
+<pre><code>stack.Clear();
+Console.WriteLine(stack.Count); // 0
+</code></pre>
+
+<b>Преобразование в массив:</b>
+
+<pre><code>Stack&lt;int&gt; numbers = new Stack&lt;int&gt;();
+numbers.Push(10);
+numbers.Push(20);
+numbers.Push(30);
+
+int[] arr = numbers.ToArray();
+</code></pre>
+
+<b>Итог:</b>
+
+<code>Stack</code> — это удобная коллекция для задач, где важен обратный порядок обработки данных. Благодаря простому интерфейсу и высокой производительности, он часто используется при реализации алгоритмов и логики взаимодействия пользователя.

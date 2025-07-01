@@ -1,0 +1,78 @@
+<b>Что такое строка?</b>
+
+В C# строка (тип <code>string</code>) — это последовательность символов Unicode. Строки являются ссылочным типом и неизменяемы, то есть при любом изменении создаётся новая строка.
+
+<b>Создание строк:</b>
+
+<pre><code>string greeting = "Hello, world!";
+string empty = string.Empty;
+string fromChars = new string(new char[] { 'H', 'i' });</code></pre>
+
+<b>Основные операции со строками:</b>
+
+1. <b>Сложение (конкатенация):</b>
+
+<pre><code>string fullName = "John" + " " + "Doe";</code></pre>
+
+2. <b>Интерполяция строк:</b>
+
+<pre><code>string name = "Alice";
+string message = $"Hello, {name}!";</code></pre>
+
+3. <b>Форматирование строк:</b>
+
+<pre><code>string formatted = string.Format("Today is {0:dd.MM.yyyy}", DateTime.Now);</code></pre>
+
+4. <b>Извлечение подстроки:</b>
+
+<pre><code>string text = "Programming";
+string part = text.Substring(0, 6); // "Progra"</code></pre>
+
+5. <b>Проверка содержимого:</b>
+
+<pre><code>text.Contains("gram"); // true
+text.StartsWith("Pro"); // true
+text.EndsWith("ing"); // true</code></pre>
+
+6. <b>Изменение регистра:</b>
+
+<pre><code>string upper = text.ToUpper(); // "PROGRAMMING"
+string lower = text.ToLower(); // "programming"</code></pre>
+
+7. <b>Удаление пробелов:</b>
+
+<pre><code>string input = "  hello  ";
+string trimmed = input.Trim(); // "hello"</code></pre>
+
+8. <b>Разделение и объединение строк:</b>
+
+<pre><code>string csv = "apple,banana,orange";
+string[] fruits = csv.Split(',');
+string joined = string.Join(" | ", fruits);</code></pre>
+
+<b>Экранирование символов:</b>
+
+<pre><code>string quote = "He said: \"Hello!\"";</code></pre>
+
+<b>Сравнение строк:</b>
+
+<pre><code>string a = "Test";
+string b = "test";
+
+bool equal = a.Equals(b, StringComparison.OrdinalIgnoreCase); // true</code></pre>
+
+<b>Пример использования:</b>
+
+<pre><code>string firstName = "John";
+string lastName = "Smith";
+
+string info = $"User: {firstName} {lastName}".ToUpper();
+
+Console.WriteLine(info); // "USER: JOHN SMITH"</code></pre>
+
+<b>Вывод:</b>
+
+- Строки в C# — это неизменяемые объекты.
+- Существует множество встроенных методов для работы со строками: <code>Substring</code>, <code>Split</code>, <code>Join</code>, <code>Replace</code>, <code>Contains</code>, <code>Trim</code> и др.
+- Интерполяция и форматирование строк позволяют легко создавать читаемые сообщения.
+- Сравнение строк можно выполнять с учётом или без учёта регистра.

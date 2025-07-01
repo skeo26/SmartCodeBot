@@ -1,0 +1,89 @@
+Question: Какая функция в MySQL используется для объединения нескольких строк в одну?
+Options:
+- CONCAT()
+- LENGTH()
+- SUBSTRING()
+- TRIM()
+Explanation: Функция CONCAT() используется для объединения нескольких строк в одну.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает количество символов в строке (игнорирует байтовое представление)?
+Options:
+- LENGTH()
+- CHAR_LENGTH()
+- UPPER()
+- REPLACE()
+Explanation: Функция CHAR_LENGTH() возвращает количество символов в строке.
+CorrectAnswerIndex: 1
+
+Question: Какая функция используется для извлечения подстроки из строки?
+Options:
+- SUBSTRING()
+- CONCAT()
+- TRIM()
+- REPLACE()
+Explanation: Функция SUBSTRING() используется для извлечения подстроки из строки.
+CorrectAnswerIndex: 0
+
+Question: Какая функция в MySQL удаляет пробелы с обеих сторон строки?
+Options:
+- REPLACE()
+- TRIM()
+- LOWER()
+- INSTR()
+Explanation: Функция TRIM() удаляет пробелы с обеих сторон строки.
+CorrectAnswerIndex: 1
+
+Question: Какая функция преобразует строку в нижний регистр?
+Options:
+- UPPER()
+- LOWER()
+- REPLACE()
+- LEFT()
+Explanation: Функция LOWER() преобразует строку в нижний регистр.
+CorrectAnswerIndex: 1
+
+Question: Какую функцию нужно использовать, чтобы заменить все вхождения подстроки в строке?
+Options:
+- REPLACE()
+- CONCAT_WS()
+- TRIM()
+- CHAR_LENGTH()
+Explanation: Функция REPLACE() заменяет все вхождения подстроки в строке.
+CorrectAnswerIndex: 0
+
+Question: Какая функция объединяет строки, разделяя их указанным разделителем?
+Options:
+- CONCAT_WS()
+- INSTR()
+- REPLACE()
+- LEFT()
+Explanation: Функция CONCAT_WS() объединяет строки, разделяя их указанным разделителем.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает позицию первого вхождения подстроки в строке?
+Options:
+- INSTR()
+- FIELD()
+- LEFT()
+- RIGHT()
+Explanation: Функция INSTR() возвращает позицию первого вхождения подстроки в строке.
+CorrectAnswerIndex: 0
+
+Question: Какая функция используется для получения левой части строки, указанной длины?
+Options:
+- LEFT()
+- RIGHT()
+- LENGTH()
+- TRIM()
+Explanation: Функция LEFT() возвращает указанное количество символов с левой стороны строки.
+CorrectAnswerIndex: 0
+
+Question: Какая функция переворачивает строку в MySQL?
+Options:
+- REVERSE()
+- LEFT()
+- TRIM()
+- SOUNDEX()
+Explanation: Функция REVERSE() переворачивает строку.
+CorrectAnswerIndex: 0

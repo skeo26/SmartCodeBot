@@ -1,0 +1,111 @@
+Question: Что делает свойство Length у строки?
+Options:
+- Возвращает количество слов в строке
+- Возвращает длину строки (количество символов)
+- Возвращает количество подстрок в строке
+- Проверяет, пуста ли строка
+Explanation: Свойство Length возвращает количество символов в строке.
+CorrectAnswerIndex: 1
+
+Question: Какой метод используется для преобразования строки в верхний регистр?
+Options:
+- ToUpper()
+- ToUpperCase()
+- Upper()
+- MakeUpper()
+Explanation: Метод ToUpper() преобразует все символы строки в верхний регистр.
+CorrectAnswerIndex: 0
+
+Question: Что делает метод Contains()?
+Options:
+- Разделяет строку на части
+- Проверяет, содержит ли строка заданную подстроку
+- Заменяет символы в строке
+- Возвращает длину строки
+Explanation: Contains() проверяет, есть ли заданная подстрока в строке.
+CorrectAnswerIndex: 1
+
+Question: Что вернёт метод IndexOf("world") при вызове на строке "Hello, world!"?
+Options:
+- 0
+- 7
+- -1
+- 6
+Explanation: Метод IndexOf возвращает индекс начала первого вхождения подстроки. В "Hello, world!" слово "world" начинается с позиции 7.
+CorrectAnswerIndex: 1
+
+Question: Какой метод используется для извлечения части строки?
+Options:
+- Substring()
+- Extract()
+- GetPart()
+- Slice()
+Explanation: Substring() используется для извлечения подстроки из строки.
+CorrectAnswerIndex: 0
+
+Question: Что делает метод Replace()?
+Options:
+- Очищает строку
+- Удаляет символы
+- Заменяет все вхождения одной подстроки на другую
+- Возвращает индекс символа
+Explanation: Replace() заменяет все вхождения указанной подстроки на другую.
+CorrectAnswerIndex: 2
+
+Question: Какой метод удаляет пробелы в начале и в конце строки?
+Options:
+- Trim()
+- Cut()
+- Clear()
+- Strip()
+Explanation: Trim() удаляет пробелы с начала и конца строки.
+CorrectAnswerIndex: 0
+
+Question: Какой метод используется для разбиения строки по разделителю?
+Options:
+- Split()
+- Join()
+- Break()
+- Divide()
+Explanation: Split() разделяет строку на части по заданному символу.
+CorrectAnswerIndex: 0
+
+Question: Как объединить элементы массива строк в одну строку?
+Options:
+- string.Join()
+- string.Concat()
+- string.Merge()
+- string.Combine()
+Explanation: Метод Join объединяет элементы массива строк в одну строку с указанным разделителем.
+CorrectAnswerIndex: 0
+
+Question: Что делает метод StartsWith()?
+Options:
+- Проверяет, содержит ли строка подстроку
+- Проверяет, начинается ли строка с заданной подстроки
+- Удаляет первую букву строки
+- Возвращает индекс начала строки
+Explanation: Метод StartsWith проверяет, начинается ли строка с указанной подстроки.
+CorrectAnswerIndex: 1
+
+Question: Что вернёт string.IsNullOrWhiteSpace("   ")?
+Options:
+- false
+- true
+- null
+- Ошибка компиляции
+Explanation: Метод IsNullOrWhiteSpace возвращает true, если строка пуста или содержит только пробелы.
+CorrectAnswerIndex: 1
+
+Question: Что напечатает следующий код?
+Code:
+string input = "  Hello, C# World!  ";
+string result = input.Trim().Replace("C#", ".NET").ToUpper();
+Console.WriteLine(result);
+Options:
+- HELLO, C# WORLD!
+- HELLO,.NETWORLD!
+- HELLO, .NET WORLD!
+- hello, .net world!
+Explanation: Trim убирает пробелы, Replace меняет "C#" на ".NET", ToUpper делает всё заглавными.
+CorrectAnswerIndex: 2

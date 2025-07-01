@@ -1,0 +1,45 @@
+Оператор <code>WHERE</code> используется для фильтрации строк при выполнении SQL-запросов. Он позволяет выбирать только те записи, которые удовлетворяют определённому условию.
+
+<b>Синтаксис:</b>
+<code>
+SELECT столбцы FROM таблица WHERE условие;
+</code>
+
+<b>Пример:</b>
+<code>
+SELECT * FROM users WHERE age &gt; 18;
+</code>
+Этот запрос выберет всех пользователей старше 18 лет.
+
+<b>Операторы сравнения:</b>
+- <code>=</code> — равно
+- <code>&gt;</code>, <code>&lt;</code> — больше, меньше
+- <code>&gt;=</code>, <code>&lt;=</code> — больше или равно, меньше или равно
+- <code>!=</code> или <code>&lt;&gt;</code> — не равно
+
+<b>Логические операторы:</b>
+- <code>AND</code> — логическое И
+- <code>OR</code> — логическое ИЛИ
+- <code>NOT</code> — отрицание
+
+<b>Пример:</b>
+<code>
+SELECT name FROM users WHERE age &gt;= 18 AND city = 'Moscow';
+</code>
+Выводит имена пользователей старше 18 лет, которые живут в Москве.
+
+<b>Оператор BETWEEN:</b>
+<code>
+SELECT * FROM products WHERE price BETWEEN 100 AND 500;
+</code>
+
+<b>Оператор IN:</b>
+<code>
+SELECT * FROM employees WHERE department IN ('HR', 'IT', 'Finance');
+</code>
+
+<b>Оператор LIKE (поиск по шаблону):</b>
+<code>
+SELECT * FROM users WHERE name LIKE 'A%';
+</code>
+Выберет всех пользователей, чьё имя начинается на букву A.

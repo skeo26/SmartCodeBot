@@ -1,0 +1,93 @@
+Question: Для чего используется конструкция try-catch-finally в C#?
+Options:
+- Для выполнения циклов
+- Для обработки ошибок во время выполнения программы
+- Для объявления переменных
+- Для создания объектов
+Explanation: Конструкция try-catch-finally используется для обработки исключений, возникающих во время выполнения.
+CorrectAnswerIndex: 1
+
+Question: Какой блок выполняется всегда, независимо от того, возникло ли исключение?
+Options:
+- try
+- catch
+- throw
+- finally
+Explanation: Блок finally выполняется всегда — при наличии или отсутствии исключения.
+CorrectAnswerIndex: 3
+
+Question: Что произойдёт при выполнении этого кода?
+Code:
+try
+{
+    int x = 5 / 0;
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("Деление на ноль!");
+}
+finally
+{
+    Console.WriteLine("Готово!");
+}
+Options:
+- Деление на ноль!
+- Деление на ноль!\nГотово!
+- Только Готово!
+- Программа завершится с ошибкой
+Explanation: Сначала сработает catch-блок, затем finally — выведется два сообщения.
+CorrectAnswerIndex: 1
+
+Question: Что произойдёт, если в блоке try не возникнет исключений?
+Options:
+- Будет выполнен только блок try
+- Будет выполнен try и finally
+- Будет выполнен try и catch
+- Будет выполнен только catch
+Explanation: Если ошибок нет, catch не выполняется, а finally всегда выполняется.
+CorrectAnswerIndex: 1
+
+Question: Что произойдёт, если не указать блок catch, но использовать finally?
+Code:
+try
+{
+    Console.WriteLine("Программа работает");
+}
+finally
+{
+    Console.WriteLine("Завершение работы");
+}
+Options:
+- Ошибка компиляции
+- Будет выполнен только finally
+- Будут выполнены оба блока
+- Блок finally не будет вызван
+Explanation: catch не обязателен, можно использовать только try и finally.
+CorrectAnswerIndex: 2
+
+Question: Какой тип исключения нужно указать, чтобы поймать *любое* исключение?
+Options:
+- Exception
+- Error
+- SystemError
+- BaseException
+Explanation: Класс Exception — базовый тип для всех исключений в .NET.
+CorrectAnswerIndex: 0
+
+Question: Что делает оператор throw внутри catch-блока?
+Options:
+- Завершает программу
+- Повторно выбрасывает текущее исключение
+- Игнорирует исключение
+- Прерывает finally-блок
+Explanation: `throw` позволяет повторно выбросить текущее исключение после его частичной обработки.
+CorrectAnswerIndex: 1
+
+Question: Можно ли использовать несколько блоков catch для обработки разных исключений?
+Options:
+- Нет, можно использовать только один catch
+- Да, но только с finally
+- Да, можно использовать несколько catch-блоков
+- Только если использовать ключевое слово `switch`
+Explanation: В C# можно использовать несколько блоков catch для разных типов исключений.
+CorrectAnswerIndex: 2

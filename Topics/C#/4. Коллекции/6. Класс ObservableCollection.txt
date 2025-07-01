@@ -1,0 +1,80 @@
+<b>Что такое ObservableCollection?</b>
+
+<code>ObservableCollection&lt;T&gt;</code> — это коллекция из пространства имён <code>System.Collections.ObjectModel</code>, которая автоматически уведомляет об изменениях (добавление, удаление, обновление элементов). Это делает её особенно полезной в приложениях с интерфейсом, например, WPF или .NET MAUI.
+
+<b>Ключевая особенность:</b>
+
+ObservableCollection реализует интерфейс <code>INotifyCollectionChanged</code>, который позволяет подписываться на события изменения коллекции. Это значит, что пользовательский интерфейс может автоматически обновляться при изменении содержимого коллекции.
+
+<b>Объявление коллекции:</b>
+
+<pre><code>using System.Collections.ObjectModel;
+
+ObservableCollection&lt;string&gt; names = new ObservableCollection&lt;string&gt;();
+</code></pre>
+
+<b>Добавление и удаление элементов:</b>
+
+<pre><code>names.Add("Alice");
+names.Add("Bob");
+names.Remove("Alice");
+</code></pre>
+
+<b>Пример с подпиской на событие изменения:</b>
+
+<pre><code>names.CollectionChanged += (sender, e) =>
+{
+    Console.WriteLine($"Изменение: {e.Action}");
+};
+</code></pre>
+
+<b>Действия, вызывающие событие CollectionChanged:</b>
+
+- Добавление (<code>e.Action == NotifyCollectionChangedAction.Add</code>)
+- Удаление (<code>e.Action == NotifyCollectionChangedAction.Remove</code>)
+- Замена элемента
+- Очистка коллекции
+
+<b>Пример с типом данных:</b>
+
+<pre><code>ObservableCollection&lt;int&gt; numbers = new ObservableCollection&lt;int&gt;() { 1, 2, 3 };
+numbers.Add(4);  // вызовет событие
+numbers.Remove(2);  // вызовет событие
+</code></pre>
+
+<b>Когда использовать ObservableCollection:</b>
+
+- В проектах с привязкой данных (data binding)
+- Когда нужно отслеживать изменения в коллекции
+- В WPF, Xamarin, .NET MAUI для обновления UI при изменениях коллекции
+
+<b>Важно:</b>
+
+ObservableCollection отслеживает только изменения самой коллекции, но не изменения в самих элементах. Если элементы — это классы и нужно отслеживать их внутренние изменения, они должны реализовывать интерфейс <code>INotifyPropertyChanged</code>.
+
+<b>Пример с классом:</b>
+
+<pre><code>public class Person : INotifyPropertyChanged
+{
+    private string name;
+    public string Name
+    {
+        get =&gt; name;
+        set
+        {
+            name = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+}
+</code></pre>
+
+<pre><code>ObservableCollection&lt;Person&gt; people = new ObservableCollection&lt;Person&gt;();
+people.Add(new Person { Name = "Alice" });
+</code></pre>
+
+<b>Итог:</b>
+
+<code>ObservableCollection</code> — это мощная коллекция, которая уведомляет подписчиков об изменениях. Она идеально подходит для UI-сценариев, особенно там, где важна автоматическая реакция интерфейса на изменения данных.

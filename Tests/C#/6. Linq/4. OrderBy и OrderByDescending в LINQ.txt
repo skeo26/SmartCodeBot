@@ -1,0 +1,97 @@
+Question: Что делает метод OrderBy() в LINQ?
+Options:
+- Удаляет дубликаты
+- Группирует элементы
+- Сортирует элементы по возрастанию
+- Фильтрует элементы по условию
+Explanation: OrderBy сортирует элементы коллекции в порядке возрастания.
+CorrectAnswerIndex: 2
+
+Question: Что делает метод OrderByDescending()?
+Options:
+- Сортирует по возрастанию
+- Сортирует по убыванию
+- Оставляет порядок без изменений
+- Удаляет элементы
+Explanation: OrderByDescending сортирует элементы в порядке убывания.
+CorrectAnswerIndex: 1
+
+Question: Какой будет результат следующего кода?
+Code:
+var numbers = new[] { 5, 2, 8, 1 };
+var sorted = numbers.OrderBy(n => n);
+Options:
+- 1 2 5 8
+- 8 5 2 1
+- 5 2 8 1
+- Ошибка компиляции
+Explanation: OrderBy упорядочит числа по возрастанию.
+CorrectAnswerIndex: 0
+
+Question: Для чего используется метод ThenBy()?
+Options:
+- Для группировки после сортировки
+- Для фильтрации по второму критерию
+- Для вторичной сортировки после OrderBy()
+- Для удаления повторов после сортировки
+Explanation: ThenBy применяется для вторичной сортировки после OrderBy.
+CorrectAnswerIndex: 2
+
+Question: Что делает следующий код?
+Code:
+people.OrderBy(p => p.Age).ThenBy(p => p.Name);
+Options:
+- Сортирует только по возрасту
+- Сортирует по имени, затем по возрасту
+- Сортирует по возрасту, затем по имени
+- Ничего не делает
+Explanation: Сначала сортирует по возрасту, затем по имени в рамках одинакового возраста.
+CorrectAnswerIndex: 2
+
+Question: Можно ли использовать OrderBy с анонимным типом?
+Options:
+- Нет
+- Только с числами
+- Да, можно
+- Только если есть ThenBy
+Explanation: OrderBy можно использовать с анонимными типами, если они корректно сравниваются.
+CorrectAnswerIndex: 2
+
+Question: Какой будет результат?
+Code:
+var words = new[] { "banana", "kiwi", "apple" };
+var sorted = words.OrderBy(w => w.Length);
+Options:
+- banana kiwi apple
+- kiwi apple banana
+- apple banana kiwi
+- kiwi banana apple
+Explanation: Сортировка по длине строк: kiwi (4), apple (5), banana (6).
+CorrectAnswerIndex: 1
+
+Question: Что произойдёт, если использовать OrderBy без ThenBy?
+Options:
+- Сортировка будет только по первому критерию
+- Будет ошибка
+- Сортировка будет по всем полям
+- ThenBy применится автоматически
+Explanation: OrderBy сортирует только по одному критерию, без дополнительной сортировки.
+CorrectAnswerIndex: 0
+
+Question: Какой метод используется для сортировки по убыванию второго критерия?
+Options:
+- OrderBy
+- OrderByDescending
+- ThenByDescending
+- GroupBy
+Explanation: ThenByDescending применяется после первичной сортировки для убывания второго критерия.
+CorrectAnswerIndex: 2
+
+Question: Какой тип возвращается после вызова OrderBy()?
+Options:
+- IEnumerable
+- List<T>
+- IOrderedEnumerable<T>
+- void
+Explanation: OrderBy возвращает IOrderedEnumerable<T>, который поддерживает цепочку ThenBy.
+CorrectAnswerIndex: 2

@@ -1,0 +1,89 @@
+Question: Что такое строка в C#?
+Options:
+- Строка — это последовательность символов Unicode, неизменяемая коллекция символов
+- Строка — это динамически изменяемая коллекция символов
+- Строка — это объект для хранения числовых значений
+- Строка — это ссылка на объект, хранящий числовое значение
+Explanation: В C# строка — это последовательность символов Unicode, которая является ссылочным типом и неизменяемой.
+CorrectAnswerIndex: 0
+
+Question: Какое из утверждений о строках в C# верно?
+Options:
+- Строки являются изменяемыми и позволяют редактировать содержимое
+- Строки неизменяемы, и при изменении создаётся новая строка
+- Строки в C# можно изменять напрямую, без создания новых объектов
+- Строки могут изменяться только в методах класса string
+Explanation: Строки в C# неизменяемы, и при изменении создаётся новая строка.
+CorrectAnswerIndex: 1
+
+Question: Как создать строку, используя массив символов в C#?
+Options:
+- string greeting = new string(new char[] { 'H', 'i' });
+- string greeting = new string("Hello");
+- string greeting = "Hello".ToCharArray();
+- string greeting = new char[] { 'H', 'i' }.ToString();
+Explanation: Строку можно создать с помощью массива символов, используя конструктор new string.
+CorrectAnswerIndex: 0
+
+Question: Как выполнить конкатенацию строк в C#?
+Options:
+- string fullName = "John" + " " + "Doe";
+- string fullName = String.Concat("John", "Doe");
+- string fullName = String.Combine("John", "Doe");
+- string fullName = $"John Doe";
+Explanation: Конкатенация строк может быть выполнена через оператор + или метод String.Concat.
+CorrectAnswerIndex: 0
+
+Question: Как в C# выполнить интерполяцию строк?
+Options:
+- string message = $"Hello, {name}!";
+- string message = String.Interpolate("Hello, {name}!");
+- string message = string.Format("Hello, {name}!");
+- string message = "Hello, " + name + "!";
+Explanation: Интерполяция строк в C# выполняется с использованием синтаксиса $"строка {переменная}".
+CorrectAnswerIndex: 0
+
+Question: Как извлечь подстроку из строки в C#?
+Options:
+- string part = text.Substring(0, 6);
+- string part = text.Substring(6);
+- string part = text.Split(6);
+- string part = text.Substring(0, text.Length - 1);
+Explanation: Метод Substring позволяет извлечь подстроку, начиная с определённой позиции и длины.
+CorrectAnswerIndex: 0
+
+Question: Как в C# удалить пробелы по краям строки?
+Options:
+- string trimmed = input.Trim();
+- string trimmed = input.RemoveSpaces();
+- string trimmed = input.TrimEnd();
+- string trimmed = input.Remove();
+Explanation: Метод Trim удаляет пробелы по краям строки.
+CorrectAnswerIndex: 0
+
+Question: Как разделить строку на массив строк в C#?
+Options:
+- string[] fruits = csv.Split(',');
+- string[] fruits = csv.Separate(',');
+- string[] fruits = csv.Split(';');
+- string[] fruits = csv.Divide(','); 
+Explanation: Для разделения строки на массив строк используется метод Split.
+CorrectAnswerIndex: 0
+
+Question: Как в C# проверить, начинается ли строка с подстроки?
+Options:
+- text.StartsWith("Pro");
+- text.BeginsWith("Pro");
+- text.Contains("Pro");
+- text.HasPrefix("Pro");
+Explanation: Метод StartsWith проверяет, начинается ли строка с заданной подстроки.
+CorrectAnswerIndex: 0
+
+Question: Как сравнить две строки с учётом регистра в C#?
+Options:
+- bool equal = a.Equals(b, StringComparison.OrdinalIgnoreCase);
+- bool equal = a.Compare(b) == 0;
+- bool equal = a.Equals(b);
+- bool equal = a.ToLower() == b.ToLower();
+Explanation: Метод Equals с параметром StringComparison.OrdinalIgnoreCase сравнивает строки без учёта регистра.
+CorrectAnswerIndex: 0

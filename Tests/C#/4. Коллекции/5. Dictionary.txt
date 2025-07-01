@@ -1,0 +1,71 @@
+Question: Какой принцип работы реализует структура данных Dictionary?
+Options:
+- Хранение элементов в порядке их добавления
+- Хранение пар ключ-значение, где ключ уникален
+- Хранение элементов без дублирования значений
+- Хранение элементов с автоматической сортировкой
+Explanation: Dictionary хранит пары "ключ-значение", где ключ уникален.
+CorrectAnswerIndex: 1
+
+Question: Какой метод добавляет пару ключ-значение в Dictionary?
+Options:
+- Add()
+- Insert()
+- Put()
+- AddValue()
+Explanation: Метод Add добавляет пару ключ-значение в Dictionary.
+CorrectAnswerIndex: 0
+
+Question: Как безопасно получить значение по ключу из Dictionary?
+Options:
+- TryGetValue()
+- Get()
+- Find()
+- Lookup()
+Explanation: Метод TryGetValue безопасно получает значение по ключу.
+CorrectAnswerIndex: 0
+
+Question: Как удалить элемент из Dictionary по ключу?
+Options:
+- Remove()
+- Delete()
+- RemoveByKey()
+- ClearKey()
+Explanation: Метод Remove удаляет элемент по ключу из Dictionary.
+CorrectAnswerIndex: 0
+
+Question: Как проверить, содержится ли в Dictionary ключ?
+Options:
+- ContainsKey()
+- HasKey()
+- CheckKey()
+- KeyExists()
+Explanation: Метод ContainsKey проверяет наличие ключа в Dictionary.
+CorrectAnswerIndex: 0
+
+Question: Как итерировать по элементам Dictionary?
+Options:
+- Использовать цикл foreach для перебора пар ключ-значение
+- Использовать цикл for для перебора ключей
+- Использовать цикл foreach для перебора значений
+- Использовать цикл do-while для перебора пар
+Explanation: Для перебора элементов в Dictionary используется цикл foreach для пар ключ-значение.
+CorrectAnswerIndex: 0
+
+Question: Как очистить Dictionary от всех элементов?
+Options:
+- Clear()
+- Reset()
+- ClearAll()
+- RemoveAll()
+Explanation: Метод Clear очищает все элементы из Dictionary.
+CorrectAnswerIndex: 0
+
+Question: Как проверить наличие значения в Dictionary?
+Options:
+- ContainsValue()
+- HasValue()
+- ValueExists()
+- CheckValue()
+Explanation: Метод ContainsValue проверяет наличие значения в Dictionary.
+CorrectAnswerIndex: 0

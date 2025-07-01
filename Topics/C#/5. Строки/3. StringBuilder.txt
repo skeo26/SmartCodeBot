@@ -1,0 +1,70 @@
+<b>StringBuilder</b> — это класс из пространства имён <code>System.Text</code>, который используется для эффективной работы со строками, особенно в случае частых изменений содержимого.
+
+В отличие от обычных строк (типа <code>string</code>), <code>StringBuilder</code> не создаёт новый объект в памяти при каждой операции, что значительно повышает производительность.
+
+<b>Создание объекта StringBuilder:</b>
+
+<pre><code>using System.Text;
+
+StringBuilder sb = new StringBuilder();</code></pre>
+
+<b>Примеры использования:</b>
+
+<b>1. Append()</b> — добавляет строку к текущему объекту.
+
+<pre><code>sb.Append("Hello");
+sb.Append(" ");
+sb.Append("world!");
+Console.WriteLine(sb.ToString()); // "Hello world!"</code></pre>
+
+<b>2. AppendLine()</b> — добавляет строку и символ новой строки.
+
+<pre><code>sb.Clear();
+sb.AppendLine("Первый абзац.");
+sb.AppendLine("Второй абзац.");
+Console.WriteLine(sb.ToString());</code></pre>
+
+<b>3. Insert()</b> — вставляет строку в указанную позицию.
+
+<pre><code>sb.Clear();
+sb.Append("Привет мир");
+sb.Insert(6, "прекрасный ");
+Console.WriteLine(sb.ToString()); // "Привет прекрасный мир"</code></pre>
+
+<b>4. Replace()</b> — заменяет подстроку.
+
+<pre><code>sb.Replace("мир", "C#");
+Console.WriteLine(sb.ToString()); // "Привет прекрасный C#"</code></pre>
+
+<b>5. Remove()</b> — удаляет часть строки.
+
+<pre><code>sb.Remove(6, 11);
+Console.WriteLine(sb.ToString()); // "Привет C#"</code></pre>
+
+<b>6. Length и Capacity</b> — свойства длины строки и текущей ёмкости буфера.
+
+<pre><code>int len = sb.Length;
+int cap = sb.Capacity;</code></pre>
+
+<b>Полный пример:</b>
+
+<pre><code>StringBuilder sb = new StringBuilder();
+sb.Append("Количество:");
+sb.Append(" ");
+sb.Append(5);
+sb.Append(" штук");
+
+Console.WriteLine(sb.ToString()); // "Количество: 5 штук"</code></pre>
+
+<b>Преимущества StringBuilder:</b>
+
+- Более эффективен при множественных изменениях строки.
+- Избегает создания большого количества временных объектов в памяти.
+- Удобен для построения больших текстов (например, HTML, SQL-запросов и т.д.).
+
+<b>Когда использовать:</b>
+
+- Когда требуется многократная конкатенация строк.
+- При обработке большого объема текста в циклах.
+- Когда производительность критична.
+

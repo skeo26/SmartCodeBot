@@ -1,0 +1,89 @@
+<b>Что такое исключения в C#?</b>
+
+Исключения — это ошибки, которые происходят во время выполнения программы. В C# существует несколько типов исключений, каждый из которых представляет собой конкретную проблему, возникшую в процессе работы программы.
+
+<b>Классы исключений:</b>
+В C# исключения являются объектами, которые наследуют класс <code>System.Exception</code>. Все исключения можно классифицировать по типам, каждый из которых наследует базовый класс <code>Exception</code>.
+
+<b>Основные типы исключений:</b>
+1. <b>System.Exception</b> — базовый класс для всех исключений.
+2. <b>System.NullReferenceException</b> — возникает, когда приложение пытается использовать объект, который не был инициализирован (равен <code>null</code>).
+3. <b>System.IndexOutOfRangeException</b> — возникает, когда индекс выходит за пределы диапазона массива или коллекции.
+4. <b>System.DivideByZeroException</b> — возникает при попытке деления на ноль.
+5. <b>System.ArgumentException</b> — возникает, когда метод получает неподходящий аргумент.
+6. <b>System.IO.IOException</b> — возникает при ошибке ввода-вывода, например, при работе с файлами.
+7. <b>System.InvalidOperationException</b> — возникает, когда метод вызывается в неподобающем контексте.
+
+<b>Примеры:</b>
+
+<b>1. NullReferenceException</b>
+<pre><code>class Program
+{
+    static void Main()
+    {
+        string str = null;
+        Console.WriteLine(str.Length); // Ошибка: попытка доступа к объекту, который равен null
+    }
+}
+</code></pre>
+
+<b>2. IndexOutOfRangeException</b>
+<pre><code>class Program
+{
+    static void Main()
+    {
+        int[] arr = new int[3];
+        Console.WriteLine(arr[5]); // Ошибка: выход за пределы массива
+    }
+}
+</code></pre>
+
+<b>3. DivideByZeroException</b>
+<pre><code>class Program
+{
+    static void Main()
+    {
+        int result = 10 / 0; // Ошибка: деление на ноль
+    }
+}
+</code></pre>
+
+<b>4. ArgumentException</b>
+<pre><code>class Program
+{
+    static void Main()
+    {
+        int ParseStringToInt(string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+                throw new ArgumentException("Строка не может быть пустой", nameof(str));
+            return int.Parse(str);
+        }
+
+        ParseStringToInt(""); // Ошибка: пустая строка
+    }
+}
+</code></pre>
+
+<b>Как обрабатывать исключения?</b>
+
+Используя конструкцию <code>try-catch</code>, можно перехватывать и обрабатывать различные типы исключений.
+
+<b>Пример обработки нескольких типов исключений:</b>
+<pre><code>try
+{
+    int[] arr = new int[3];
+    Console.WriteLine(arr[5]); // Выход за пределы массива
+}
+catch (IndexOutOfRangeException ex)
+{
+    Console.WriteLine("Ошибка: выход за пределы массива!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Неизвестная ошибка: {ex.Message}");
+}
+</code></pre>
+
+<b>Итог:</b>
+C# предоставляет разнообразие типов исключений для различных ситуаций. Правильная обработка исключений помогает сделать программы более стабильными и надежными, а также улучшает взаимодействие с пользователем, предоставляя более информативные сообщения об ошибках.

@@ -1,0 +1,95 @@
+Question: Для чего используется класс StringBuilder?
+Options:
+- Для хранения чисел
+- Для эффективной работы с часто изменяемыми строками
+- Для работы с файлами
+- Для создания графического интерфейса
+Explanation: StringBuilder позволяет эффективно изменять строки без создания новых объектов в памяти.
+CorrectAnswerIndex: 1
+
+Question: В каком пространстве имён находится StringBuilder?
+Options:
+- System
+- System.IO
+- System.Text
+- System.Collections
+Explanation: StringBuilder находится в пространстве имён System.Text.
+CorrectAnswerIndex: 2
+
+Question: Что делает метод Append()?
+Options:
+- Удаляет символы
+- Добавляет строку к текущему содержимому
+- Заменяет строку
+- Проверяет наличие подстроки
+Explanation: Append() добавляет строку или значение к текущему содержимому StringBuilder.
+CorrectAnswerIndex: 1
+
+Question: Какой метод добавляет строку с символом новой строки?
+Options:
+- Append()
+- AppendLine()
+- AddNewLine()
+- WriteLine()
+Explanation: Метод AppendLine добавляет строку и символ новой строки.
+CorrectAnswerIndex: 1
+
+Question: Что делает метод Insert()?
+Options:
+- Удаляет символы
+- Добавляет строку в начало
+- Вставляет строку в указанную позицию
+- Проверяет, начинается ли строка с подстроки
+Explanation: Insert вставляет строку в указанную позицию объекта StringBuilder.
+CorrectAnswerIndex: 2
+
+Question: Что произойдёт при вызове sb.Replace("мир", "C#")?
+Options:
+- Заменит все вхождения "мир" на "C#"
+- Удалит слово "мир"
+- Добавит "C#" в конец строки
+- Ошибка компиляции
+Explanation: Replace заменяет все вхождения указанной подстроки на новую.
+CorrectAnswerIndex: 0
+
+Question: Что делает метод Remove()?
+Options:
+- Удаляет весь текст
+- Очищает строку
+- Удаляет часть строки, начиная с указанной позиции
+- Удаляет строку из памяти
+Explanation: Remove удаляет заданное количество символов, начиная с определённой позиции.
+CorrectAnswerIndex: 2
+
+Question: Что показывает свойство Capacity?
+Options:
+- Текущую длину строки
+- Максимальную длину строки
+- Количество символов, которое может быть сохранено без перераспределения памяти
+- Количество вызовов метода Append()
+Explanation: Capacity показывает ёмкость буфера — сколько символов может храниться до перераспределения памяти.
+CorrectAnswerIndex: 2
+
+Question: Что выведет следующий код?
+Code:
+StringBuilder sb = new StringBuilder();
+sb.Append("Hello");
+sb.Append(" ");
+sb.Append("world!");
+Console.WriteLine(sb.ToString());
+Options:
+- Hello
+- Hello world!
+- world!
+- HelloWorld!
+Explanation: Метод Append добавляет строки друг за другом, результат — "Hello world!".
+CorrectAnswerIndex: 1
+
+Question: Когда рекомендуется использовать StringBuilder?
+Options:
+- При редкой работе со строками
+- При множественных изменениях строк, особенно в циклах
+- Только для форматирования чисел
+- Всегда вместо string
+Explanation: StringBuilder особенно полезен при множественных изменениях строки — например, в цикле.
+CorrectAnswerIndex: 1

@@ -1,0 +1,122 @@
+Question: Что делает метод Select() в LINQ?
+Options:
+- Преобразует элементы коллекции в новый тип или структуру
+- Объединяет элементы коллекции в одну коллекцию
+- Группирует элементы коллекции по ключу
+- Удаляет дубликаты из коллекции
+Explanation: Select используется для преобразования каждого элемента коллекции в новый объект или тип.
+CorrectAnswerIndex: 0
+
+Question: Какой результат будет у следующего кода:
+Code:
+var numbers = new List&lt;int&gt;() { 1, 2, 3, 4, 5 };
+var squaredNumbers = numbers.Select(n => n * n);
+Options:
+- 1, 4, 9, 16, 25
+- 1, 2, 3, 4, 5
+- 2, 4, 6, 8, 10
+- 1, 2, 3, 4
+Explanation: Select возводит каждый элемент в квадрат, результат — 1, 4, 9, 16, 25.
+CorrectAnswerIndex: 0
+
+Question: Как создать анонимный тип с использованием Select()?
+Options:
+- new { Name = "Alice", Age = 25 }
+- new Person { Name = "Alice", Age = 25 }
+- Person { Name = "Alice", Age = 25 }
+- { "Alice", 25 }
+Explanation: С помощью Select() можно создать анонимный тип, например, new { Name = "Alice", Age = 25 }.
+CorrectAnswerIndex: 0
+
+Question: Что делает метод SelectMany() в LINQ?
+Options:
+- Преобразует элементы коллекции в новый объект
+- Объединяет несколько коллекций в одну
+- Удаляет дубликаты из коллекции
+- Проектирует элементы коллекции в структуру данных
+Explanation: SelectMany используется для распаковки коллекций коллекций в одну плоскую коллекцию.
+CorrectAnswerIndex: 1
+
+Question: Какой результат будет у следующего кода:
+Code:
+var listOfLists = new List&lt;List&lt;int&gt;&gt;()
+{
+    new List&lt;int&gt;() { 1, 2, 3 },
+    new List&lt;int&gt;() { 4, 5, 6 },
+    new List&lt;int&gt;() { 7, 8, 9 }
+};
+var flattenedList = listOfLists.SelectMany(list => list);
+Options:
+- 1, 2, 3, 4, 5, 6, 7, 8, 9
+- 1, 4, 7, 2, 5, 8, 3, 6, 9
+- 1, 2, 3
+- 7, 8, 9
+Explanation: SelectMany распаковывает коллекции и создает одну плоскую коллекцию.
+CorrectAnswerIndex: 0
+
+Question: Какой результат будет у следующего кода:
+Code:
+var orders = new List&lt;Customer&gt;()
+{
+    new Customer { Name = "Alice", Orders = new List&lt;Order&gt; { new Order { Product = "Laptop" }, new Order { Product = "Tablet" } } },
+    new Customer { Name = "Bob", Orders = new List&lt;Order&gt; { new Order { Product = "Smartphone" } } }
+};
+var customerOrders = orders.SelectMany(c => c.Orders, (customer, order) => new { customer.Name, order.Product });
+Options:
+- Alice ordered Laptop, Alice ordered Tablet, Bob ordered Smartphone
+- Alice ordered Smartphone, Bob ordered Laptop, Bob ordered Tablet
+- Bob ordered Smartphone, Alice ordered Laptop, Alice ordered Tablet
+- Alice ordered Laptop, Bob ordered Smartphone
+Explanation: SelectMany распаковывает заказы для каждого клиента и проецирует их в новый формат.
+CorrectAnswerIndex: 0
+
+Question: Какой будет результат при выполнении кода:
+Code:
+var countries = new List&lt;Country&gt;()
+{
+    new Country { Name = "USA", Cities = new List&lt;string&gt; { "New York", "Los Angeles", "Chicago" } },
+    new Country { Name = "Germany", Cities = new List&lt;string&gt; { "Berlin", "Munich", "Hamburg" } }
+};
+var countryCities = countries.SelectMany(c => c.Cities, (country, city) => new { country.Name, City = city });
+Options:
+- USA: New York, USA: Los Angeles, USA: Chicago, Germany: Berlin, Germany: Munich, Germany: Hamburg
+- New York, Los Angeles, Chicago, Berlin, Munich, Hamburg
+- USA: New York, Los Angeles, Chicago
+- Germany: Berlin, Munich, Hamburg
+Explanation: SelectMany распаковывает города для каждой страны и объединяет их в один список.
+CorrectAnswerIndex: 0
+
+Question: Когда использовать метод SelectMany()?
+Options:
+- Когда необходимо преобразовать коллекцию в новый тип
+- Когда нужно распаковать коллекцию коллекций в одну коллекцию
+- Когда необходимо отсортировать коллекцию
+- Когда нужно объединить несколько коллекций с удалением дубликатов
+Explanation: SelectMany используется для распаковки коллекций, вложенных в другие коллекции.
+CorrectAnswerIndex: 1
+
+Question: Какой результат будет у следующего кода:
+Code:
+var people = new List&lt;Person&gt;()
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 35 }
+};
+var selectedPeople = people.Select(p => new { p.Name, p.Age });
+Options:
+- Alice, 25, Bob, 30, Charlie, 35
+- Alice, Bob, Charlie
+- 25, 30, 35
+- 25, 30
+Explanation: Select создает анонимный тип с полями Name и Age.
+CorrectAnswerIndex: 0
+
+Question: Какой метод используется для преобразования коллекции коллекций в одну коллекцию?
+Options:
+- Select()
+- SelectMany()
+- Join()
+- Where()
+Explanation: SelectMany распаковывает коллекции коллекций и объединяет их в одну плоскую коллекцию.
+CorrectAnswerIndex: 1

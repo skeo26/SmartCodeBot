@@ -1,0 +1,61 @@
+Многопоточность позволяет выполнять несколько задач одновременно, повышая производительность.
+
+<b>1. Thread</b>
+
+Класс <code>Thread</code> используется для создания и управления потоками.
+
+<pre><code>Thread thread = new Thread(Worker);
+thread.Start();
+
+void Worker()
+{
+    Console.WriteLine("Задача в отдельном потоке.");
+}
+</code></pre>
+
+<b>2. Task</b>
+
+<code>Task</code> представляет асинхронную задачу, которая упрощает работу с многозадачностью.
+
+<pre><code>Task.Run(() =&gt; Worker());
+
+void Worker()
+{
+    Console.WriteLine("Задача в отдельной задаче.");
+}
+</code></pre>
+
+<b>3. Асинхронные методы</b>
+
+<code>async</code> и <code>await</code> позволяют работать с асинхронными операциями.
+
+<pre><code>await Task.Delay(1000);
+Console.WriteLine("Задача выполнена.");
+</code></pre>
+
+<b>4. Конкурентность</b>
+
+Используйте <code>lock</code> для синхронизации потоков и предотвращения гонок.
+
+<pre><code>lock (typeof(Program))
+{
+    counter++;
+    Console.WriteLine(counter);
+}
+</code></pre>
+
+<b>5. Параллельные задачи</b>
+
+<code>Parallel.For</code> позволяет выполнять несколько задач одновременно.
+
+<pre><code>Parallel.For(0, 5, i =&gt; 
+{
+    Console.WriteLine($"Задача {i}");
+});
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>Thread</code> и <code>Task</code> — для работы с потоками и асинхронными задачами.
+- <code>async</code> и <code>await</code> упрощают асинхронное программирование.
+- Для синхронизации используйте <code>lock</code>.

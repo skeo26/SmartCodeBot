@@ -1,0 +1,101 @@
+Question: Что делает метод Distinct() в LINQ?
+Options:
+- Убирает все дублирующиеся элементы, оставляя только уникальные значения
+- Объединяет две коллекции, удаляя дубликаты
+- Сортирует коллекцию по возрастанию
+- Группирует элементы по ключу
+Explanation: Distinct удаляет все дублирующиеся элементы из коллекции, оставляя только уникальные.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при выполнении следующего кода?
+Code:
+var list1 = new List&lt;int&gt; { 1, 2, 3 };
+var list2 = new List&lt;int&gt; { 3, 4, 5 };
+var result = list1.Union(list2);
+Options:
+- Вернётся коллекция {1, 2, 3, 4, 5}
+- Вернётся коллекция {3, 4, 5}
+- Произойдёт ошибка компиляции
+- Вернётся коллекция {1, 2}
+Explanation: Union объединяет коллекции, удаляя дубли, результат — {1, 2, 3, 4, 5}.
+CorrectAnswerIndex: 0
+
+Question: Какой результат будет у следующего кода?
+Code:
+var numbers = new List&lt;int&gt; { 1, 2, 2, 3, 4, 4, 5 };
+var distinctNumbers = numbers.Distinct();
+Options:
+- 1, 2, 3, 4, 5
+- 2, 3, 4
+- 1, 2, 3, 4
+- 1, 2, 2, 3
+Explanation: Distinct удаляет все дублирующиеся элементы.
+CorrectAnswerIndex: 0
+
+Question: Какой метод позволяет объединить два списка и удалить дубли?
+Options:
+- Distinct()
+- Union()
+- Join()
+- Select()
+Explanation: Union объединяет коллекции и удаляет повторяющиеся элементы.
+CorrectAnswerIndex: 1
+
+Question: Какую задачу решает метод Union()?
+Options:
+- Убирает дубликаты из одной коллекции
+- Объединяет две коллекции, удаляя дубликаты
+- Сортирует коллекцию по ключу
+- Преобразует коллекцию в другую структуру данных
+Explanation: Union объединяет две коллекции, удаляя дубликаты.
+CorrectAnswerIndex: 1
+
+Question: Когда необходимо переопределять методы Equals() и GetHashCode() в пользовательских типах данных?
+Options:
+- Когда нужно сравнивать объекты по значению
+- Когда необходимо сортировать коллекцию
+- Когда объекты должны быть уникальными в коллекции
+- Когда необходимо выполнять фильтрацию по ключу
+Explanation: Переопределение Equals() и GetHashCode() необходимо для правильного сравнения объектов при использовании методов, таких как Union() или Distinct().
+CorrectAnswerIndex: 0
+
+Question: Какой будет результат, если попытаться объединить две коллекции с объектами без переопределения Equals() и GetHashCode()?
+Options:
+- Ошибка компиляции
+- Результат будет некорректным
+- Коллекции будут объединены без удаления дубликатов
+- Дубликаты будут удалены правильно
+Explanation: Без переопределения методов Equals() и GetHashCode() дубликаты не будут удалены корректно при использовании Union().
+CorrectAnswerIndex: 2
+
+Question: Как будет выглядеть результат при выполнении кода:
+Code:
+var fruits1 = new List&lt;string&gt; { "apple", "banana", "cherry" };
+var fruits2 = new List&lt;string&gt; { "banana", "date", "cherry" };
+var distinctFruits = fruits1.Distinct();
+
+Options:
+- "apple", "banana", "cherry"
+- "banana", "cherry"
+- "apple", "cherry"
+- "banana", "date"
+Explanation: Distinct убирает дубли из первой коллекции fruits1.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при вызове метода Union() для двух одинаковых коллекций?
+Options:
+- Коллекция будет дублироваться
+- Коллекции объединятся без дубликатов
+- Коллекции не объединятся
+- Будет выброшено исключение
+Explanation: Union удалит дубликаты и объединит коллекции без повторов.
+CorrectAnswerIndex: 1
+
+Question: Какой метод в LINQ позволяет работать с уникальными элементами коллекции?
+Options:
+- Where()
+- Distinct()
+- Select()
+- Any()
+Explanation: Distinct позволяет работать с уникальными элементами коллекции.
+CorrectAnswerIndex: 1

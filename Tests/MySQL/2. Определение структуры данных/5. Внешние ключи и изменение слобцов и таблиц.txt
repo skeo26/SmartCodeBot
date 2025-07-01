@@ -1,0 +1,44 @@
+Question: Что делает внешний ключ (FOREIGN KEY) в MySQL?
+Options:
+- Обеспечивает связь между таблицами
+- Удаляет дублирующиеся строки
+- Создает уникальный индекс
+- Сортирует таблицу по алфавиту
+Explanation: FOREIGN KEY устанавливает связь между двумя таблицами и обеспечивает ссылочную целостность.
+CorrectAnswerIndex: 0
+
+Question: Какая команда используется для добавления столбца в существующую таблицу?
+Options:
+- ALTER TABLE ... ADD
+- UPDATE TABLE ... ADD
+- MODIFY TABLE ... ADD
+- CHANGE TABLE ... ADD
+Explanation: Для добавления столбца используется команда ALTER TABLE ... ADD.
+CorrectAnswerIndex: 0
+
+Question: Какая команда используется для удаления столбца из таблицы?
+Options:
+- ALTER TABLE ... DROP COLUMN
+- DELETE TABLE ... COLUMN
+- REMOVE COLUMN FROM TABLE
+- ALTER COLUMN ... DROP
+Explanation: Удаление столбца производится с помощью ALTER TABLE ... DROP COLUMN.
+CorrectAnswerIndex: 0
+
+Question: Какой синтаксис используется для изменения типа данных столбца?
+Options:
+- ALTER TABLE имя MODIFY имя_столбца новый_тип
+- CHANGE TABLE имя новый_тип
+- RENAME COLUMN имя TO новый_тип
+- SET COLUMN имя TYPE новый_тип
+Explanation: Для изменения типа данных столбца используется команда ALTER TABLE ... MODIFY.
+CorrectAnswerIndex: 0
+
+Question: Как добавить внешний ключ в таблицу после её создания?
+Options:
+- ALTER TABLE ... ADD CONSTRAINT ... FOREIGN KEY ...
+- INSERT FOREIGN KEY INTO TABLE ...
+- UPDATE TABLE ... SET FOREIGN KEY ...
+- ADD FOREIGN KEY TO TABLE ...
+Explanation: Внешний ключ можно добавить с помощью ALTER TABLE ... ADD CONSTRAINT ... FOREIGN KEY ...
+CorrectAnswerIndex: 0

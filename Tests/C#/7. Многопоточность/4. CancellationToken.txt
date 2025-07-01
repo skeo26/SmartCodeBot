@@ -1,0 +1,89 @@
+Question: Какой класс используется для создания CancellationToken?
+Options:
+- CancellationSource
+- CancellationRequest
+- CancellationManager
+- CancellationTokenSource
+Explanation: CancellationTokenSource создаёт токен, который можно использовать для отмены задач.
+CorrectAnswerIndex: 3
+
+Question: Как отменить задачу с использованием CancellationTokenSource?
+Options:
+- Вызвать Cancel() у токена
+- Вызвать Cancel() у CancellationTokenSource
+- Задать token = null
+- Вызвать Dispose() у задачи
+Explanation: Метод Cancel() у CancellationTokenSource инициирует отмену.
+CorrectAnswerIndex: 1
+
+Question: Что проверяет свойство IsCancellationRequested?
+Options:
+- Завершилась ли задача
+- Началась ли операция
+- Была ли запрошена отмена
+- Возникло ли исключение
+Explanation: Это свойство проверяет, была ли инициирована отмена через токен.
+CorrectAnswerIndex: 2
+
+Question: Что произойдет, если токен отменён, а задача продолжит выполнение?
+Options:
+- Задача завершится успешно
+- Выбросится OperationCanceledException
+- Задача будет приостановлена
+- Задача завершится с ошибкой компиляции
+Explanation: Если отмена проверяется вручную и выполняется return, исключение не выбрасывается. Но при использовании await и отмены может быть выброшено OperationCanceledException.
+CorrectAnswerIndex: 1
+
+Question: Какой метод позволяет отменить задачу через определённое время?
+Options:
+- token.StopAfter()
+- cts.Abort()
+- cts.CancelAfter()
+- task.CancelDelayed()
+Explanation: Метод CancelAfter() у CancellationTokenSource позволяет задать таймер отмены.
+CorrectAnswerIndex: 2
+
+Question: Какой тип исключения следует обрабатывать при отмене задачи?
+Options:
+- TaskCanceledException
+- TimeoutException
+- OperationCanceledException
+- CancelException
+Explanation: При отмене задач с CancellationToken выбрасывается OperationCanceledException.
+CorrectAnswerIndex: 2
+
+Question: Где обычно проверяется IsCancellationRequested?
+Options:
+- Внутри метода Main()
+- Внутри цикла или асинхронной операции
+- Перед запуском приложения
+- После завершения программы
+Explanation: Проверка на отмену обычно размещается в цикле или в асинхронной задаче.
+CorrectAnswerIndex: 1
+
+Question: Что произойдёт, если вызвать Cancel() до запуска задачи?
+Options:
+- Задача не начнётся
+- Задача начнётся, но сразу завершится
+- Будет выброшено исключение в момент вызова
+- Программа зависнет
+Explanation: Если токен уже отменён, задача может не выполняться полностью или завершится сразу.
+CorrectAnswerIndex: 1
+
+Question: Как отменить задачу вручную во время её выполнения?
+Options:
+- Вызвать Dispose() у токена
+- Вызвать Cancel() у CancellationTokenSource
+- Использовать throw внутри задачи
+- Использовать await внутри try
+Explanation: Cancel() у CancellationTokenSource инициирует отмену токена, который может быть проверен в задаче.
+CorrectAnswerIndex: 1
+
+Question: Что произойдёт, если не обработать OperationCanceledException?
+Options:
+- Программа будет работать без ошибок
+- Приложение завершится с необработанным исключением
+- Исключение будет проигнорировано
+- Выдаст ошибку компиляции
+Explanation: Если исключение не обрабатывается, оно может привести к аварийному завершению приложения.
+CorrectAnswerIndex: 1

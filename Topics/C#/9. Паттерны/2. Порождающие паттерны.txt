@@ -1,0 +1,84 @@
+Порождающие паттерны проектирования решают задачи создания объектов, позволяя гибко управлять их созданием.
+
+<b>1. Фабричный метод (Factory Method)</b>
+
+Позволяет создавать объекты, не указывая конкретные классы создаваемых объектов.
+
+<pre><code>public abstract class Product
+{
+    public abstract void Operation();
+}
+
+public class ConcreteProductA : Product
+{
+    public override void Operation() { Console.WriteLine("Product A"); }
+}
+
+public class Creator
+{
+    public abstract Product FactoryMethod();
+}
+
+public class ConcreteCreatorA : Creator
+{
+    public override Product FactoryMethod() { return new ConcreteProductA(); }
+}
+</code></pre>
+
+<b>2. Абстрактная фабрика (Abstract Factory)</b>
+
+Создает семейства взаимосвязанных объектов.
+
+<pre><code>public interface IButton { void Render(); }
+public class WinButton : IButton { public void Render() { Console.WriteLine("Win Button"); } }
+public class MacButton : IButton { public void Render() { Console.WriteLine("Mac Button"); } }
+</code></pre>
+
+<b>3. Одиночка (Singleton)</b>
+
+Гарантирует, что класс имеет только один экземпляр.
+
+<pre><code>public class Singleton
+{
+    private static Singleton instance;
+    private Singleton() { }
+    public static Singleton Instance => instance ?? (instance = new Singleton());
+}
+</code></pre>
+
+<b>4. Строитель (Builder)</b>
+
+Отделяет конструкцию сложного объекта от его представления.
+
+<pre><code>public class Car
+{
+    public string Engine { get; set; }
+    public string Wheels { get; set; }
+    public string Color { get; set; }
+}
+
+public interface ICarBuilder
+{
+    void BuildEngine();
+    void BuildWheels();
+    void BuildColor();
+    Car GetResult();
+}
+</code></pre>
+
+<b>5. Прототип (Prototype)</b>
+
+Создает новые объекты путем клонирования существующих.
+
+<pre><code>public class ConcretePrototype : Prototype
+{
+    public string Name { get; set; }
+    public ConcretePrototype(string name) { Name = name; }
+    public override Prototype Clone() { return new ConcretePrototype(this.Name); }
+}
+</code></pre>
+
+<b>6. Когда использовать порождающие паттерны?</b>
+
+Когда создание объектов требует гибкости и абстракции, позволяя скрыть детали реализации.
+

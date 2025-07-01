@@ -1,0 +1,107 @@
+В этой теме мы рассмотрим более сложные методы и паттерны для работы с асинхронными задачами в C#. Мы изучим, как управлять задачами с использованием различных конструкций, таких как продолжения задач, комбинирование асинхронных операций и обработка ошибок.
+
+<b>1. Использование ContinueWith для продолжения задач</b>
+
+Метод <code>ContinueWith</code> позволяет выполнять дополнительные действия после завершения асинхронной задачи. Это полезно, когда необходимо обработать результат выполнения задачи или выполнить дополнительную работу, как только задача завершится.
+
+<pre><code>public void StartTaskWithContinuation()
+{
+    Task.Run(async () =>
+    {
+        await Task.Delay(1000); // Симуляция асинхронной операции
+    })
+    .ContinueWith(t =>
+    {
+        if (t.IsFaulted)
+        {
+            Console.WriteLine($"Задача завершилась с ошибкой: {t.Exception?.Message}");
+        }
+        else
+        {
+            Console.WriteLine("Задача завершена успешно");
+        }
+    });
+}
+</code></pre>
+
+<b>2. Сложные цепочки задач с ContinueWith</b>
+
+Вы можете строить более сложные цепочки задач, комбинируя <code>ContinueWith</code> для выполнения последовательности асинхронных операций.
+
+<pre><code>public void ExecuteTaskChain()
+{
+    Task.Run(async () =>
+    {
+        await Task.Delay(1000);
+        return "Результат задачи 1";
+    })
+    .ContinueWith(t =>
+    {
+        Console.WriteLine(t.Result); // Вывод результата задачи 1
+        return "Результат задачи 2";
+    })
+    .ContinueWith(t =>
+    {
+        Console.WriteLine(t.Result); // Вывод результата задачи 2
+    });
+}
+</code></pre>
+
+<b>3. Комбинирование нескольких асинхронных операций с Task.WhenAny</b>
+
+Метод <code>Task.WhenAny</code> позволяет ожидать завершение хотя бы одной из нескольких задач. Это полезно, если необходимо продолжить выполнение программы, как только одна из задач завершится, независимо от того, какая именно.
+
+<pre><code>public async Task&lt;string&gt; WaitForAnyTaskAsync()
+{
+    Task&lt;string&gt; task1 = Task.Delay(5000).ContinueWith(t => "Задача 1 завершена");
+    Task&lt;string&gt; task2 = Task.Delay(2000).ContinueWith(t => "Задача 2 завершена");
+
+    Task&lt;string&gt; completedTask = await Task.WhenAny(task1, task2); // Ожидание первой завершившейся задачи
+    return completedTask.Result;
+}
+</code></pre>
+
+<b>4. Комбинирование нескольких асинхронных операций с Task.WhenAll</b>
+
+Метод <code>Task.WhenAll</code> позволяет ждать завершения всех задач. Это особенно полезно, когда необходимо выполнить несколько независимых операций и дождаться их завершения.
+
+<pre><code>public async Task&lt;string&gt; ExecuteAllTasksAsync()
+{
+    Task&lt;string&gt; task1 = Task.Delay(1000).ContinueWith(t => "Задача 1 завершена");
+    Task&lt;string&gt; task2 = Task.Delay(2000).ContinueWith(t => "Задача 2 завершена");
+    Task&lt;string&gt; task3 = Task.Delay(3000).ContinueWith(t => "Задача 3 завершена");
+
+    string[] results = await Task.WhenAll(task1, task2, task3); // Ожидание завершения всех задач
+    return string.Join(", ", results);
+}
+</code></pre>
+
+<b>5. Асинхронные операции с использованием CancellationToken</b>
+
+Для отмены асинхронных операций можно использовать <code>CancellationToken</code>. Это позволяет контролировать время выполнения задач и прерывать их в случае необходимости.
+
+<pre><code>public async Task&lt;string&gt; TaskWithCancellationAsync(CancellationToken token)
+{
+    await Task.Delay(5000, token); // Асинхронная операция с поддержкой отмены
+    return "Операция завершена";
+}
+</code></pre>
+
+<b>6. Асинхронные методы, возвращающие значение типа Task</b>
+
+Если метод асинхронно выполняет работу, но не возвращает результата (возвращает <code>Task</code>), это используется для выполнения операций без необходимости получения значения после выполнения.
+
+<pre><code>public async Task PerformTaskAsync()
+{
+    await Task.Delay(1000);
+    Console.WriteLine("Задача выполнена");
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>ContinueWith</code> позволяет добавлять дополнительные операции после завершения задачи.
+- <code>Task.WhenAny</code> и <code>Task.WhenAll</code> позволяют работать с несколькими задачами и комбинировать их результаты.
+- <code>CancellationToken</code> позволяет отменять асинхронные операции по запросу.
+- Использование <code>Task</code> без результата подходит для выполнения задач, где не требуется возвращение значений.
+

@@ -1,0 +1,89 @@
+Question: Какая функция в MySQL возвращает абсолютное значение числа?
+Options:
+- ABS()
+- ROUND()
+- CEILING()
+- FLOOR()
+Explanation: Функция ABS() возвращает абсолютное значение числа.
+CorrectAnswerIndex: 0
+
+Question: Какая функция округляет число до указанного количества десятичных знаков?
+Options:
+- ROUND()
+- CEILING()
+- MOD()
+- POW()
+Explanation: Функция ROUND() округляет число до указанного количества десятичных знаков.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает наименьшее целое число, которое больше или равно заданному числу (округление вверх)?
+Options:
+- CEILING()
+- FLOOR()
+- ABS()
+- ROUND()
+Explanation: Функция CEILING() возвращает наименьшее целое число, которое больше или равно заданному числу (округление вверх).
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает наибольшее целое число, которое меньше или равно заданному числу (округление вниз)?
+Options:
+- FLOOR()
+- CEILING()
+- ABS()
+- ROUND()
+Explanation: Функция FLOOR() возвращает наибольшее целое число, которое меньше или равно заданному числу (округление вниз).
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает остаток от деления?
+Options:
+- MOD()
+- ABS()
+- POW()
+- SIGN()
+Explanation: Функция MOD() возвращает остаток от деления.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возводит число в степень?
+Options:
+- POW()
+- SQRT()
+- EXP()
+- ROUND()
+Explanation: Функция POW() или POWER() возводит число в степень.
+CorrectAnswerIndex: 0
+
+Question: Какая функция вычисляет квадратный корень из числа?
+Options:
+- SQRT()
+- PI()
+- LOG()
+- EXP()
+Explanation: Функция SQRT() вычисляет квадратный корень из числа.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает значение числа Пи?
+Options:
+- PI()
+- EXP()
+- SQRT()
+- ROUND()
+Explanation: Функция PI() возвращает значение числа Пи.
+CorrectAnswerIndex: 0
+
+Question: Какая функция генерирует случайное число с плавающей точкой от 0 до 1?
+Options:
+- RAND()
+- GREATEST()
+- LOG()
+- SIGN()
+Explanation: Функция RAND() генерирует случайное число с плавающей точкой от 0 до 1.
+CorrectAnswerIndex: 0
+
+Question: Какая функция возвращает знак числа: 1 для положительного, -1 для отрицательного и 0 для нуля?
+Options:
+- SIGN()
+- ABS()
+- FLOOR()
+- ROUND()
+Explanation: Функция SIGN() возвращает знак числа: 1 для положительного, -1 для отрицательного и 0 для нуля.
+CorrectAnswerIndex: 0

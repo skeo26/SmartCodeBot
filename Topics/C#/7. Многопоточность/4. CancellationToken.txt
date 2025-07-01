@@ -1,0 +1,68 @@
+<code>CancellationToken</code> используется для отмены асинхронных операций или задач в C#. Это позволяет гибко управлять отменой работы потока или задачи.
+
+<b>1. Создание CancellationTokenSource</b>
+
+Для создания <code>CancellationToken</code> используется класс <code>CancellationTokenSource</code>, который предоставляет токен для отмены.
+
+<pre><code>CancellationTokenSource cts = new CancellationTokenSource();
+CancellationToken token = cts.Token;
+</code></pre>
+
+<b>2. Отмена операции</b>
+
+Операцию можно отменить с помощью метода <code>Cancel()</code> у <code>CancellationTokenSource</code>.
+
+<pre><code>cts.Cancel(); // Отменяем задачу
+</code></pre>
+
+<b>3. Асинхронная отмена</b>
+
+Токен можно передать асинхронной операции для мониторинга отмены.
+
+<pre><code>async Task DoWork(CancellationToken token)
+{
+    for (int i = 0; i &lt; 10; i++)
+    {
+        if (token.IsCancellationRequested)
+        {
+            Console.WriteLine("Операция отменена.");
+            return;
+        }
+        await Task.Delay(500);
+        Console.WriteLine($"Задача {i}");
+    }
+}
+</code></pre>
+
+<b>4. Пример с использованием CancellationToken</b>
+
+Пример использования <code>CancellationToken</code> для отмены асинхронной задачи.
+
+<pre><code>CancellationTokenSource cts = new CancellationTokenSource();
+Task task = DoWork(cts.Token);
+
+cts.CancelAfter(2000); // Отменить через 2 секунды
+await task;
+</code></pre>
+
+<b>5. Обработка исключений</b>
+
+При отмене задачи возникает <code>OperationCanceledException</code>, который можно обработать.
+
+<pre><code>try
+{
+    await task;
+}
+catch (OperationCanceledException)
+{
+    Console.WriteLine("Задача была отменена.");
+}
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>CancellationToken</code> позволяет отменить операцию в любом месте кода.
+- <code>CancellationTokenSource</code> используется для создания токена и отмены задачи.
+- <code>IsCancellationRequested</code> проверяет, была ли запрашиваемая отмена.
+- Для асинхронных задач используйте <code>OperationCanceledException</code> для обработки отмены.
+

@@ -1,0 +1,115 @@
+<b>LINQ (Language Integrated Query)</b> — это мощный инструмент для работы с данными в C#, который позволяет легко выполнять запросы к коллекциям объектов, базам данных и другим источникам данных. Основными операциями являются проекция и фильтрация данных.
+
+<b>1. Проекция данных:</b>
+
+Проекция в LINQ позволяет преобразовать каждый элемент коллекции в новый тип или структуру. Это выполняется с помощью оператора <code>select</code>.
+
+<b>Пример:</b>
+<pre><code>var people = new List&lt;Person&gt;()
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 35 }
+};
+
+var names = people.Select(p =&gt; p.Name);
+
+foreach (var name in names)
+{
+    Console.WriteLine(name);
+}
+// Результат:
+// Alice
+// Bob
+// Charlie
+</code></pre>
+
+<b>2. Фильтрация данных:</b>
+
+Фильтрация данных в LINQ позволяет выбирать только те элементы коллекции, которые удовлетворяют заданному условию. Для этого используется метод <code>Where()</code>.
+
+<b>Пример:</b>
+<pre><code>var adults = people.Where(p =&gt; p.Age &gt; 18);
+
+foreach (var person in adults)
+{
+    Console.WriteLine(person.Name);
+}
+// Результат:
+// Alice
+// Bob
+// Charlie
+</code></pre>
+
+<b>3. Совмещение проекции и фильтрации:</b>
+
+Можно одновременно фильтровать и проецировать данные. В этом случае сначала происходит фильтрация, а затем проекция.
+
+<b>Пример:</b>
+<pre><code>var adultNames = people
+    .Where(p =&gt; p.Age &gt; 18)
+    .Select(p =&gt; p.Name);
+
+foreach (var name in adultNames)
+{
+    Console.WriteLine(name);
+}
+// Результат:
+// Alice
+// Bob
+// Charlie
+</code></pre>
+
+<b>4. Пример с использованием анонимных типов:</b>
+
+LINQ позволяет создавать анонимные типы в процессе проекции данных. Это полезно для выбора нескольких свойств из объектов.
+
+<b>Пример:</b>
+<pre><code>var personInfo = people
+    .Where(p =&gt; p.Age &gt; 18)
+    .Select(p =&gt; new { p.Name, p.Age });
+
+foreach (var person in personInfo)
+{
+    Console.WriteLine($"Name: {person.Name}, Age: {person.Age}");
+}
+// Результат:
+// Name: Alice, Age: 25
+// Name: Bob, Age: 30
+// Name: Charlie, Age: 35
+</code></pre>
+
+<b>5. Использование сортировки:</b>
+
+LINQ также позволяет сортировать данные с помощью метода <code>OrderBy()</code>.
+
+<b>Пример:</b>
+<pre><code>var sortedByAge = people
+    .OrderBy(p =&gt; p.Age)
+    .Select(p =&gt; p.Name);
+
+foreach (var name in sortedByAge)
+{
+    Console.WriteLine(name);
+}
+// Результат:
+// Alice
+// Bob
+// Charlie
+</code></pre>
+
+<b>Основные методы LINQ для работы с данными:</b>
+
+- <code>Where()</code> — фильтрация элементов коллекции.
+- <code>Select()</code> — проекция данных.
+- <code>OrderBy()</code> — сортировка.
+- <code>Distinct()</code> — удаление дубликатов.
+- <code>First()</code>, <code>FirstOrDefault()</code> — выбор первого элемента коллекции.
+- <code>ToList()</code> — преобразование результата в список.
+
+<b>Когда использовать:</b>
+
+- Для обработки коллекций и данных в памяти.
+- Для запросов к базе данных через LINQ to Entities.
+- Для создания динамических запросов в приложениях.
+

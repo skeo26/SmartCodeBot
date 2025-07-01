@@ -1,0 +1,44 @@
+Question: Какое ограничение гарантирует уникальность значений в столбце?
+Options:
+- UNIQUE
+- PRIMARY KEY
+- FOREIGN KEY
+- NOT NULL
+Explanation: UNIQUE обеспечивает, чтобы все значения в столбце были уникальными.
+CorrectAnswerIndex: 0
+
+Question: Какое ограничение используется для связи между таблицами?
+Options:
+- FOREIGN KEY
+- UNIQUE
+- CHECK
+- DEFAULT
+Explanation: FOREIGN KEY обеспечивает ссылочную целостность между таблицами.
+CorrectAnswerIndex: 0
+
+Question: Что делает ограничение CHECK?
+Options:
+- Проверяет соответствие значения условию
+- Обеспечивает уникальность
+- Запрещает значения NULL
+- Устанавливает значение по умолчанию
+Explanation: CHECK проверяет, соответствуют ли значения определённому условию (доступно с MySQL 8.0).
+CorrectAnswerIndex: 0
+
+Question: Как удалить ограничение NOT NULL?
+Options:
+- ALTER TABLE ... MODIFY столбец ... NULL
+- DROP CONSTRAINT NOT NULL
+- DELETE NOT NULL FROM столбец
+- ALTER COLUMN SET NULL
+Explanation: NOT NULL удаляется через ALTER TABLE и изменение столбца: MODIFY name VARCHAR(...) NULL.
+CorrectAnswerIndex: 0
+
+Question: Что произойдёт при попытке вставить значение NULL в столбец с ограничением NOT NULL?
+Options:
+- Произойдёт ошибка
+- NULL будет автоматически заменён на 0
+- Значение будет проигнорировано
+- Строка добавится без значения
+Explanation: При вставке NULL в столбец с ограничением NOT NULL произойдёт ошибка.
+CorrectAnswerIndex: 0

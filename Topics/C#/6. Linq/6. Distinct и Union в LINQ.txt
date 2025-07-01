@@ -1,0 +1,118 @@
+<b>Distinct</b> и <b>Union</b> — это методы в LINQ, которые используются для работы с уникальными элементами в коллекции.
+
+<b>1. Distinct</b>
+
+Метод <code>Distinct()</code> удаляет все дублирующиеся элементы из коллекции, оставляя только уникальные значения.
+
+<pre><code>var numbers = new List&lt;int&gt;() { 1, 2, 2, 3, 4, 4, 5 };
+
+var distinctNumbers = numbers.Distinct();
+
+foreach (var number in distinctNumbers)
+{
+    Console.WriteLine(number);
+}
+// Результат:
+// 1
+// 2
+// 3
+// 4
+// 5
+</code></pre>
+
+<b>2. Union</b>
+
+Метод <code>Union()</code> объединяет два множества, удаляя дублирующиеся элементы. Этот метод работает с двумя коллекциями и возвращает объединение этих коллекций без повторений.
+
+<pre><code>var list1 = new List&lt;int&gt;() { 1, 2, 3 };
+var list2 = new List&lt;int&gt;() { 3, 4, 5 };
+
+var unionResult = list1.Union(list2);
+
+foreach (var number in unionResult)
+{
+    Console.WriteLine(number);
+}
+// Результат:
+// 1
+// 2
+// 3
+// 4
+// 5
+</code></pre>
+
+<b>3. Union с пользовательскими типами:</b>
+
+Можно использовать <code>Union()</code> с коллекциями объектов. Для этого нужно переопределить метод <code>Equals()</code> и <code>GetHashCode()</code> для правильного сравнения объектов.
+
+<pre><code>public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public override bool Equals(object obj)
+    {
+        return obj is Person person && person.Name == this.Name && person.Age == this.Age;
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(Name, Age);
+    }
+}
+
+var people1 = new List&lt;Person&gt;()
+{
+    new Person { Name = "Alice", Age = 25 },
+    new Person { Name = "Bob", Age = 30 }
+};
+
+var people2 = new List&lt;Person&gt;()
+{
+    new Person { Name = "Bob", Age = 30 },
+    new Person { Name = "Charlie", Age = 35 }
+};
+
+var distinctPeople = people1.Union(people2);
+
+foreach (var person in distinctPeople)
+{
+    Console.WriteLine($"{person.Name}, {person.Age}");
+}
+// Результат:
+// Alice, 25
+// Bob, 30
+// Charlie, 35
+</code></pre>
+
+<b>4. Пример с строками:</b>
+
+Метод <code>Distinct()</code> и <code>Union()</code> можно использовать также для коллекций строк.
+
+<pre><code>var fruits1 = new List&lt;string&gt;() { "apple", "banana", "cherry" };
+var fruits2 = new List&lt;string&gt;() { "banana", "date", "cherry" };
+
+var distinctFruits = fruits1.Distinct();
+
+foreach (var fruit in distinctFruits)
+{
+    Console.WriteLine(fruit);
+}
+// Результат:
+// apple
+// banana
+// cherry
+</code></pre>
+
+<b>Основные моменты:</b>
+
+- <code>Distinct()</code> удаляет все дублирующиеся элементы.
+- <code>Union()</code> объединяет две коллекции, удаляя дубли.
+- Для коллекций с объектами необходимо переопределить метод <code>Equals()</code> и <code>GetHashCode()</code> для правильного сравнения.
+
+<b>Когда использовать:</b>
+
+- Когда нужно получить уникальные элементы из коллекции.
+- Для объединения двух коллекций с удалением повторов.
+- При работе с пользовательскими типами и необходимости определения, какие объекты считаются одинаковыми.
+
